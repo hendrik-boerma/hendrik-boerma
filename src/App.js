@@ -43,7 +43,7 @@ function App() {
           </ul>
         </nav>
         <div className='homepage'>
-          <h1>HENDRIK BOERMA</h1>
+          <h1>HENDRIK BOERMA.</h1>
           <h2>Testing, UX & FrontEnd Development</h2>
         </div>
       </header>
