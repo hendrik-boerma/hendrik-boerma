@@ -102,7 +102,12 @@ h3{
 }
 
 .container2 {
+  display: flex;
   padding: 20px 5%;
+  gap: 5%;
+}
+
+.ervaring {
   display: flex;
   flex-direction: column;
   background-color: $primary-backgroundcolor;
@@ -130,7 +135,7 @@ h3{
     background-position: left;
   }
 
-.container2 p{
+.ervaring p{
   display: none;
   color: $primary-color-text;
   font-size: 1rem;
@@ -163,7 +168,6 @@ h3{
   object-fit: cover;
   vertical-align: bottom;
   background-color: #000000;
-  border: solid 5px #FFFFFF;
 }
 
 #modal {
@@ -209,7 +213,7 @@ footer p{
 }
 
 @media screen and (max-width: 768px) {
-  .container1 {
+  .container1, .container2 {
     display: block;
     }
   .text {
@@ -229,11 +233,14 @@ footer p{
 
 @media screen and (max-width: 400px) {
   ul {
-    text-align: center;
+    justify-content: center;
     bottom: 0;
     background-color: #000000;
     animation: none;
     z-index: 1;
+  }
+  li{
+    padding: 0px 5%;
   }
   a{
     color: $primary-color-text-1;
@@ -245,7 +252,9 @@ footer p{
   h2{
     font-size: 1rem;
   }
-
+  h3{
+    font-size: 1.5rem;
+  }
   .container3 img{
     width: 100%;
   }
