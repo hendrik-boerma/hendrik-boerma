@@ -34,7 +34,6 @@ function App() {
 
   return (
     <>
-      <header>
         <nav>
           <ul>
             <li><a href="#overmij">Over mij</a></li>
@@ -46,8 +45,6 @@ function App() {
           <h1>HENDRIK BOERMA</h1>
           <h2>Testing, UX & FrontEnd Development</h2>
         </div>
-      </header>
-
       <main className='pagecontent'>
         <section className='container1'>
           <div className='text'>

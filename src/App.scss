@@ -2,6 +2,15 @@ $primary-backgroundcolor: #EFEFEF;
 $primary-color-text: #000000;
 $primary-color-text-1: #efefef;
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 body {
   background-color: $primary-backgroundcolor;
   background-size: 100%;
@@ -13,17 +22,16 @@ ul {
   background-color: #EFEFEF;
   position: fixed;
   width: 100%;
-  color: $primary-color-text;
-  text-align: right;
   list-style: none;
-  top: 0;
   margin: 0;
-  padding: 30px 0px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 li {
-  display: inline-block;
-  margin-right: 5%;
+  padding: 0px 30px;
   cursor: pointer;
   border-radius: 3px;
 }
@@ -83,6 +91,7 @@ h3{
   color: $primary-color-text;
   background-color: #FFFFFF;
   left: 0;
+  animation: 1s ease-out 0s 1 slideInLeft;
 }
 
 .portret {
@@ -108,7 +117,6 @@ h3{
     text-align: left;
     cursor: pointer;
     color: $primary-color-text;
-    /*background-image: linear-gradient(to left,#023535,#008F8C);*/
     background-color: #D9D9D9;
     transition: 0.6s;
     background-size: 100%;
@@ -145,7 +153,6 @@ h3{
 .gallery{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   gap: 10px;
 }
 
@@ -223,16 +230,22 @@ footer p{
 @media screen and (max-width: 400px) {
   ul {
     text-align: center;
+    bottom: 0;
+    background-color: #000000;
+    animation: none;
+    z-index: 1;
   }
-  li {
-    margin: 0% 5%;
+  a{
+    color: $primary-color-text-1;
   }
   h1 {
     font-size: 2rem;
   }
+
   h2{
     font-size: 1rem;
   }
+
   .container3 img{
     width: 100%;
   }
