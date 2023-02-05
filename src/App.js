@@ -5,6 +5,12 @@ import illustrations from './Images/work/Illustrations.png'
 import mockup from './Images/work/Mockup.png'
 import landscape from './Images/work/Landscape.png'
 import voucheraw from './Images/work/VouherAW.png'
+import htmlicon from './Images/html5.png'
+import cssicon from './Images/css3.png'
+import jsicon from './Images/js.png'
+import figmaicon from './Images/Figma.png'
+import adobeicon from './Images/AdobeCloud.png'
+import tmapicon from './Images/TMAP.png'
 
 
 function App() {
@@ -25,12 +31,6 @@ function App() {
     modal.style.display = "none";
   }
 
-  function ImageModal(foto){
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById("img");
-    modal.style.display = "flex";
-    modalImg.src = "landscape";
-  }
 
   return (
     <>
@@ -67,21 +67,29 @@ function App() {
             <button  onClick={() => collapsible("p5")}>Studie Communication & Multimedia design - Hanze Hogeschool</button>
             <p id="p5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
-          <div>
+          <div className='skills'>
             <h3>Skills</h3>
+            <div className='skillsicons'>
+              <img src={htmlicon} alt='Hendrik Boerma' />
+              <img src={cssicon} alt='Hendrik Boerma' />
+              <img src={jsicon} alt='Hendrik Boerma' />
+              <img src={figmaicon} alt='Hendrik Boerma' />
+              <img src={adobeicon} alt='Hendrik Boerma' />
+              <img src={tmapicon} alt='Hendrik Boerma' />
+            </div>
           </div>
         </section>
         <section className='container3'>
           <h3 id='portfolio'>Portfolio</h3>
           <div className='gallery'>
-            <img src={capetown} alt='cape town' onClick={ImageModal} />
-            <img src={illustrations} alt='Hendrik Boerma' />
-            <img src={landscape} alt='Hendrik Boerma' />
-            <img src={mockup} alt='Hendrik Boerma' />
-            <img src={voucheraw} alt='Hendrik Boerma' />
-            <img src={voucheraw} alt='Hendrik Boerma' />
-            <img src={voucheraw} alt='Hendrik Boerma' />
-            <img src={voucheraw} alt='Hendrik Boerma' />
+            <img id='myImg' src={capetown} alt='cape town'/>
+            <img src={illustrations} alt='Hendrik Boerma'/>
+            <img src={landscape} alt='Hendrik Boerma'/>
+            <img src={mockup} alt='Hendrik Boerma'/>
+            <img src={voucheraw} alt='Hendrik Boerma'/>
+            <img src={voucheraw} alt='Hendrik Boerma'/>
+            <img src={voucheraw} alt='Hendrik Boerma'/>
+            <img src={voucheraw} alt='Hendrik Boerma'/>
           </div>
         </section>
       </main>
@@ -91,9 +99,6 @@ function App() {
             </div>
       <footer>
         <h3>Contact</h3>
-        <i></i>
-        <i></i>
-        <i></i>
       </footer>
     </>
   );
