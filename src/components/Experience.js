@@ -1,13 +1,11 @@
 import images from '../images'
 
 function Experience () {
-    
+
     function collapsible(num) {
-        let paragraf = document.getElementById(num)
-        console.log(num)
+        const paragraf = document.getElementById(num)
         if (paragraf.style.display === "none") {
           paragraf.style.display = "block";
-          console.log("open")
         } else {
           paragraf.style.display = "none"
         }
