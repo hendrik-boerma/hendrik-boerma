@@ -142,7 +142,6 @@ h3{
   }
 
 .ervaring p{
-  display: none;
   color: $primary-color-text-1;
   font-size: 1rem;
   font-weight: 200;
@@ -155,22 +154,6 @@ h3{
   border-radius: 5px;
 }
 
-.skills {
-  width: 50%;
-}
-
-.skillsicons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.skills img {
-  width: 16vh;
-  padding: 20px;
-  height: auto;
-  align-self: center;
-}
 
 .container3 {
   padding: 20px 5%;
@@ -220,21 +203,6 @@ h3{
   top: 15px;
   right: 35px;
   cursor: pointer;
-}
-
-footer {
-  background-color: #000000;
-  padding: 50px 5%;
-  height: 500px;
-}
-
-footer h3 {
-  color: $primary-color-text-1;
-}
-
-footer p{
-  color: $primary-color-text-1;
-
 }
 
 @media screen and (max-width: 768px) {
