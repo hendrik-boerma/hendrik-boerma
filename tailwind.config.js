@@ -2,9 +2,6 @@
 module.exports = {
   content:  ["./src/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      'futura': ['Futura', 'Arial', 'Helvetica', 'sans-serif'],
-    },
     colors: {
       'darkblue': '#000B10',
       'mediumblue': '#001722',
