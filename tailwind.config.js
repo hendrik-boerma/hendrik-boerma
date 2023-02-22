@@ -5,7 +5,13 @@ module.exports = {
     fontFamily: {
       'futura': ['Futura', 'Arial', 'Helvetica', 'sans-serif'],
     },
-    extend: {},
+    colors: {
+      'darkblue': '#000B10',
+      'mediumblue': '#001722',
+      'offwhite': '#EFEFEF',
+      'blacktransparent': 'rgba(0,0,0,0.9)'
+    },
+    extend: {}
   },
   plugins: [],
 }

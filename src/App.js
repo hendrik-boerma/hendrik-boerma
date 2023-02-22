@@ -9,20 +9,20 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <>
+    < >
       <Navigation />
       <header>
-        <div className='homepage'>
-          <h1>HENDRIK BOERMA</h1>
-          <h2>Testing, UX & FrontEnd Development</h2>
+        <div className='flex flex-col justify-center text-center py-48 px-2 gap-8'>
+          <h1 className='text-black text-3xl font-futura'>HENDRIK BOERMA</h1>
+          <h2 className='text-black text-2xl'>Testing, UX & FrontEnd Development</h2>
         </div>
       </header>
-      <main className='pagecontent'>
         <About />
+      <div className='bg-darkblue'> 
         <Experience />
         <Portfolio />
-      </main>
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }
