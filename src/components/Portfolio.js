@@ -16,7 +16,7 @@ function Portfolio() {
     return (
         <>
             <section className='p-6 bg-darkblue'  id='section3'>
-                <h3 className='text-4xl text-offwhite'>Portfolio</h3>
+                <h3 className='text-4xl text-offwhite font-bold'>Portfolio</h3>
                 <div className='flex flex-wrap gap-2 py-6'>
                     <img className='rounded max-h-96 grow w-auto object-cover align-bottom cursor-pointer' onClick={() => modal(images.a4hflyer)} src={images.a4hflyer} alt='cape town' />
                     <img className='rounded max-h-96 grow w-auto object-cover align-bottom cursor-pointer'  onClick={() => modal(images.illustrations)} src={images.illustrations} alt='Hendrik Boerma' />
@@ -28,9 +28,8 @@ function Portfolio() {
                     <img className='rounded max-h-96 grow w-auto object-cover align-bottom cursor-pointer'  onClick={() => modal(images.voucheraw)} src={images.voucheraw} alt='Hendrik Boerma' />
                 </div>
             </section>
-            <div className="hidden fixed text-center justify-center w-full top-0 h-full z-10 bg-blacktransparent" id='modal'>
-                <span onClick={close} className="text-offwhite text-5xl font-extrabold absolute top-8 right-8 cursor-pointer">X</span>
-                <img className='w-full max-w-2xl m-auto px-6' id='img' alt='Hendrik Boerma' />
+            <div onClick={close} className=" flex flex-col hidden fixed items-center text-end justify-center w-full top-0 h-full z-10 bg-blacktransparent" id='modal'>    
+            <img className='w-full max-w-2xl px-2' id='img' alt='Hendrik Boerma' />
             </div>
         </>
     );

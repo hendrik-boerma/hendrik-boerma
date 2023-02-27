@@ -8,7 +8,11 @@ module.exports = {
       'offwhite': '#EFEFEF',
       'blacktransparent': 'rgba(0,0,0,0.9)'
     },
-    extend: {}
-  },
+    extend: {
+      backgroundImage: {
+        'CTBG': "./src/images/work/CT.png"
+      }
+    },
   plugins: [],
+}
 }
