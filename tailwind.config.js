@@ -3,8 +3,8 @@ module.exports = {
   content:  ["./src/**/*.{html,js}"],
   theme: {
     colors: {
-      'darkblue': '#000B10',
-      'mediumblue': '#001722',
+      'darkblue': '#042326',
+      'mediumblue': '#1D7373',
       'offwhite': '#EFEFEF',
       'blacktransparent': 'rgba(0,0,0,0.9)'
     },

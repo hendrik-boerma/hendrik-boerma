@@ -12,10 +12,10 @@ function App() {
     < >
       <Navigation />
       <header>
-        <div className='py-60'>
+        <div className='py-60 bg-offwhite'>
           <div className='fixed w-full flex flex-col justify-center text-center gap-8 px-8'>
-          <h1 className='text-offwhite text-4xl font-bold'>Hendrik Boerma</h1>
-          <h2 className='text-offwhite text-2xl'>Testing, UX & Front-end Development</h2>
+          <h1 className='text-darkblue text-4xl font-bold md:text-6xl'>Hendrik Boerma</h1>
+          <h2 className='text-darkblue text-2xl md:text-3xl'>Testing, UX & Front-end Development</h2>
           </div>
         </div>
       </header>
