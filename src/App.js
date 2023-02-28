@@ -19,8 +19,8 @@ function App() {
           </div>
         </div>
       </header>
-        <About />
       <div className='bg-darkblue sticky'> 
+        <About />
         <Experience />
         <Portfolio />
         <Footer />
