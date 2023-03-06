@@ -2,11 +2,12 @@ import images from '../Images'
 
 function Portfolio() {
 
-    function modal(image) {
+    function modal(image, alttext) {
         const modal = document.getElementById('modal');
         modal.style.display = "flex";
         const img = document.getElementById('img');
         img.src = image;
+        img.alt = alttext;
     }
     function close() {
         const modal = document.getElementById('modal');
@@ -33,7 +34,7 @@ function Portfolio() {
                 </div>
             </section>
             <div onClick={close} className=" flex flex-col hidden fixed items-center text-end justify-center w-full top-0 h-full z-30 bg-blacktransparent" id='modal'>    
-            <img className='w-full max-w-2xl p-2 md:p-16' id='img' alt='Hendrik Boerma' />
+            <img className='w-full max-w-2xl p-2 md:p-16' id='img' alt='' />
             </div>
         </>
     );
