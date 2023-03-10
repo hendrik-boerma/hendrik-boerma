@@ -22,7 +22,7 @@ function Experience() {
     }
 
     return (
-      <button className="flex justify-between items-center w-full p-4 pl-6 text-left cursor-pointer bg-mediumblue rounded font-bold"
+      <button className="flex justify-between items-center w-full p-4 pl-6 text-left text-offwhite cursor-pointer bg-mediumblue rounded font-bold"
         onClick={() => collapsible()}>
         <p>{title} <br />
           <span className='font-normal'>{company}</span>
@@ -61,7 +61,7 @@ function Experience() {
         </div>
         <div className='md:w-6/12'>
           <h4 className='text-2xl text-offwhite pt-8 md:pt-0'>Tools</h4>
-          <div className='flex flex-wrap justify-center items-center md:justify-start py-4'>
+          <div className='flex flex-wrap justify-center items-center md:justify-start py-4 max-w-3xl'>
             <img className='p-6 w-28 sm:w-36 h-full' src={images.figmaicon} alt='figmaicon' />
             <img className='p-6 w-28 sm:w-36 h-full' src={images.adobeicon} alt='adobeicon' />
             <img className='p-6 w-28 sm:w-36 h-full' src={images.tmapicon} alt='tmapicon' />
@@ -72,7 +72,7 @@ function Experience() {
             <img className='p-6 w-28 sm:w-36 h-full' src={images.reacticon} alt='reacticon' />
           </div>
           <h4 className='text-2xl pt-4 text-offwhite'>Skills</h4>
-          <div className='flex flex-wrap gap-4 py-6 text-center'>
+          <div className='flex flex-wrap gap-4 py-6 text-center text-offwhite max-w-3xl'>
             <span className='bg-mediumblue p-4 grow rounded'>Front-End Development</span>
             <span className='bg-mediumblue p-4 grow rounded'>Creatief</span>
             <span className='bg-mediumblue p-4 grow rounded'>Test Automation</span>

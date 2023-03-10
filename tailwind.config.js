@@ -3,9 +3,11 @@ module.exports = {
   content:  ["./src/**/*.{html,js}"],
   theme: {
     colors: {
-      'darkblue': '#042326',
-      'mediumblue': '#1D7373',
+      'darkblue': '#1F1F1F',
+      'mediumblue': '#0D0D0D',
       'offwhite': '#EFEFEF',
+      'neoblue': '#0DDBFF',
+      'lightgrey': '#F2F2F2',
       'blacktransparent': 'rgba(0,0,0,0.9)'
     },
     extend: {

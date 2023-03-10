@@ -12,10 +12,10 @@ function App() {
     < >
       <Navigation />
       <header className='h-screen flex flex-col'>
-        <div className='flex flex-col align-center justify-center h-screen bg-offwhite'>
+        <div className='flex flex-col align-center justify-center h-screen'>
           <div className='fixed w-full flex flex-col text-start gap-6 px-8 pt-20 md:px-16'>
-            <h1 className='text-darkblue text-4xl font-bold md:text-6xl slideleft'>Hendrik Boerma</h1>
-            <h2 className='text-darkblue text-2xl md:text-3xl slideleft'>Testing, UX & Front-end Development</h2>
+            <h1 className='text-offwhite text-4xl font-bold md:text-6xl slideleft'>Hendrik Boerma</h1>
+            <h2 className='text-neoblue text-2xl md:text-3xl slideleft'>Testing, UX & Front-end Development</h2>
           </div>
         </div>
         <div className='flex flex-row justify-center p-8 mb-16 md:mb-8 md:px-16 text-center z-10'>

@@ -16,7 +16,7 @@ function Portfolio() {
 
     const Imagebox = ({boximage, alttext}) => {
                 return (
-            <img className='rounded max-h-96 grow sm:w-4/12 lg:w-3/12 object-cover align-bottom cursor-pointer' onClick={() => modal(boximage)} src={boximage} alt={alttext} />
+            <img className='rounded grow sm:w-4/12 lg:w-3/12 lg:max-w-md object-cover align-bottom cursor-pointer' onClick={() => modal(boximage)} src={boximage} alt={alttext} />
         );
     }
 
@@ -34,7 +34,7 @@ function Portfolio() {
                 </div>
             </section>
             <div onClick={close} className=" flex flex-col hidden fixed items-center text-end justify-center w-full top-0 h-full z-30 bg-blacktransparent" id='modal'>    
-            <img className='w-full max-w-2xl p-2 md:p-16' id='img' alt='' />
+            <img className='w-full max-w-4xl p-2 md:p-16' id='img' alt='' />
             </div>
         </>
     );
