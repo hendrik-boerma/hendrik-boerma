@@ -22,7 +22,7 @@ function Experience() {
     }
 
     return (
-      <button className="flex justify-between items-center w-full p-4 pl-6 text-left text-offwhite cursor-pointer bg-mediumblue rounded font-bold"
+      <button className="flex justify-between items-center w-full p-4 pl-6 text-left text-offwhite cursor-pointer bg-mediumblue hover:border-b-2 border-neoblue rounded font-bold"
         onClick={() => collapsible()}>
         <p>{title} <br />
           <span className='font-normal'>{company}</span>

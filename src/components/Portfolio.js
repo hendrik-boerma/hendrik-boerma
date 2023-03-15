@@ -34,7 +34,7 @@ function Portfolio() {
                 </div>
             </section>
             <div onClick={close} className=" flex flex-col hidden fixed items-center text-end justify-center w-full top-0 h-full z-30 bg-blacktransparent" id='modal'>    
-            <img className='w-full max-w-4xl p-2 md:p-16' id='img' alt='' />
+            <img className='w-full max-w-3xl p-2 md:p-16' id='img' alt='' />
             </div>
         </>
     );

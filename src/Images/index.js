@@ -1,6 +1,6 @@
 import portret from './portret.png'
 import a4hflyer from './work/flyerA4H.png'
-import illustrations from './work/Illustrations.png'
+import illustrations from './work/illustrations.png'
 import mockup from './work/Mockup.png'
 import landscape from './work/Landscape.png'
 import voucheraw from './work/VoucherAW.png'
