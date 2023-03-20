@@ -19,7 +19,7 @@ function App() {
           </div>
         </div>
         <div className='flex flex-row justify-center p-8 mb-16 md:mb-8 md:px-16 text-center z-10'>
-            <a className='text-4xl cursor-pointer bg-darkblue text-offwhite w-12 h-12 rounded-full hover:animate-bounce' href="#section1">↓</a>
+            <a className='text-4xl cursor-pointer bg-darkblue text-offwhite w-12 h-12 rounded-full hover:text-neoblue' href="#section1">↓</a>
           </div>
       </header>
       <div className='bg-darkblue sticky'> 
