@@ -22,7 +22,7 @@ function App() {
             <a className='text-4xl cursor-pointer bg-darkblue text-offwhite w-12 h-12 rounded-full hover:text-neoblue' href="#section1">↓</a>
           </div>
       </header>
-      <div className='bg-darkblue sticky'>
+      <div className='bg-darkblue sticky'> 
         <About />
         <Experience />
         <Portfolio />

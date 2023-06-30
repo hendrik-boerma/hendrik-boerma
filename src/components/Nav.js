@@ -5,27 +5,24 @@ import { useState } from 'react'
 
 function Navigation (){
 
-  const [toggle, setToggle] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
 function openMenu () {
   let menu = document.getElementById("menu");
-  if (toggle === false){
-    setToggle(true)
+  if (toggleMenu === false){
+    setToggleMenu(true)
     menu.style.display = "flex"
   } else {
     menu.style.display = "none"
-    setToggle(false)
+    setToggleMenu(false)
   }
 }
 
   return (
     <nav>
       <div className="fixed flex justify-end w-full text-lightgrey bg-darkblue drop-shadow-md z-30 top-0" onClick={openMenu}>
-      <button className="flex flex-col gap-2 p-4 cursor-pointer">
-      <span className="w-12 h-1 bg-offwhite"></span>
-      <span className="w-12 h-1 bg-offwhite"></span>
-      <span className="w-12 h-1 bg-offwhite"></span>
-    </button>
+      <button className="flex flex-col gap-2 p-4 cursor-pointer">{toggleMenu ? "close" : "menu"}
+      </button>
     </div>
     <div id="menu" className="flex flex-col items-center justify-center bg-darkblue h-full w-full z-20 fixed text-lightgrey text-2xl hidden">
         <ul className="flex flex-col justify-center gap-12">
