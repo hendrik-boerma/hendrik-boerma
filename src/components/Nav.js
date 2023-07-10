@@ -21,7 +21,7 @@ function openMenu () {
   return (
     <nav>
       <div className="fixed flex justify-end w-full text-lightgrey bg-darkblue drop-shadow-md z-30 top-0" onClick={openMenu}>
-      <button className="flex flex-col gap-2 p-4 cursor-pointer">{toggleMenu ? "close" : "menu"}
+      <button className="flex flex-col gap-2 p-4 cursor-pointer text-offwhite text-2xl font-bold md:text-2xl">{toggleMenu ? "Close" : "Menu"}
       </button>
     </div>
     <div id="menu" className="flex flex-col items-center justify-center bg-darkblue h-full w-full z-20 fixed text-lightgrey text-2xl hidden">

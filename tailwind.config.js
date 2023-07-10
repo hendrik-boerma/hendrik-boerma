@@ -12,7 +12,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'CTBG': "./src/images/work/CT.png"
+        'portret': "url('../src/Images/portret.png')"
+      },
+      spacing: {
+        '128': '32rem',
       }
     },
   plugins: [],

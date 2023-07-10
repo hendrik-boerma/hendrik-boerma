@@ -25,10 +25,11 @@ function Experience() {
       <button className="flex justify-between items-center w-full p-4 pl-6 text-left text-offwhite cursor-pointer bg-mediumblue hover:border-b-2 border-neoblue rounded font-bold"
         onClick={() => collapsible()}>
         <p>{title} <br />
-          <span className='font-normal'>{company}</span>
+          <span className='font-normal'>{company}</span> <br />
+          <span className='font-normal text-sm xl:hidden'>{date}</span>
         </p>
         <p className='flex items-center gap-4 md:gap-8'>
-        <span className='font-normal text-sm'>{date}</span>
+        <span className='font-normal text-sm hidden xl:flex'>{date}</span>
         <span id={arrowid} className='text-2xl text-center'>{arrow}</span>
         </p>
       </button>
@@ -36,7 +37,7 @@ function Experience() {
   }
 
   return (
-    <section className='text-offwhite py-12 px-6 bg-darkblue md:px-16' id='section2'>
+    <section className='text-offwhite py-12 px-4 bg-darkblue md:px-16' id='section2'>
       <h3 className='text-4xl py-8 font-bold' id='ervaring'>Ervaring</h3>
       <div className='flex flex-col md:flex-row md:gap-16'>
         <div className='flex flex-col gap-4 md:w-6/12'>
