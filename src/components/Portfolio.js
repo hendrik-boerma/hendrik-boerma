@@ -23,7 +23,7 @@ function Portfolio() {
     return (
         <>
             <section className='py-12 px-6 md:px-16 bg-darkblue'  id='section3'>
-                <h3 className='text-4xl py-8 text-offwhite font-bold'>Portfolio</h3>
+                <h3 className='text-3xl py-8 text-lightgrey font-bold'>Portfolio</h3>
                 <div className='flex flex-wrap gap-2'>
                     <Imagebox boximage={images.a4hflyer} alttext="a4hflyer"/>
                     <Imagebox boximage={images.illustrations} alttext="illustrations"/>

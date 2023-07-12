@@ -38,8 +38,8 @@ function Experience() {
 
   return (
     <section className='text-offwhite py-12 px-4 bg-darkblue md:px-16' id='section2'>
-      <h3 className='text-4xl py-8 font-bold' id='ervaring'>Ervaring</h3>
-      <div className='flex flex-col md:flex-row md:gap-16'>
+      <h3 className='text-3xl py-4 md:py-8 font-bold text-lightgrey' id='ervaring'>Ervaring</h3>
+      <div className='flex flex-col-reverse md:flex-row md:gap-16'>
         <div className='flex flex-col gap-4 md:w-6/12'>
           <h4 className='text-2xl text-offwhite' id='werk'>Werk</h4>
           <Button title="Test Engineer" company="Gemeente Groningen" date="Mrt. 2023 - heden" arrowid="arrow7" contentid="content7" />
