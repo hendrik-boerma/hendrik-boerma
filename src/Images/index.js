@@ -13,21 +13,29 @@ import tmapicon from './icons/TMAP.png'
 import cypressicon from './icons/cypress.png'
 import reacticon from './icons/reactjs.png'
 
-const images =  {
+const icons =  [
+  htmlicon,
+  cssicon,
+  jsicon,
+  figmaicon,
+  adobeicon,
+  tmapicon,
+  cypressicon,
+  reacticon
+];
+
+const works =  [
     portret,
     a4hflyer,
     illustrations,
     mockup,
     landscape,
-    voucheraw,
-    htmlicon,
-    cssicon,
-    jsicon,
-    figmaicon,
-    adobeicon,
-    tmapicon,
-    cypressicon,
-    reacticon
-  };
+    voucheraw
+];
 
-export default images;
+const data = {
+  icons,
+  works,
+};
+
+export default data;
