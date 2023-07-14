@@ -1,41 +1,25 @@
-import images from '../Images'
+import data from '../Data'
 
 function Portfolio() {
 
-    function modal(image, alttext) {
-        const modal = document.getElementById('modal');
-        modal.style.display = "flex";
-        const img = document.getElementById('img');
-        img.src = image;
-        img.alt = alttext;
-    }
-    function close() {
-        const modal = document.getElementById('modal');
-        modal.style.display = "none";
-    }
-
-    const Imagebox = ({boximage, alttext}) => {
-                return (
-            <img className='rounded grow sm:w-4/12 lg:w-3/12 lg:max-w-md object-cover align-bottom cursor-pointer' onClick={() => modal(boximage)} src={boximage} alt={alttext} />
-        );
-    }
+    const projects = data.projects;
 
     return (
         <>
-            <section className='py-12 px-6 md:px-16 bg-darkblue'  id='section3'>
-                <h3 className='text-3xl py-8 text-lightgrey font-bold'>Portfolio</h3>
-                <div className='flex flex-wrap gap-2'>
-                    <Imagebox boximage={images.a4hflyer} alttext="a4hflyer"/>
-                    <Imagebox boximage={images.illustrations} alttext="illustrations"/>
-                    <Imagebox boximage={images.landscape} alttext="landscape"/>
-                    <Imagebox boximage={images.mockup} alttext="mockup"/>
-                    <Imagebox boximage={images.voucheraw} alttext="voucheraw"/>
-                    <Imagebox boximage={images.voucheraw} alttext="voucheraw"/>
+            <section className='py-12 px-6 md:px-16 bg-darkblue' id='section3'>
+                <h3 className='text-3xl py-8 text-textcolor font-bold'>Portfolio</h3>
+                <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-2'>
+                    {projects.map(projects => (
+                        <card className='flex flex-col'>
+                            <img className='object-cover h-full w-full rounded-t-lg' src={projects.image} alt={projects.image}/>
+                            <div className='grid grid-cols-2 grid-rows-2 bg-primary p-4 rounded-b-lg gap-8 cursor-pointer hover:'>
+                                <h5 className='col-span-2 text-lg font-bold text-textcolor'>{projects.name}</h5>
+                                <button className='text-textcolor text-right col-start-2 col-span-1'>Bekijk project &gt;</button>
+                            </div>
+                        </card>
+                    ))}
                 </div>
             </section>
-            <div onClick={close} className=" flex flex-col hidden fixed items-center text-end justify-center w-full top-0 h-full z-30 bg-blacktransparent" id='modal'>    
-            <img className='w-full max-w-3xl p-2 md:p-16' id='img' alt='' />
-            </div>
         </>
     );
 }

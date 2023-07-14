@@ -10,7 +10,7 @@ function App() {
   return (
     < >
       <Header />
-      <main className='bg-darkblue sticky'>
+      <main className='bg-backgroundcolor'>
         <Experience />
         <Portfolio />
         <Footer />

@@ -30,11 +30,11 @@ function openMenu () {
           <li className="cursor-pointer"><a href="#section2" onClick={openMenu}>Ervaring</a></li>
           <li className="cursor-pointer"><a href="#section3" onClick={openMenu}>Portfolio</a></li>
         </ul>
-        <ul className="flex gap-12 mt-24">
+        <div className="flex gap-12 mt-24">
             <a href="https://www.linkedin.com/in/hendrik-boerma/" ><FontAwesomeIcon className="cursor-pointer" icon={faLinkedinIn} size='xl'/></a>
             <a href="https://github.com/hendrik-boerma"><FontAwesomeIcon className="cursor-pointer" icon={faGithub} size='xl'/></a>
             <a href="mailto:hendrikboerma@gmail.com"><FontAwesomeIcon className="cursor-pointer" icon={faEnvelope} size='xl'/></a>
-          </ul>
+          </div>
     </div>
     </nav>
     )
