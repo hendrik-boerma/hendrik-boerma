@@ -20,7 +20,7 @@ function Experience() {
               <p>{job.company}</p>
             </div>
           ))}
-          <h4 className='text-2xl pt-4 text-secondary' id='werk'>Studie</h4>
+          <h4 className='text-2xl pt-4 text-secondary' id='werk'>Studies</h4>
           {studies.map(study => (
             <div className='grid grid-cols-2 gap-2 grow rounded'>
               <h5 className='text-lg font-bold text-textcolor'>{study.title}</h5>
