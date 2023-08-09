@@ -7,14 +7,21 @@ function Portfolio() {
     return (
         <>
             <section className='py-12 px-6 md:px-16 bg-darkblue' id='section3'>
-                <h3 className='text-3xl py-8 text-textcolor font-bold'>Portfolio</h3>
-                <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-2'>
+                <h3 className='text-3xl py-8 text-textcolor font-bold'>Projecten</h3>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2'>
                     {projects.map(projects => (
                         <card className='flex flex-col'>
-                            <img className='object-cover h-full w-full rounded-t-lg' src={projects.image} alt={projects.image}/>
-                            <div className='grid grid-cols-2 grid-rows-2 bg-primary p-4 rounded-b-lg gap-8 cursor-pointer hover:'>
-                                <h5 className='col-span-2 text-lg font-bold text-textcolor'>{projects.name}</h5>
-                                <button className='text-textcolor text-right col-start-2 col-span-1'>Bekijk project &gt;</button>
+                            <div className='grid grid-cols-2 grid-rows-5 bg-primary p-4 rounded-lg gap-2 cursor-pointer text-textcolor hover:scale-95 ease-in-out duration-300'>
+                                <h5 className='col-span-2 text-lg font-bold'>{projects.name}</h5>
+                                <p className='col-span-2 text-md font-regular'>{projects.subtitle}</p>
+                                <p className='col-start-1 col-span-2 row-span-1 flex gap-2'>
+                                    {projects.tags.map((tag => (
+                                        <span className='bg-primary p-1 rounded'>
+                                            {tag}
+                                        </span>
+                                    )))}
+                                </p>
+                                <button className='hover:text-secondary text-right col-start-2 row-start-5 col-span-2'>Bekijk project &gt;</button>
                             </div>
                         </card>
                     ))}

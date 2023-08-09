@@ -26,29 +26,38 @@ const icons =  [
 
 const projects =  [
    {
-    name: 'A4H-Tech flyers',
-    image: a4hflyer
+    name: 'Mijn Groningen',
+    subtitle: 'Gemeente Groningen',
+    tags: ['Testersuite','Jira']
    },
    {
-    name: 'Project',
-    image: illustrations
+    name: 'De Stem van Groningen',
+    subtitle: 'Gemeente Groningen',
+    tags: ['UX/UI', 'Figma', 'CMS']
    },
    {
-    name: 'Dieet App',
-    image: mockup
+    name: 'VASD',
+    subtitle: 'Gemeente Groningen',
+    tags: ['TMAP', 'Selenium']
    },
    {
-    name: 'Prototype ElimuOnline',
-    subtitle: 'ux design',
-    image: landscape
+    name: 'Restaurant website',
+    subtitle: 'Front-end Cursus',
+    tags: ['React', 'GIT']
    },
    {
-    name: 'Adventure works',
-    image: voucheraw
+    name: 'Formule 1 Dashboard',
+    subtitle: 'Hobby project',
+    tags: ['HTML','CSS','JS', 'API', 'GIT']
+   },
+   {
+    name: 'Portfolio',
+    subtitle: 'Hobby project',
+    tags: ['HTML','CSS','JS', 'API', 'GIT']
    }
 ];
 
-const skills = ['Scrum', 'Human centered design', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving']
+const skills = ['Scrum', 'Human centered design', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving', 'Selenium']
 
 const jobs = [
   {
