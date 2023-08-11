@@ -1,5 +1,7 @@
 import data from '../Data';
 import { useState } from 'react';
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Portfolio() {
 
@@ -50,7 +52,7 @@ function Portfolio() {
                         <p className='col-span-2 text-md font-regular text-textcolor py-8 max-w-xl'>
                             {project.description}
                         </p>
-                        <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary text-center'}>{project.linktext}</a>
+                        <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary text-center'}>{project.linktext} <FontAwesomeIcon icon={faExternalLink} size='sm'/></a>
                     </article>
                 </div>
             </section>
