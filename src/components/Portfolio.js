@@ -37,7 +37,7 @@ function Portfolio() {
                 </div>
                 <div className={toggleProject ? "bg-backgroundcolor2 drop-shadow-2xl w-full lg:w-1/2 h-screen fixed top-0 right-0 z-20 p-8 slideright ease-in-out duration-300" : "hidden"}>
                     <button className='text-3xl font-bold text-textcolor hover:rotate-180 ease-in-out duration-300' onClick={() => setToggleProject(false)}>X</button>
-                    <article className='p-16 flex flex-col gap-4'>
+                    <article className='py-16 flex flex-col gap-4'>
                         <h5 className='text-3xl font-bold text-textcolor'>{project.name}</h5>
                         <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
                         <p className='col-start-1 col-span-2 row-span-1 flex gap-2'>
@@ -47,9 +47,10 @@ function Portfolio() {
                                 </span>
                             ))}
                         </p>
-                        <p className='col-span-2 text-md font-regular text-textcolor pt-8 max-w-xl'>
+                        <p className='col-span-2 text-md font-regular text-textcolor py-8 max-w-xl'>
                             {project.description}
                         </p>
+                        <a type="button" href={project.link} className={project.link == null ? 'hidden' : 'bg-textcolor p-4 rounded cursor-pointer max-w-xs hover:bg-secondary text-center'}>{project.linktext}</a>
                     </article>
                 </div>
             </section>

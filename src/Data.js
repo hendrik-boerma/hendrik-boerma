@@ -24,39 +24,49 @@ const projects =  [
     name: 'Mijn Groningen',
     subtitle: 'Gemeente Groningen',
     tags: ['Testersuite','Jira'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    link: 'google',
+    linktext: 'Open website'
    },
    {
     name: 'De Stem van Groningen',
     subtitle: 'Gemeente Groningen',
     tags: ['UX/UI', 'Figma', 'CMS'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    link: 'google',
+    linktext: 'Open website'
    },
    {
     name: 'VASD',
     subtitle: 'Gemeente Groningen',
     tags: ['TMAP', 'Selenium'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
    },
    {
     name: 'Restaurant website',
     subtitle: 'Front-end Cursus',
     tags: ['React', 'GIT'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    link: 'google',
+    linktext: 'Open in github'
 
    },
    {
     name: 'Formule 1 Dashboard',
     subtitle: 'Hobby project',
     tags: ['HTML','CSS','JS', 'API', 'GIT'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    link: 'google',
+    linktext: 'Open in github'
 
    },
    {
     name: 'Portfolio',
     subtitle: 'Hobby project',
     tags: ['HTML','CSS','JS', 'API', 'GIT'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    link: 'google',
+    linktext: 'Open in github'
 
    }
 ];

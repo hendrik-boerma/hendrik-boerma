@@ -39,7 +39,7 @@ function Experience() {
           <h4 className='text-2xl pt-4 text-secondary'>Skills</h4>
           <div className='flex flex-wrap gap-4 py-6 text-center text-textcolor'>
             {skills.map((skill, index) => (
-              <span key={index} className='bg-primary p-4 grow rounded max-w-md'>{skill}</span>
+              <span key={index} className='bg-backgroundcolor2 p-4 grow rounded max-w-md'>{skill}</span>
             ))}
           </div>
         </div>
