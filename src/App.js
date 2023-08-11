@@ -11,8 +11,8 @@ function App() {
     < >
          <Header />
       <main className='bg-backgroundcolor'>
-        <Experience />
         <Portfolio />
+        <Experience />
       </main>
         <Footer />
     </>

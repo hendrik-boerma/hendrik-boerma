@@ -15,7 +15,7 @@ function Portfolio() {
 
     return (
         <>
-            <section className='py-12 px-6 md:px-16 bg-darkblue' id='section3'>
+            <section className='py-12 px-4 md:px-16 bg-darkblue' id='section3'>
                 <h3 className='text-3xl py-8 text-textcolor font-bold'>Projecten</h3>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2'>
                     {projects.map((project, index) => (
@@ -25,7 +25,7 @@ function Portfolio() {
                                 <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
                                 <p className='col-start-1 col-span-2 row-span-1 flex gap-2'>
                                     {project.tags.map((tag, tagIndex) => (
-                                        <span className='bg-primary p-1 rounded text-textcolor' key={tagIndex}>
+                                        <span className='bg-primary px-2 py-1 rounded text-textcolor' key={tagIndex}>
                                             {tag}
                                         </span>
                                     ))}
@@ -42,7 +42,7 @@ function Portfolio() {
                         <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
                         <p className='col-start-1 col-span-2 row-span-1 flex gap-2'>
                             {project.tags.map((tag, tagIndex) => (
-                                <span className='bg-primary p-1 rounded text-textcolor' key={tagIndex}>
+                                <span className='bg-primary px-2 py-1 rounded text-textcolor' key={tagIndex}>
                                     {tag}
                                 </span>
                             ))}
@@ -50,7 +50,7 @@ function Portfolio() {
                         <p className='col-span-2 text-md font-regular text-textcolor py-8 max-w-xl'>
                             {project.description}
                         </p>
-                        <a type="button" href={project.link} className={project.link == null ? 'hidden' : 'bg-textcolor p-4 rounded cursor-pointer max-w-xs hover:bg-secondary text-center'}>{project.linktext}</a>
+                        <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary text-center'}>{project.linktext}</a>
                     </article>
                 </div>
             </section>

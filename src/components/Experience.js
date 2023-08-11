@@ -1,8 +1,11 @@
 import data from '../Data'
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Experience() {
 
-  const skills = data.skills
+  const certificats = data.certificats;
+  const skills = data.skills;
   const icons = data.icons;
   const jobs = data.jobs;
   const studies = data.studies;
@@ -14,7 +17,7 @@ function Experience() {
         <div className='flex flex-col gap-8 lg:w-6/12'>
           <h4 className='text-2xl text-secondary' id='werk'>Werk</h4>
           {jobs.map((job, index) => (
-            <div className='grid grid-cols-2 gap-2 grow rounded' key={index}>
+            <div className='grid grid-cols-2 gap-2 grow border-b border-primary pb-2' key={index}>
               <h5 className='text-lg font-bold text-textcolor'>{job.title}</h5>
               <p className='justify-self-end'>{job.date}</p>
               <p>{job.company}</p>
@@ -22,7 +25,7 @@ function Experience() {
           ))}
           <h4 className='text-2xl pt-4 text-secondary' id='werk'>Studies</h4>
           {studies.map((study, index) => (
-            <div className='grid grid-cols-2 gap-2 grow rounded' key={index}>
+            <div className='grid grid-cols-2 gap-2 grow border-b border-primary pb-2' key={index}>
               <h5 className='text-lg font-bold text-textcolor'>{study.title}</h5>
               <p className='justify-self-end text-textcolor'>{study.date}</p>
               <p>{study.company}</p>
@@ -40,6 +43,12 @@ function Experience() {
           <div className='flex flex-wrap gap-4 py-6 text-center text-textcolor'>
             {skills.map((skill, index) => (
               <span key={index} className='bg-backgroundcolor2 p-4 grow rounded max-w-md'>{skill}</span>
+            ))}
+          </div>
+          <h4 className='text-2xl pt-4 text-secondary'>Certificaten</h4>
+          <div className='flex flex-wrap gap-4 py-6 text-center text-textcolor'>
+            {certificats.map((certificat, index) => (
+              <a href={certificat.link} rel="noreferrer" target="_blank" key={index} className='bg-backgroundcolor2 hover:bg-primary p-4 grow rounded max-w-md hover:text-secondary'>{certificat.title} <FontAwesomeIcon icon={faExternalLink} size='sm'/></a>
             ))}
           </div>
         </div>
