@@ -1,20 +1,20 @@
 import './App.scss';
-import Header from './components/Header';
-import Experience from './components/Experience';
-import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import Experience from './components/Experience';
 
 
 function App() {
 
   return (
     < >
-      <Header />
+         <Header />
       <main className='bg-backgroundcolor'>
         <Experience />
         <Portfolio />
-        <Footer />
       </main>
+        <Footer />
     </>
   );
 }

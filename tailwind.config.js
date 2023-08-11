@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     colors: {
       'backgroundcolor': '#161616',
-      'backgroundcolor2': 'rgba(255, 255, 255, 0.05)',
+      'backgroundcolor2': '#262626',
       'textcolor': '#EFEFEF',
-      'primary': 'rgba(255, 255, 255, 0.05)',
+      'primary': '#595959',
       'secondary': '#00E3CC',
       'footer': '',
       'footertext': ''

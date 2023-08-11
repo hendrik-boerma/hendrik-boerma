@@ -1,8 +1,3 @@
-import a4hflyer from './Images/work/flyerA4H.png'
-import illustrations from './Images/work/illustrations.png'
-import mockup from './Images//work/Mockup.png'
-import landscape from './Images/work/Landscape.png'
-import voucheraw from './Images/work/VoucherAW.png'
 import htmlicon from './Images/icons/html5.png'
 import cssicon from './Images/icons/css3.png'
 import jsicon from './Images/icons/js.png'
@@ -28,32 +23,41 @@ const projects =  [
    {
     name: 'Mijn Groningen',
     subtitle: 'Gemeente Groningen',
-    tags: ['Testersuite','Jira']
+    tags: ['Testersuite','Jira'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
    },
    {
     name: 'De Stem van Groningen',
     subtitle: 'Gemeente Groningen',
-    tags: ['UX/UI', 'Figma', 'CMS']
+    tags: ['UX/UI', 'Figma', 'CMS'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
    },
    {
     name: 'VASD',
     subtitle: 'Gemeente Groningen',
-    tags: ['TMAP', 'Selenium']
+    tags: ['TMAP', 'Selenium'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
    },
    {
     name: 'Restaurant website',
     subtitle: 'Front-end Cursus',
-    tags: ['React', 'GIT']
+    tags: ['React', 'GIT'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+
    },
    {
     name: 'Formule 1 Dashboard',
     subtitle: 'Hobby project',
-    tags: ['HTML','CSS','JS', 'API', 'GIT']
+    tags: ['HTML','CSS','JS', 'API', 'GIT'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+
    },
    {
     name: 'Portfolio',
     subtitle: 'Hobby project',
-    tags: ['HTML','CSS','JS', 'API', 'GIT']
+    tags: ['HTML','CSS','JS', 'API', 'GIT'],
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat vel tortor eu porta. Suspendisse potenti. Curabitur pretium finibus nisi at ultricies. Vivamus rutrum felis metus, mollis ullamcorper neque tristique quis. Fusce convallis facilisis dictum. Maecenas venenatis porta fermentum. Fusce dapibus vehicula augue sed iaculis. Ut rhoncus, leo semper aliquam semper, ante erat placerat dolor, id convallis sapien magna quis mi. Duis pretium lobortis sollicitudin. Proin accumsan nisi et erat dictum, a placerat dolor malesuada. Donec vel imperdiet orci.'
+
    }
 ];
 

@@ -13,16 +13,16 @@ function Experience() {
       <div className='flex flex-col-reverse lg:flex-row lg:gap-16'>
         <div className='flex flex-col gap-8 lg:w-6/12'>
           <h4 className='text-2xl text-secondary' id='werk'>Werk</h4>
-          {jobs.map(job => (
-            <div className='grid grid-cols-2 gap-2 grow rounded'>
+          {jobs.map((job, index) => (
+            <div className='grid grid-cols-2 gap-2 grow rounded' key={index}>
               <h5 className='text-lg font-bold text-textcolor'>{job.title}</h5>
               <p className='justify-self-end'>{job.date}</p>
               <p>{job.company}</p>
             </div>
           ))}
           <h4 className='text-2xl pt-4 text-secondary' id='werk'>Studies</h4>
-          {studies.map(study => (
-            <div className='grid grid-cols-2 gap-2 grow rounded'>
+          {studies.map((study, index) => (
+            <div className='grid grid-cols-2 gap-2 grow rounded' key={index}>
               <h5 className='text-lg font-bold text-textcolor'>{study.title}</h5>
               <p className='justify-self-end text-textcolor'>{study.date}</p>
               <p>{study.company}</p>
@@ -32,12 +32,14 @@ function Experience() {
         <div className='lg:w-6/12'>
           <h4 className='text-2xl text-secondary pt-8 lg:pt-0'>Tools</h4>
           <div className='grid grid-cols-3 lg:grid-cols-4 justify-center items-center lg:justify-start py-4 max-w-3xl'>
-            {icons.map(icon => (<img className='p-6 w-28 sm:w-32' src={icon} alt={icon} />
+            {icons.map((icon, index) => (
+              <img key={index} className='p-6 w-28 sm:w-32' src={icon} alt={`Icon ${index}`} />
             ))}
           </div>
           <h4 className='text-2xl pt-4 text-secondary'>Skills</h4>
           <div className='flex flex-wrap gap-4 py-6 text-center text-textcolor'>
-            {skills.map(skill => (<span className='bg-primary p-4 grow rounded max-w-md'>{skill}</span>
+            {skills.map((skill, index) => (
+              <span key={index} className='bg-primary p-4 grow rounded max-w-md'>{skill}</span>
             ))}
           </div>
         </div>
