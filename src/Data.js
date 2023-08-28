@@ -55,7 +55,7 @@ const projects =  [
     name: 'Formule 1 Dashboard',
     subtitle: 'Eigen project',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
-    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper. test push',
     link: 'https://github.com/hendrik-boerma/F1-live-score-app',
     linktext: 'Open in github'
 
