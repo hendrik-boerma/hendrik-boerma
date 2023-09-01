@@ -10,9 +10,9 @@ function Header() {
           <h2 className='text-secondary text-xl md:text-2xl xl:text-3xl'>Front-end Developer</h2>
           <p className='leading-relaxed text-l xl:text-xl text-textcolor py-4'>"Front-end developer/designer en tester met een oog voor de eindgebruiker."</p>
          <div className="flex gap-12 py-4 slideleft">
-            <a href="https://github.com/hendrik-boerma"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='2xl'/></a>
-            <a href="https://www.linkedin.com/in/hendrik-boerma/" ><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='2xl'/></a>
-            <a href="mailto:hendrikboerma@gmail.com"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faEnvelope} size='2xl'/></a>
+            <a href="https://github.com/hendrik-boerma" aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='2xl'/></a>
+            <a href="https://www.linkedin.com/in/hendrik-boerma/" aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='2xl'/></a>
+            <a href="mailto:hendrikboerma@gmail.com" aria-label="Mail"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faEnvelope} size='2xl'/></a>
           </div>
         </article>
         <div className='bg-portret top-0 bg-no-repeat  h-full bg-top w-full md:w-2/3 bg-cover md:relative'></div>

@@ -23,7 +23,7 @@ function Portfolio() {
                     {projects.map((project, index) => (
                         <div className='flex flex-col' onClick={() => openProject(index)} key={index}>
                             <div className='grid grid-cols-2 grid-rows-5 bg-backgroundcolor2 p-4 rounded-lg gap-2 cursor-pointer text-textcolor hover:text-secondary hover:scale-95 ease-in-out duration-300'>
-                                <h5 className='col-span-2 text-lg font-bold text-textcolor'>{project.name}</h5>
+                                <h4 className='col-span-2 text-lg font-bold text-textcolor'>{project.name}</h4>
                                 <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
                                 <p className='col-start-1 col-span-2 row-span-1 flex gap-2'>
                                     {project.tags.map((tag, tagIndex) => (
