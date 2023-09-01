@@ -1,5 +1,5 @@
 import data from '../Data';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -10,7 +10,17 @@ function Portfolio() {
     const project = data.projects[number];
     const [toggleProject, setToggleProject] = useState(false);
 
-    function openProject(index) {
+    useEffect(() => {
+const overlay = document.getElementById("overlay");
+        if (toggleProject === false) {
+          document.body.style.overflow = "auto";
+        } else {
+          document.body.style.overflow = "hidden";
+          overlay.focus();
+        }
+      }, [toggleProject]);
+
+      function openProject(index) {
         setNumber(index);
         setToggleProject(true);
     }
@@ -37,8 +47,8 @@ function Portfolio() {
                         </div>
                     ))}
                 </div>
-                <div className={toggleProject ? "bg-backgroundcolor2 drop-shadow-2xl w-full lg:w-1/2 h-screen fixed top-0 right-0 z-20 p-8 slideright ease-in-out duration-300" : "hidden"}>
-                    <button className='text-3xl font-bold text-textcolor hover:rotate-180 ease-in-out duration-300' onClick={() => setToggleProject(false)}>X</button>
+                <div className={toggleProject ? "overflow-y-auto bg-backgroundcolor2 drop-shadow-2xl w-full lg:w-1/2 h-screen fixed top-0 right-0 z-20 p-8 slideright ease-in-out duration-300" : "hidden"}>
+                    <button id="overlay" className='text-3xl font-bold text-textcolor hover:rotate-180 ease-in-out duration-300' onClick={() => setToggleProject(false)}>X</button>
                     <article className='py-16 flex flex-col gap-4'>
                         <h5 className='text-3xl font-bold text-textcolor'>{project.name}</h5>
                         <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>

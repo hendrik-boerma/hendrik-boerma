@@ -24,15 +24,15 @@ const projects =  [
     name: 'Mijn Groningen',
     subtitle: 'Gemeente Groningen',
     tags: ['Testersuite','Jira'],
-    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    description: 'Binnen de gemeente Groningen wordt er gewerkt aan het nieuw inwoners portaal ‘Mijn Groningen’. Inwoners van de gemeente Groningen kunnen hier verschillende producten aanvragen en hun huidige aanvragen inzien. Als test coördinator ben ik binnen dit project verantwoordelijk voor de kwaliteit van het portaal. Op basis van User stories en Acceptatiecriteria stel ik per sprint testscripts op in het programma testersuite en geef ik een vrijgave advies op basis van mijn bevindingen. Daarnaast denk ik mee over de invulling en UX van Mijn Groningen. Sinds 15 juni 2023 is Mijn Groningen live en werken we als team aan de door ontwikkeling van het platform.',
     link: 'https://mijn.groningen.nl/accounts/login/',
-    linktext: 'Open de website'
+    linktext: 'Bekijk Mijn Groningen'
    },
    {
     name: 'De Stem van Groningen',
     subtitle: 'Gemeente Groningen',
     tags: ['UX/UI', 'Figma', 'CMS'],
-    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    description: 'De Stem van Groningen is een website die beheerd wordt door de gemeente Groningen. Inwoners van de gemeente kunnen hier ideeën indienen om hun wijk mooier, leuker, veiliger, duurzamer of socialer te maken. Als beheerder/ontwerper ben ik samen met collega’s verantwoordelijk voor het faciliteren van het platform en het opzetten en indelen van pagina’s voor de verschillende wijk projecten. Naast het beheer werken we ook aan de doorontwikkeling van het platform. In Figma maak ik verschillende herontwerpen om de website gebruiksvriendelijker en aantrekkelijker te maken voor de inwoner. Ook heb ik een nieuwe huisstijl en logo gemaakt voor de Stem van Groningen om de website herkenbaarder en overzichtelijker te maken.',
     link: 'https://stemvan.groningen.nl/',
     linktext: 'Open de website'
    },
@@ -40,13 +40,13 @@ const projects =  [
     name: 'VASD',
     subtitle: 'Gemeente Groningen',
     tags: ['TMAP', 'Selenium'],
-    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    description: 'De afkorting VASD staat voor vernieuwing applicaties sociaal domein. Binnen dit project wordt er gewerkt aan een nieuwe saas applicatie voor de gemeente Groningen voor het behandelen van aanvragen. Het doel van deze applicatie is om de dienstverlening te verbeteren en het applicatielandschap wendbaarder te maken. Als tester ben ik hier samen met het testteam verantwoordelijk voor het opstellen van testscripts en het uitvoeren van systeem en accepatie testen. Binnen het project maken we ook gebruik van testautomatisering, waarbij we UI.Vision inzetten dat gebruikmaakt van Selenium-commands en Javascript. Tijdens dit project heb ik veel mogen leren over het opzetten en uitvoeren van systeemtesten en het schrijven van testautomatisering scripts.',
    },
    {
     name: 'Little Lemon',
-    subtitle: 'Meta Front-end Cursus',
+    subtitle: 'Meta Front-end Developer',
     tags: ['React', 'GIT'],
-    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    description: 'Tijdens mijn opleiding voor Front-end developer bij Meta heb ik als eindwerkstuk een website ontworpen en gebouwd in React voor het fictieve restaurant Little Lemon. Tijdens het bouwen van de website heb ik veel geleerd over het werken met semantische html, form validation en css grid- en flex- layouts.',
     link: 'https://github.com/hendrik-boerma/capstone-course-coursera',
     linktext: 'Open in github'
 
@@ -55,7 +55,7 @@ const projects =  [
     name: 'Formule 1 Dashboard',
     subtitle: 'Eigen project',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
-    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper. test push',
+    description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en Javascript. Het dashboard is verbonden met public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over vanille Javascript en het werken met een public API.',
     link: 'https://github.com/hendrik-boerma/F1-live-score-app',
     linktext: 'Open in github'
 
@@ -63,8 +63,8 @@ const projects =  [
    {
     name: 'Portfolio',
     subtitle: 'Eigen project',
-    tags: ['React', 'GIT'],
-    description: 'Lorem ipsum ulis. Ut rhoncus, leo semper aliquam semper.',
+    tags: ['React', 'GIT', 'Tailwind'],
+    description: 'Dit portfolio is gebouwd met React en er is gebruik gemaakt van Tailwind CSS voor de styling van de website. Tijdens het bouwen van deze website heb ik veel geleerd van React en Tailwind en ook veel nagedacht over de styling en inrichting van het portfolio. Daarnaast probeer ik zoveel mogelijk rekening te houden met toegankelijkheid en semantische html.',
     link: 'https://github.com/hendrik-boerma/portfolio',
     linktext: 'Open in github'
 
