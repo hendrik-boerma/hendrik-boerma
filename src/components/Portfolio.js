@@ -1,5 +1,5 @@
 import data from '../Data';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -7,22 +7,31 @@ function Portfolio() {
 
     const projects = data.projects;
     const [number, setNumber] = useState(0);
-    const project = data.projects[number];
+    const project = data.projects[number];      
     const [toggleProject, setToggleProject] = useState(false);
+    const overlayRef = useRef(null);
 
     useEffect(() => {
-const overlay = document.getElementById("overlay");
         if (toggleProject === false) {
-          document.body.style.overflow = "auto";
+            document.body.style.overflow = "auto";
         } else {
-          document.body.style.overflow = "hidden";
-          overlay.focus();
+            document.body.style.overflow = "hidden";
+            overlayRef.current.focus();         
         }
-      }, [toggleProject]);
+    }, [toggleProject]);
 
-      function openProject(index) {
+    useEffect(() => {
+        overlayRef.current.focus(); 
+    }, [number]);   
+
+    function openProject(index) {
         setNumber(index);
         setToggleProject(true);
+    }
+
+    function closeProject() {
+        setToggleProject(false);
+        document.querySelector(`div:nth-child(${number + 1}) > div > button`).focus();
     }
 
     return (
@@ -42,13 +51,13 @@ const overlay = document.getElementById("overlay");
                                         </span>
                                     ))}
                                 </p>
-                                <button className=' text-right col-start-2 row-start-5 col-span-2'>Bekijk project &gt;</button>
+                                <button tabIndex={0} className=' text-right col-start-2 row-start-5 col-span-2'>Bekijk project &gt;</button>
                             </div>
                         </div>
                     ))}
                 </div>
                 <div className={toggleProject ? "overflow-y-auto bg-backgroundcolor2 drop-shadow-2xl w-full lg:w-1/2 h-screen fixed top-0 right-0 z-20 p-8 slideright ease-in-out duration-300" : "hidden"}>
-                    <button id="overlay" className='text-3xl font-bold text-textcolor hover:rotate-180 ease-in-out duration-300' onClick={() => setToggleProject(false)}>X</button>
+                    <button ref={overlayRef} tabIndex={toggleProject ? 0 : -1} className='text-3xl font-bold text-textcolor hover:rotate-180 ease-in-out duration-300' onClick={() => closeProject(false)}>X</button>
                     <article className='py-16 flex flex-col gap-4'>
                         <h5 className='text-3xl font-bold text-textcolor'>{project.name}</h5>
                         <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
@@ -62,7 +71,7 @@ const overlay = document.getElementById("overlay");
                         <p className='col-span-2 text-md font-regular text-textcolor py-8 max-w-xl'>
                             {project.description}
                         </p>
-                        <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary text-center'}>{project.linktext} <FontAwesomeIcon icon={faExternalLink} size='sm'/></a>
+                        <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary text-center'}>{project.linktext} <FontAwesomeIcon icon={faExternalLink} size='sm' /></a>
                     </article>
                 </div>
             </section>
