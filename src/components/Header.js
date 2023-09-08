@@ -2,7 +2,7 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Header() {
+function Header({ tabIndex}) {
   return (
     <header className='h-screen flex flex-col-reverse md:flex-row'>
         <article className='w-full flex flex-col text-start justify-center gap-4 px-4 py-8 md:px-16 z-10 bg-backgroundcolor2'>
@@ -10,9 +10,9 @@ function Header() {
           <h2 className='text-secondary text-xl md:text-2xl xl:text-3xl'>Front-end Developer</h2>
           <p className='leading-relaxed text-l xl:text-xl text-textcolor py-4'>"Front-end developer/designer en tester met een oog voor de eindgebruiker."</p>
          <div className="flex gap-12 py-4 slideleft">
-            <a href="https://github.com/hendrik-boerma" aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='2xl'/></a>
-            <a href="https://www.linkedin.com/in/hendrik-boerma/" aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='2xl'/></a>
-            <a href="mailto:hendrikboerma@gmail.com" aria-label="Mail"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faEnvelope} size='2xl'/></a>
+            <a href="https://github.com/hendrik-boerma" tabIndex={tabIndex} aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='2xl'/></a>
+            <a href="https://www.linkedin.com/in/hendrik-boerma/" tabIndex={tabIndex} aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='2xl'/></a>
+            <a href="mailto:hendrikboerma@gmail.com" tabIndex={tabIndex} aria-label="Mail"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faEnvelope} size='2xl'/></a>
           </div>
         </article>
         <div className='bg-portret top-0 bg-no-repeat  h-full bg-top w-full md:w-2/3 bg-cover md:relative'></div>

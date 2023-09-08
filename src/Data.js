@@ -55,7 +55,7 @@ const projects =  [
     name: 'Formule 1 Dashboard',
     subtitle: 'Eigen project',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
-    description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en Javascript. Het dashboard is verbonden met public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over vanille Javascript en het werken met een public API.',
+    description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en Javascript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over vanille Javascript en het werken met een public API.',
     link: 'https://github.com/hendrik-boerma/F1-live-score-app',
     linktext: 'Open in github'
 
