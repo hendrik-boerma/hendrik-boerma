@@ -34,7 +34,7 @@ const projects =  [
     tags: ['UX/UI', 'Figma', 'CMS'],
     description: 'De Stem van Groningen is een website die beheerd wordt door de gemeente Groningen. Inwoners van de gemeente kunnen hier ideeën indienen om hun wijk mooier, leuker, veiliger, duurzamer of socialer te maken. Als beheerder/ontwerper ben ik samen met collega’s verantwoordelijk voor het faciliteren van het platform en het opzetten en indelen van pagina’s voor de verschillende wijk projecten. Naast het beheer werken we ook aan de doorontwikkeling van het platform. In Figma maak ik verschillende herontwerpen om de website gebruiksvriendelijker en aantrekkelijker te maken voor de inwoner. Ook heb ik een nieuwe huisstijl en logo gemaakt voor de Stem van Groningen om de website herkenbaarder en overzichtelijker te maken.',
     link: 'https://stemvan.groningen.nl/',
-    linktext: 'Open de website'
+    linktext: 'Bekijk De Stem van Groningen'
    },
    {
     name: 'VASD',
@@ -48,7 +48,7 @@ const projects =  [
     tags: ['React', 'GIT'],
     description: 'Tijdens mijn opleiding voor Front-end developer bij Meta heb ik als eindwerkstuk een website ontworpen en gebouwd in React voor het fictieve restaurant Little Lemon. Tijdens het bouwen van de website heb ik veel geleerd over het werken met semantische html, form validation en css grid- en flex- layouts.',
     link: 'https://github.com/hendrik-boerma/capstone-course-coursera',
-    linktext: 'Open in github'
+    linktext: 'Bekijk het project in github'
 
    },
    {
@@ -57,7 +57,7 @@ const projects =  [
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
     description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en Javascript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over Javascript en het werken met een public API.',
     link: 'https://github.com/hendrik-boerma/F1-live-score-app',
-    linktext: 'Open in github',
+    linktext: 'Bekijk het project in github',
    },
    {
     name: 'Portfolio',
@@ -65,8 +65,7 @@ const projects =  [
     tags: ['React', 'GIT', 'Tailwind'],
     description: 'Dit portfolio is gebouwd met React en er is gebruik gemaakt van Tailwind CSS voor de styling van de website. Tijdens het bouwen van deze website heb ik veel geleerd van React en Tailwind en ook veel nagedacht over de styling en inrichting van het portfolio. Daarnaast probeer ik zoveel mogelijk rekening te houden met toegankelijkheid en semantische html.',
     link: 'https://github.com/hendrik-boerma/portfolio',
-    linktext: 'Open in github'
-
+    linktext: 'Bekijk het project in github',
    }
 ];
 
@@ -118,7 +117,7 @@ const jobs = [
   },
   {
     title: "Stagiair Grafisch Vormgeving",
-    company: "Adventure Works",
+    company: "Adventure Works South-Africa",
     date: "Sep 2019 - Jan 2020",
     description: "Description for Grafisch Vormgever",
   },
