@@ -23,8 +23,8 @@ const projects =  [
    {
     name: 'Mijn Groningen',
     subtitle: 'Gemeente Groningen',
-    tags: ['Testersuite','Jira'],
-    description: 'Binnen de gemeente Groningen wordt er gewerkt aan het nieuw inwoners portaal ‘Mijn Groningen’. Inwoners van de gemeente Groningen kunnen hier verschillende producten aanvragen en hun huidige aanvragen inzien. Als test coördinator ben ik binnen dit project verantwoordelijk voor de kwaliteit van het portaal. Op basis van User stories en Acceptatiecriteria stel ik per sprint testscripts op in het programma testersuite en geef ik een vrijgave advies op basis van mijn bevindingen. Daarnaast denk ik mee over de invulling en UX van Mijn Groningen. Sinds 15 juni 2023 is Mijn Groningen live en werken we als team aan de door ontwikkeling van het platform.',
+    tags: ['Jira', 'Robot Framework','Testersuite'],
+    description: 'Binnen de gemeente Groningen wordt er gewerkt aan het nieuwe inwoners portaal ‘Mijn Groningen’. Inwoners van de gemeente Groningen kunnen hier verschillende producten aanvragen en hun huidige aanvragen inzien. Als test coördinator ben ik binnen dit project verantwoordelijk voor de kwaliteit van het portaal. Op basis van User stories en Acceptatiecriteria stel ik per sprint testscripts op in het programma testersuite en geef ik een vrijgave advies op basis van mijn bevindingen. Daarnaast denk ik mee over de invulling en UX van Mijn Groningen. Sinds 15 juni 2023 is Mijn Groningen live en werken we als team aan de door ontwikkeling van het platform.',
     link: 'https://mijn.groningen.nl/accounts/login/',
     linktext: 'Bekijk Mijn Groningen'
    },
@@ -55,10 +55,9 @@ const projects =  [
     name: 'Formule 1 Dashboard',
     subtitle: 'Eigen project',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
-    description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en Javascript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over vanille Javascript en het werken met een public API.',
+    description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en Javascript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over Javascript en het werken met een public API.',
     link: 'https://github.com/hendrik-boerma/F1-live-score-app',
-    linktext: 'Open in github'
-
+    linktext: 'Open in github',
    },
    {
     name: 'Portfolio',
@@ -71,7 +70,7 @@ const projects =  [
    }
 ];
 
-const skills = ['Scrum', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving', 'UI.Vision', 'Selenium', 'Tailwind', 'SCSS',  'Human centered design']
+const skills = ['Scrum', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind']
 
 const certificats = [
   {
@@ -106,19 +105,19 @@ const jobs = [
     description: "Description for Agile Test Engineer",
   },
   {
-    title: "E-Commerce Medewerker",
+    title: "Webshop Beheerder & Vormgever",
     company: "A4H-TECH BV",
     date: "Sep 2021 - Sep 2022",
     description: "Description for E-Commerce Medewerker",
   },
   {
-    title: "UX Designer",
+    title: "Stagiair UX Design",
     company: "Digital Education Africa Network",
     date: "Feb 2021 - Jun 2021",
     description: "Description for UX Designer",
   },
   {
-    title: "Grafisch Vormgever",
+    title: "Stagiair Grafisch Vormgeving",
     company: "Adventure Works",
     date: "Sep 2019 - Jan 2020",
     description: "Description for Grafisch Vormgever",
