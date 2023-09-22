@@ -69,7 +69,7 @@ const projects =  [
    }
 ];
 
-const skills = ['Scrum', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind']
+const skills = ['Scrum', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind', 'Usability testing']
 
 const certificats = [
   {
