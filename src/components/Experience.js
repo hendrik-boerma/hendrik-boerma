@@ -15,7 +15,7 @@ function Experience({ tabIndex }) {
       <h3 className='text-3xl font-bold text-textcolor' id='ervaring'>Ervaring</h3>
       <div className='flex flex-col-reverse lg:flex-row lg:gap-16'>
         <div className='flex flex-col lg:w-6/12'>
-          <h4 className='text-2xl text-secondary pt-8' id='werk'>Werk</h4>
+          <h4 className='text-2xl text-secondary pt-8' id='werk'>Werk Ervaring</h4>
           {jobs.map((job, index) => (
             <div className='grid grid-cols-2 gap-2 grow border-b border-primary py-4' key={index}>
               <h5 className='text-lg font-bold text-textcolor col-span-2'>{job.title}</h5>
