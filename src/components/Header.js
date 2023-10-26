@@ -7,8 +7,8 @@ function Header({ tabIndex}) {
     <header className='h-screen flex flex-col-reverse md:flex-row'>
         <article className='w-full flex flex-col text-start justify-center gap-4 px-4 py-8 md:px-32 z-10 bg-backgroundcolor2'>
           <h1 className='text-textcolor text-3xl font-bold md:text-4xl xl:text-6xl'>Hendrik Boerma</h1>
-          <h2 className='text-secondary text-xl md:text-2xl xl:text-3xl'>Front-end Developer</h2>
-          <p className='leading-relaxed text-l xl:text-xl text-textcolor'>Ik ben een veelzijdige IT-professional met sterke creatieve en technische vaardigheden, gericht op gebruiksvriendelijkheid, UX-design en Front-end ontwikkeling.</p>
+          <h2 className='text-secondary text-xl md:text-2xl xl:text-3xl'>Front-end developer</h2>
+          <p className='leading-relaxed text-l xl:text-xl text-textcolor'>Ik ben een veelzijdige IT-professional met sterke creatieve en technische vaardigheden, gericht op gebruiksvriendelijkheid, UX-design en front-end development.</p>
          <div className="flex gap-12 py-4 slideleft">
             <a href="https://github.com/hendrik-boerma" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='2xl'/></a>
             <a href="https://www.linkedin.com/in/hendrik-boerma/" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='2xl'/></a>
