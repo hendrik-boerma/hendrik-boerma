@@ -33,13 +33,12 @@ function Experience({ tabIndex }) {
           ))}
         </div>
         <div className='lg:w-6/12'>
-          <h4 className='text-2xl text-secondary pt-8 lg:pt-0'>Tools</h4>
+          <h4 className='text-2xl text-secondary pt-8'>Tools & skills</h4>
           <div className='grid grid-cols-3 lg:grid-cols-4 justify-center items-center lg:justify-start py-4 max-w-3xl'>
             {icons.map((icon, index) => (
               <img key={index} className='p-6 w-28 sm:w-32' src={icon} alt={`Icon ${index}`} />
             ))}
           </div>
-          <h4 className='text-2xl pt-8 text-secondary'>Skills</h4>
           <div className='flex flex-wrap gap-4 py-4 text-center text-textcolor'>
             {skills.map((skill, index) => (
               <span key={index} className='border border-secondary p-4 grow rounded max-w-md'>{skill}</span>
