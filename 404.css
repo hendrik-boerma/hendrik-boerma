@@ -1,0 +1,23 @@
+html {
+    height: 100vh;
+  }
+  
+  body {
+    font-family: 'Montserrat','Arial';
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  article {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  h1 {
+    color: #EFEFEF;
+  }
