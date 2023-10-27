@@ -2,21 +2,13 @@ import htmlicon from './Images/icons/html5.png'
 import cssicon from './Images/icons/css3.png'
 import jsicon from './Images/icons/js.png'
 import figmaicon from './Images/icons/Figma.png'
-import adobeicon from './Images/icons/AdobeCloud.png'
-import tmapicon from './Images/icons/TMAP.png'
-import cypressicon from './Images/icons/cypress.png'
-import reacticon from './Images/icons/reactjs.png'
 
 
 const icons =  [
   htmlicon,
   cssicon,
   jsicon,
-  reacticon,
   figmaicon,
-  adobeicon,
-  tmapicon,
-  cypressicon,
 ];
 
 const projects =  [
@@ -69,7 +61,7 @@ const projects =  [
    }
 ];
 
-const skills = ['Scrum', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind', 'Usability testing']
+const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind', 'Usability testing']
 
 const certificats = [
   {
