@@ -5,7 +5,7 @@ html {
   body {
     margin: 0;
     font-family: 'Montserrat','Arial';
-    background-color: #262626;
+    background-color: #161616;
     display: flex;
     align-items: center;
     text-align: center;
@@ -37,14 +37,14 @@ html {
  }
 
   .button {
-    background-color: #161616;
+    background-color: #262626;
     color: #EFEFEF;
     padding: 1rem;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 0.125rem;
   }
 
   .button:hover {
-    background-color: #161616;
+    background-color: #595959;
     color: #00E3CC;
   }
