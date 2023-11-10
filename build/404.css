@@ -3,8 +3,9 @@ html {
   }
   
   body {
+    margin: 0;
     font-family: 'Montserrat','Arial';
-    background-color: #0D0D0D;
+    background-color: #262626;
     display: flex;
     align-items: center;
     text-align: center;
@@ -20,13 +21,24 @@ html {
     flex-direction: column;
     gap: 2rem;
   }
+
   h1 {
     color: #EFEFEF;
+    font-weight: bold;
+    font-size: 60px;
   }
 
+  @media (max-width: 768px) 
+ {
+    h1
+    {
+        font-size:24px;
+    }
+ }
+
   .button {
-    background-color: #262626;
-    color: #00E3CC;
+    background-color: #161616;
+    color: #EFEFEF;
     padding: 1rem;
     text-decoration: none;
     border-radius: 4px;
