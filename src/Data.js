@@ -8,11 +8,7 @@ const icons =  [
   htmlicon,
   cssicon,
   jsicon,
-<<<<<<< HEAD
   figmaicon
-=======
-  figmaicon,
->>>>>>> origin/main
 ];
 
 const projects =  [
@@ -65,11 +61,7 @@ const projects =  [
    }
 ];
 
-<<<<<<< HEAD
-const skills = ['Scrum','React','Cypress', 'TMAP', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving', 'Robot Framework', 'Selenium','JSX', 'Adobe Creative Cloud', 'SCSS', 'Tailwind', 'Usability testing',  'Human centered design' ]
-=======
 const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind', 'Usability testing']
->>>>>>> origin/main
 
 const certificats = [
   {
