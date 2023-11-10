@@ -8,7 +8,11 @@ const icons =  [
   htmlicon,
   cssicon,
   jsicon,
+<<<<<<< HEAD
   figmaicon
+=======
+  figmaicon,
+>>>>>>> origin/main
 ];
 
 const projects =  [
@@ -16,7 +20,7 @@ const projects =  [
     name: 'Mijn Groningen',
     subtitle: 'Gemeente Groningen',
     tags: ['Jira', 'Robot Framework','Testersuite'],
-    description: 'Binnen de gemeente Groningen wordt er gewerkt aan het nieuwe inwoners portaal ‘Mijn Groningen’. Inwoners van de gemeente Groningen kunnen hier verschillende producten aanvragen en hun huidige aanvragen inzien. Als test coördinator ben ik binnen dit project verantwoordelijk voor de kwaliteit van het portaal. Op basis van User stories en Acceptatiecriteria stel ik per sprint testscripts op in het programma testersuite en geef ik een vrijgave advies op basis van mijn bevindingen. Daarnaast denk ik mee over de invulling en UX van Mijn Groningen. Sinds 15 juni 2023 is Mijn Groningen live en werken we als team aan de door ontwikkeling van het platform.',
+    description: 'Binnen de gemeente Groningen wordt er gewerkt aan het nieuwe inwoners portaal ‘Mijn Groningen’. Inwoners van de gemeente Groningen kunnen hier verschillende producten aanvragen en hun huidige aanvragen inzien. Als test coördinator ben ik binnen dit project verantwoordelijk voor de kwaliteit van het portaal. Op basis van user stories en acceptatiecriteria stel ik per sprint testscripts op in het programma testersuite en geef ik een vrijgaveadvies op basis van mijn bevindingen. Daarnaast denk ik mee over de doorontwikkeling en UX van Mijn Groningen. Sinds 15 juni 2023 is Mijn Groningen live en werken we als team aan de door ontwikkeling van het platform.',
     link: 'https://mijn.groningen.nl/accounts/login/',
     linktext: 'Bekijk Mijn Groningen'
    },
@@ -24,7 +28,7 @@ const projects =  [
     name: 'De Stem van Groningen',
     subtitle: 'Gemeente Groningen',
     tags: ['UX/UI', 'Figma', 'CMS'],
-    description: 'De Stem van Groningen is een website die beheerd wordt door de gemeente Groningen. Inwoners van de gemeente kunnen hier ideeën indienen om hun wijk mooier, leuker, veiliger, duurzamer of socialer te maken. Als beheerder/ontwerper ben ik samen met collega’s verantwoordelijk voor het faciliteren van het platform en het opzetten en indelen van pagina’s voor de verschillende wijk projecten. Naast het beheer werken we ook aan de doorontwikkeling van het platform. In Figma maak ik verschillende herontwerpen om de website gebruiksvriendelijker en aantrekkelijker te maken voor de inwoner. Ook heb ik een nieuwe huisstijl en logo gemaakt voor de Stem van Groningen om de website herkenbaarder en overzichtelijker te maken.',
+    description: 'De Stem van Groningen is een website die beheerd wordt door de gemeente Groningen. Inwoners van de gemeente kunnen hier ideeën indienen om hun wijk mooier, leuker, veiliger, duurzamer of socialer te maken. Als beheerder en ontwerper ben ik samen met collega’s verantwoordelijk voor het faciliteren van het platform en het opzetten en indelen van pagina’s voor verschillende wijk projecten. Naast het beheer werken we ook aan de doorontwikkeling van het platform. In Figma maak ik verschillende herontwerpen om de website gebruiksvriendelijker en aantrekkelijker te maken voor de inwoner. Ook heb ik een nieuwe huisstijl en logo gemaakt voor de Stem van Groningen om de website herkenbaarder en overzichtelijker te maken.',
     link: 'https://stemvan.groningen.nl/',
     linktext: 'Bekijk De Stem van Groningen'
    },
@@ -32,13 +36,13 @@ const projects =  [
     name: 'VASD',
     subtitle: 'Gemeente Groningen',
     tags: ['TMAP', 'Selenium'],
-    description: 'De afkorting VASD staat voor vernieuwing applicaties sociaal domein. Binnen dit project wordt er gewerkt aan een nieuwe saas applicatie voor de gemeente Groningen voor het behandelen van aanvragen. Het doel van deze applicatie is om de dienstverlening te verbeteren en het applicatielandschap wendbaarder te maken. Als tester ben ik hier samen met het testteam verantwoordelijk voor het opstellen van testscripts en het uitvoeren van systeem en accepatie testen. Binnen het project maken we ook gebruik van testautomatisering, waarbij we UI.Vision inzetten dat gebruikmaakt van Selenium-commands en Javascript. Tijdens dit project heb ik veel mogen leren over het opzetten en uitvoeren van systeemtesten en het schrijven van testautomatisering scripts.',
+    description: 'De afkorting VASD staat voor vernieuwing applicaties sociaal domein. Binnen dit project wordt er gewerkt aan een nieuwe SaaS applicatie voor de gemeente Groningen voor het behandelen van aanvragen. Het doel van deze applicatie is om de dienstverlening te verbeteren en het applicatielandschap wendbaarder te maken. Als tester ben ik hier samen met het testteam verantwoordelijk voor het opstellen van testscripts en het uitvoeren van systeem- en acceptatietesten. Binnen het project maken we ook gebruik van testautomatisering, waarbij we UI.vision inzetten dat gebruikmaakt van Selenium-commands en JavaScript. Tijdens dit project heb ik veel mogen leren over het opzetten en uitvoeren van systeemtesten en het schrijven van testautomatisering scripts.',
    },
    {
     name: 'Little Lemon',
     subtitle: 'Meta Front-end Developer',
     tags: ['React', 'GIT'],
-    description: 'Tijdens mijn opleiding voor Front-end developer bij Meta heb ik als eindwerkstuk een website ontworpen en gebouwd in React voor het fictieve restaurant Little Lemon. Tijdens het bouwen van de website heb ik veel geleerd over het werken met semantische html, form validation en css grid- en flex- layouts.',
+    description: 'Tijdens mijn opleiding voor front-end developer bij Meta heb ik als eindwerkstuk een website ontworpen en gebouwd in React voor het fictieve restaurant Little Lemon. Tijdens het bouwen van de website heb ik veel geleerd over het werken met semantische HTML, form validation en CSS grid- en flex- lay-outs.',
     link: 'https://github.com/hendrik-boerma/capstone-course-coursera',
     linktext: 'Bekijk het project in github'
 
@@ -47,7 +51,7 @@ const projects =  [
     name: 'Formule 1 Dashboard',
     subtitle: 'Eigen project',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
-    description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en Javascript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over Javascript en het werken met een public API.',
+    description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en JavaScript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over JavaScript en het werken met een public API.',
     link: 'https://github.com/hendrik-boerma/F1-live-score-app',
     linktext: 'Bekijk het project in github',
    },
@@ -55,13 +59,17 @@ const projects =  [
     name: 'Portfolio',
     subtitle: 'Eigen project',
     tags: ['React', 'GIT', 'Tailwind'],
-    description: 'Dit portfolio is gebouwd met React en er is gebruik gemaakt van Tailwind CSS voor de styling van de website. Tijdens het bouwen van deze website heb ik veel geleerd van React en Tailwind en ook veel nagedacht over de styling en inrichting van het portfolio. Daarnaast probeer ik zoveel mogelijk rekening te houden met toegankelijkheid en semantische html.',
+    description: 'Dit portfolio is gebouwd met React en er is gebruik gemaakt van Tailwind CSS voor de styling van de website. Tijdens het bouwen van deze website heb ik veel geleerd van React en Tailwind en ook veel nagedacht over de styling en inrichting van het portfolio. Daarnaast probeer ik zoveel mogelijk rekening te houden met toegankelijkheid en semantische HTML.',
     link: 'https://github.com/hendrik-boerma/portfolio',
     linktext: 'Bekijk het project in github',
    }
 ];
 
+<<<<<<< HEAD
 const skills = ['Scrum','React','Cypress', 'TMAP', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving', 'Robot Framework', 'Selenium','JSX', 'Adobe Creative Cloud', 'SCSS', 'Tailwind', 'Usability testing',  'Human centered design' ]
+=======
+const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind', 'Usability testing']
+>>>>>>> origin/main
 
 const certificats = [
   {
@@ -84,31 +92,31 @@ const certificats = [
 
 const jobs = [
   {
-    title: "Test Engineer",
+    title: "Test engineer",
     company: "Gemeente Groningen",
     date: "Mrt 2023 - heden",
     description: "Description for Test Engineer",
   },
   {
-    title: "Agile Test Engineer",
+    title: "Agile test engineer",
     company: "Sogeti Nederland",
     date: "Sep 2022 - heden",
     description: "Description for Agile Test Engineer",
   },
   {
-    title: "Webshop Beheerder & Vormgever",
+    title: "Webshopbeheerder & vormgever",
     company: "A4H-TECH BV",
     date: "Sep 2021 - Sep 2022",
     description: "Description for E-Commerce Medewerker",
   },
   {
-    title: "Stagiair UX Design",
+    title: "Stagiair UX-design",
     company: "Digital Education Africa Network",
     date: "Feb 2021 - Jun 2021",
     description: "Description for UX Designer",
   },
   {
-    title: "Stagiair Grafisch Vormgeving",
+    title: "Stagiair grafisch vormgeving",
     company: "Adventure Works South-Africa",
     date: "Sep 2019 - Jan 2020",
     description: "Description for Grafisch Vormgever",
@@ -117,19 +125,19 @@ const jobs = [
 
 const studies = [
   {
-    title: "Front-End Developer",
+    title: "Front-end developer",
     company: "Meta - Coursera",
     date: "Dec 2022 - Jul 2023",
     description: "Description for Front-End Developer",
   },
   {
-    title: "Communication & Multimedia Design",
+    title: "Communication & multimedia design",
     company: "Hanzehogeschool Groningen",
     date: "Sep 2017 - Jun 2021",
     description: "Description for CMD - Visual Design",
   },
   {
-    title: "Brand, Design & Psychology",
+    title: "Brand, design & psychology",
     company: "Hanzehogeschool Groningen",
     date: "Feb 2020 - Jun 2020",
     description: "Description for CMD - Visual Design",
