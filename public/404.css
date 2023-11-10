@@ -17,7 +17,22 @@ html {
     display: flex;
     align-items: center;
     align-content: center;
+    flex-direction: column;
+    gap: 2rem;
   }
   h1 {
     color: #EFEFEF;
+  }
+
+  .button {
+    background-color: #262626;
+    color: #00E3CC;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .button:hover {
+    background-color: #161616;
+    color: #00E3CC;
   }
