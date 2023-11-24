@@ -2,6 +2,8 @@ import htmlicon from './Images/icons/html5.png'
 import cssicon from './Images/icons/css3.png'
 import jsicon from './Images/icons/js.png'
 import figmaicon from './Images/icons/Figma.png'
+import gitaar from './Images/Gitaar.jpeg'
+import motor from './Images/Motor.JPG'
 
 
 const icons =  [
@@ -27,12 +29,6 @@ const projects =  [
     description: 'De Stem van Groningen is een website die beheerd wordt door de gemeente Groningen. Inwoners van de gemeente kunnen hier ideeën indienen om hun wijk mooier, leuker, veiliger, duurzamer of socialer te maken. Als beheerder en ontwerper ben ik samen met collega’s verantwoordelijk voor het faciliteren van het platform en het opzetten en indelen van pagina’s voor verschillende wijk projecten. Naast het beheer werken we ook aan de doorontwikkeling van het platform. In Figma maak ik verschillende herontwerpen om de website gebruiksvriendelijker en aantrekkelijker te maken voor de inwoner. Ook heb ik een nieuwe huisstijl en logo gemaakt voor de Stem van Groningen om de website herkenbaarder en overzichtelijker te maken.',
     link: 'https://stemvan.groningen.nl/',
     linktext: 'Bekijk De Stem van Groningen'
-   },
-   {
-    name: 'VASD',
-    subtitle: 'Gemeente Groningen',
-    tags: ['TMAP', 'Selenium'],
-    description: 'De afkorting VASD staat voor vernieuwing applicaties sociaal domein. Binnen dit project wordt er gewerkt aan een nieuwe SaaS applicatie voor de gemeente Groningen voor het behandelen van aanvragen. Het doel van deze applicatie is om de dienstverlening te verbeteren en het applicatielandschap wendbaarder te maken. Als tester ben ik hier samen met het testteam verantwoordelijk voor het opstellen van testscripts en het uitvoeren van systeem- en acceptatietesten. Binnen het project maken we ook gebruik van testautomatisering, waarbij we UI.vision inzetten dat gebruikmaakt van Selenium-commands en JavaScript. Tijdens dit project heb ik veel mogen leren over het opzetten en uitvoeren van systeemtesten en het schrijven van testautomatisering scripts.',
    },
    {
     name: 'Little Lemon',
@@ -61,7 +57,7 @@ const projects =  [
    }
 ];
 
-const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind', 'Usability testing']
+const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving','JSX',  'Human centered design', 'Selenium', 'Robot Framework', 'SCSS', 'Tailwind', 'Usability testing']
 
 const certificats = [
   {
@@ -142,7 +138,9 @@ const data = {
   jobs,
   studies,
   skills,
-  certificats
+  certificats,
+  gitaar,
+  motor
 };
 
 export default data;
