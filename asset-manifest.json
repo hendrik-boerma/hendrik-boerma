@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f568bf21.css",
-    "main.js": "/static/js/main.c863fd26.js",
+    "main.css": "/static/css/main.b8765f9c.css",
+    "main.js": "/static/js/main.1fc23965.js",
     "static/js/787.b701888c.chunk.js": "/static/js/787.b701888c.chunk.js",
     "static/media/portretmono.png": "/static/media/portretmono.712424b31d5fb7c70959.png",
+    "static/media/Gitaar.jpeg": "/static/media/Gitaar.0ed3063166e54c65a65a.jpeg",
+    "static/media/Motor.JPG": "/static/media/Motor.7d9d01005c6bf198a715.JPG",
     "static/media/Figma.png": "/static/media/Figma.862be385dbd04d117e4a.png",
     "static/media/html5.png": "/static/media/html5.ddd08f71fcaee23f8b4e.png",
     "static/media/js.png": "/static/media/js.4b5bb02125ef6f48eb85.png",
     "static/media/css3.png": "/static/media/css3.db6e562f7e4dd8ee4b4d.png",
     "index.html": "/index.html",
-    "main.f568bf21.css.map": "/static/css/main.f568bf21.css.map",
-    "main.c863fd26.js.map": "/static/js/main.c863fd26.js.map",
+    "main.b8765f9c.css.map": "/static/css/main.b8765f9c.css.map",
+    "main.1fc23965.js.map": "/static/js/main.1fc23965.js.map",
     "787.b701888c.chunk.js.map": "/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f568bf21.css",
-    "static/js/main.c863fd26.js"
+    "static/css/main.b8765f9c.css",
+    "static/js/main.1fc23965.js"
   ]
 }
