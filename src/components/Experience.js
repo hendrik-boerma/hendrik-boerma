@@ -32,6 +32,7 @@ function Experience({ tabIndex }) {
             </div>
           ))}
         </div>
+        
         <div className='lg:w-6/12'>
           <h3 className='text-2xl text-secondary pt-8'>Tools & skills</h3>
           <div className='grid grid-cols-4 py-4 max-w-3xl'>
