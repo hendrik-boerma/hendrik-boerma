@@ -5,8 +5,8 @@ import profile from '../Images/Profile.JPG';
 
 function Header({ tabIndex}) {
   return (
-    <header className='bg-backgroundcolor h-screen px-4 sm:px-32 gap-8 flex flex-col justify-center items-start lg:flex-row-reverse  lg:justify-end lg:items-center'>
-          <img className='lg:w-1/2 xl:p-16' src={profile} alt="Foto van mij" />
+    <header className='h-auto pt-16 px-4 md:px-32 gap-8 flex flex-col justify-center items-start lg:flex-row-reverse  lg:justify-end lg:items-center'>
+          <img className='lg:w-1/2 xl:p-16 xl:pb-0 fade' src={profile} alt="Foto van Hendrik Boerma" />
           <article className="flex flex-col gap-4">
           <h1 className='text-textcolor text-3xl font-bold md:text-4xl 2xl:text-6xl'>Hendrik Boerma</h1>
           <p className='text-secondary text-xl md:text-2xl xl:text-3xl'>Front-end developer, UX/UI Designer & Tester</p>
