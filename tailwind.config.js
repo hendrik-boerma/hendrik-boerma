@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'portret': "url('../src/Images/portret.png')",
-        'portretmono' :"url('../src/Images/portretmono.png')"
+        'portretmono' :"url('../src/Images/Profile.JPG')"
       }
     },
   plugins: [],
