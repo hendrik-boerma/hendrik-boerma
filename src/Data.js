@@ -80,7 +80,7 @@ const certificats = [
 
 const jobs = [
   {
-    title: "Test engineer",
+    title: "Test engineer / UX/UI Designer",
     company: "Gemeente Groningen",
     date: "Mrt 2023 - heden",
     description: "Description for Test Engineer",
