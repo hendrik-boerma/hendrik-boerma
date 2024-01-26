@@ -5,7 +5,7 @@ import profile from '../Images/Profile.JPG';
 
 function Header({ tabIndex}) {
   return (
-    <header className='h-auto pt-16 px-4 md:px-32 gap-8 flex flex-col justify-center items-start lg:flex-row-reverse  lg:justify-end lg:items-center'>
+    <header className='h-auto pt-16 px-4 md:px-32 2xl:px-64 gap-8 flex flex-col justify-center items-start lg:flex-row-reverse  lg:justify-end lg:items-center'>
           <img className='lg:w-1/2 xl:p-16 xl:pb-0 fade' src={profile} alt="Foto van Hendrik Boerma" />
           <article className="flex flex-col gap-4">
           <h1 className='text-textcolor text-3xl font-bold md:text-4xl 2xl:text-6xl'>Hendrik Boerma</h1>
