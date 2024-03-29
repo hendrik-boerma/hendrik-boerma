@@ -57,7 +57,7 @@ const projects =  [
    },
    {
     name: 'Weer app',
-    subtitle: 'Eigen front-end project',
+    subtitle: 'Eigen front-endproject',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
     description: 'De Weer App is een persoonlijk project dat dient als oefening in het gebruik van JavaScript en het integreren van een API. Met deze applicatie kun je eenvoudig het weer van een specifieke locatie opvragen. Na het invoeren van de gewenste locatie worden de relevante weergegevens opgehaald en past de interface zich dynamisch aan op basis van deze gegevens.',
     link: 'https://hendrik-boerma.github.io/Weather-app/',
