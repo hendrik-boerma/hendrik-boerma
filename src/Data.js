@@ -41,7 +41,7 @@ const projects =  [
    },
    {
     name: 'Formule 1 Dashboard',
-    subtitle: 'Eigen project',
+    subtitle: 'Eigen front-endproject',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
     description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en JavaScript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over JavaScript en het werken met een public API.',
     link: 'https://hendrik-boerma.github.io/F1-live-score-app',
@@ -49,7 +49,7 @@ const projects =  [
    },
    {
     name: 'Portfolio',
-    subtitle: 'Eigen project',
+    subtitle: 'Eigen front-endproject',
     tags: ['React', 'GIT', 'Tailwind'],
     description: 'Dit portfolio is gebouwd met React en er is gebruik gemaakt van Tailwind CSS voor de styling van de website. Tijdens het bouwen van deze website heb ik veel geleerd van React en Tailwind en ook veel nagedacht over de styling en inrichting van het portfolio. Daarnaast probeer ik zoveel mogelijk rekening te houden met toegankelijkheid en semantische HTML.',
     link: 'https://github.com/hendrik-boerma/portfolio',
@@ -57,7 +57,7 @@ const projects =  [
    },
    {
     name: 'Weer app',
-    subtitle: 'Eigen project',
+    subtitle: 'Eigen front-end project',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
     description: 'De Weer App is een persoonlijk project dat dient als oefening in het gebruik van JavaScript en het integreren van een API. Met deze applicatie kun je eenvoudig het weer van een specifieke locatie opvragen. Na het invoeren van de gewenste locatie worden de relevante weergegevens opgehaald en past de interface zich dynamisch aan op basis van deze gegevens.',
     link: 'https://hendrik-boerma.github.io/Weather-app/',
