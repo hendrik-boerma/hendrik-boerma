@@ -9,7 +9,7 @@ function Header({ tabIndex}) {
           <img className='lg:w-1/2 xl:p-16 xl:pb-0 fade' src={profile} alt="Foto van Hendrik Boerma" />
           <article className="flex flex-col gap-4">
           <h1 className='text-textcolor text-3xl font-bold md:text-4xl 2xl:text-6xl'>Hendrik Boerma</h1>
-          <p className='text-secondary text-xl md:text-2xl xl:text-3xl'>Front-end developer, UX/UI Designer & Tester</p>
+          <p className='text-secondary text-xl md:text-2xl xl:text-3xl'>Front-end developer, Designer & Tester</p>
          <div className="flex gap-8 py-2 slideleft">
             <a href="https://github.com/hendrik-boerma" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='2xl'/></a>
             <a href="https://www.linkedin.com/in/hendrik-boerma/" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='2xl'/></a>
