@@ -2,8 +2,6 @@ import htmlicon from './Images/icons/html5.png'
 import cssicon from './Images/icons/css3.png'
 import jsicon from './Images/icons/js.png'
 import figmaicon from './Images/icons/Figma.png'
-import gitaar from './Images/Gitaar.jpeg'
-import motor from './Images/Motor.JPG'
 
 
 const icons =  [
@@ -146,9 +144,7 @@ const data = {
   jobs,
   studies,
   skills,
-  certificats,
-  gitaar,
-  motor
+  certificats
 };
 
 export default data;
