@@ -2,13 +2,15 @@ import htmlicon from './Images/icons/html5.png'
 import cssicon from './Images/icons/css3.png'
 import jsicon from './Images/icons/js.png'
 import figmaicon from './Images/icons/Figma.png'
+import gitaar from './Images/Gitaar.jpeg'
+import motor from './Images/Motor.JPG'
 
 
 const icons =  [
   htmlicon,
   cssicon,
   jsicon,
-  figmaicon,
+  figmaicon
 ];
 
 const projects =  [
@@ -29,39 +31,41 @@ const projects =  [
     linktext: 'Bekijk De Stem van Groningen'
    },
    {
-    name: 'VASD',
-    subtitle: 'Gemeente Groningen',
-    tags: ['TMAP', 'Selenium'],
-    description: 'De afkorting VASD staat voor vernieuwing applicaties sociaal domein. Binnen dit project wordt er gewerkt aan een nieuwe SaaS applicatie voor de gemeente Groningen voor het behandelen van aanvragen. Het doel van deze applicatie is om de dienstverlening te verbeteren en het applicatielandschap wendbaarder te maken. Als tester ben ik hier samen met het testteam verantwoordelijk voor het opstellen van testscripts en het uitvoeren van systeem- en acceptatietesten. Binnen het project maken we ook gebruik van testautomatisering, waarbij we UI.vision inzetten dat gebruikmaakt van Selenium-commands en JavaScript. Tijdens dit project heb ik veel mogen leren over het opzetten en uitvoeren van systeemtesten en het schrijven van testautomatisering scripts.',
-   },
-   {
     name: 'Little Lemon',
     subtitle: 'Meta Front-end Developer',
     tags: ['React', 'GIT'],
     description: 'Tijdens mijn opleiding voor front-end developer bij Meta heb ik als eindwerkstuk een website ontworpen en gebouwd in React voor het fictieve restaurant Little Lemon. Tijdens het bouwen van de website heb ik veel geleerd over het werken met semantische HTML, form validation en CSS grid- en flex- lay-outs.',
-    link: 'https://github.com/hendrik-boerma/capstone-course-coursera',
+    link: 'https://hendrik-boerma.github.io/capstone-course-coursera',
     linktext: 'Bekijk het project in github'
 
    },
    {
     name: 'Formule 1 Dashboard',
-    subtitle: 'Eigen project',
+    subtitle: 'Eigen front-endproject',
     tags: ['HTML/CSS/JS', 'API', 'GIT'],
     description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en JavaScript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over JavaScript en het werken met een public API.',
-    link: 'https://github.com/hendrik-boerma/F1-live-score-app',
+    link: 'https://hendrik-boerma.github.io/F1-live-score-app',
     linktext: 'Bekijk het project in github',
    },
    {
     name: 'Portfolio',
-    subtitle: 'Eigen project',
+    subtitle: 'Eigen front-endproject',
     tags: ['React', 'GIT', 'Tailwind'],
     description: 'Dit portfolio is gebouwd met React en er is gebruik gemaakt van Tailwind CSS voor de styling van de website. Tijdens het bouwen van deze website heb ik veel geleerd van React en Tailwind en ook veel nagedacht over de styling en inrichting van het portfolio. Daarnaast probeer ik zoveel mogelijk rekening te houden met toegankelijkheid en semantische HTML.',
     link: 'https://github.com/hendrik-boerma/portfolio',
     linktext: 'Bekijk het project in github',
+   },
+   {
+    name: 'Weer app',
+    subtitle: 'Eigen front-endproject',
+    tags: ['HTML/CSS/JS', 'API', 'GIT'],
+    description: 'De Weer App is een persoonlijk project dat dient als oefening in het gebruik van JavaScript en het integreren van een API. Met deze applicatie kun je eenvoudig het weer van een specifieke locatie opvragen. Na het invoeren van de gewenste locatie worden de relevante weergegevens opgehaald en past de interface zich dynamisch aan op basis van deze gegevens.',
+    link: 'https://hendrik-boerma.github.io/Weather-app/',
+    linktext: 'Bekijk het project in github',
    }
 ];
 
-const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving',  'Human centered design', 'Robot Framework', 'Selenium','JSX', 'SCSS', 'Tailwind', 'Usability testing']
+const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving','JSX',  'Human centered design', 'Selenium', 'Robot Framework', 'SCSS', 'Tailwind', 'Usability testing']
 
 const certificats = [
   {
@@ -84,7 +88,7 @@ const certificats = [
 
 const jobs = [
   {
-    title: "Test engineer",
+    title: "Tester / UX/UI Designer",
     company: "Gemeente Groningen",
     date: "Mrt 2023 - heden",
     description: "Description for Test Engineer",
@@ -142,7 +146,9 @@ const data = {
   jobs,
   studies,
   skills,
-  certificats
+  certificats,
+  gitaar,
+  motor
 };
 
 export default data;

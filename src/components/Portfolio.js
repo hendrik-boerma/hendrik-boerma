@@ -55,12 +55,12 @@ function Portfolio({ tabIndex, setTabIndex }) {
     return (
         <>
             <section className='py-8 bg-darkblue' id='section3'>
-                <h3 className='text-3xl text-textcolor font-bold pb-8'>Projecten</h3>
+                <h2 className='text-3xl text-textcolor font-bold pb-8'>Projecten</h2>
                 <div id="cards" className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2'>
                     {projects.map((project, index) => (
                         <div className='flex flex-col' onClick={() => openProject(index)} key={index} data-card-id={index}>
                             <div className='grid grid-cols-2 grid-rows-5 bg-backgroundcolor2 p-4 rounded-lg gap-2 cursor-pointer text-textcolor hover:text-secondary hover:scale-95 ease-in-out duration-300'>
-                                <h4 className='col-span-2 text-lg font-bold text-textcolor'>{project.name}</h4>
+                                <h3 className='col-span-2 text-lg font-bold text-textcolor'>{project.name}</h3>
                                 <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
                                 <div className='col-start-1 row-span-1 col-span-2 max-h-8'>
                                     <div className='flex flex-wrap gap-2'>
@@ -81,7 +81,7 @@ function Portfolio({ tabIndex, setTabIndex }) {
                         <button ref={overlayRef} aria-label="Sluit" className='ml-auto sticky p-2 top-0 flex items-center justify-center text-xl font-bold bg-primary text-textcolor rounded-full w-8 h-8 hover:bg-backgroundcolor2 hover:text-secondary duration-300' onClick={() => closeProject()}><span>X</span></button>
                         <article className='flex justify-center'>
                             <div className='py-8 md:px-8 flex items-start justify-center flex-col gap-4'>
-                                <h5 className='text-3xl font-bold text-textcolor'>{project.name}</h5>
+                                <h4 className='text-3xl font-bold text-textcolor'>{project.name}</h4>
                                 <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
                                 <p className='col-start-1 col-span-2 row-span-1 flex flex-wrap gap-2'>
                                     {project.tags.map((tag, tagIndex) => (
@@ -91,7 +91,7 @@ function Portfolio({ tabIndex, setTabIndex }) {
                                     ))}
                                 </p>
                                 <img className={project.image == null ? 'hidden' : "max-w-xl w-full"} src={project.image} alt={project.alt} />
-                                <p className='col-span-2 text-md font-regular text-textcolor py-4 max-w-xl'>
+                                <p className='col-span-2 text-md font-regular text-textcolor py-4 leading-relaxed max-w-xl'>
                                     {project.description}
                                 </p>
                                 <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary hover:text-secondary text-center ease-in-out duration-300'}>{project.linktext} <FontAwesomeIcon icon={faExternalLink} size='sm' /></a>

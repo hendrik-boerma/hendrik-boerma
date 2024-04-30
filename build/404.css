@@ -3,8 +3,14 @@ html {
   }
   
   body {
+<<<<<<< HEAD
     font-family: 'Montserrat','Arial';
     background-color: #0D0D0D;
+=======
+    margin: 0;
+    font-family: 'Montserrat','Arial';
+    background-color: #161616;
+>>>>>>> 2bcc8bb64ef270c1bedeea3632839579cc53c730
     display: flex;
     align-items: center;
     text-align: center;
@@ -17,7 +23,39 @@ html {
     display: flex;
     align-items: center;
     align-content: center;
+<<<<<<< HEAD
   }
   h1 {
     color: #EFEFEF;
+=======
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h1 {
+    color: #EFEFEF;
+    font-weight: bold;
+    font-size: 60px;
+  }
+
+  @media (max-width: 768px) 
+ {
+    h1
+    {
+        font-size:24px;
+    }
+ }
+
+  .button {
+    background-color: #262626;
+    color: #EFEFEF;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+  }
+
+  .button:hover {
+    background-color: #595959;
+    color: #00E3CC;
+>>>>>>> 2bcc8bb64ef270c1bedeea3632839579cc53c730
   }

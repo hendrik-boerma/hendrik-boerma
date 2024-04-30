@@ -12,43 +12,45 @@ function Experience({ tabIndex }) {
 
   return (
     <section className='text-textcolor py-8 bg-darkblue' id='section2'>
-      <h3 className='text-3xl font-bold text-textcolor' id='ervaring'>Ervaring</h3>
+      <h2 className='text-3xl font-bold text-textcolor' id='ervaring'>Ervaring</h2>
       <div className='flex flex-col-reverse lg:flex-row lg:gap-16'>
         <div className='flex flex-col lg:w-6/12'>
-          <h4 className='text-2xl text-secondary pt-8' id='werk'>Werk Ervaring</h4>
+          <h3 className='text-2xl text-secondary pt-8' id='werk'>Werk Ervaring</h3>
           {jobs.map((job, index) => (
             <div className='grid grid-cols-2 gap-2 grow border-b border-primary py-4' key={index}>
-              <h5 className='text-lg font-bold text-textcolor col-span-2'>{job.title}</h5>
+              <h4 className='text-lg font-bold text-textcolor col-span-2'>{job.title}</h4>
               <p className='justify-self-start text-textcolor2'>{job.company}</p>
               <p className='justify-self-end text-textcolor2 mt-auto'>{job.date}</p>
             </div>
           ))}
-          <h4 className='text-2xl pt-8 text-secondary' id='werk'>Studies</h4>
+          <h3 className='text-2xl pt-8 text-secondary' id='werk'>Studies</h3>
           {studies.map((study, index) => (
             <div className='grid grid-cols-2 gap-2 grow border-b border-primary py-4' key={index}>
-              <h5 className='text-lg font-bold text-textcolor col-span-2'>{study.title}</h5>
+              <h4 className='text-lg font-bold text-textcolor col-span-2'>{study.title}</h4>
               <p className='justify-self-start text-textcolor2'>{study.company}</p>
               <p className='justify-self-end text-textcolor2 mt-auto'>{study.date}</p>
             </div>
           ))}
         </div>
+        
         <div className='lg:w-6/12'>
-          <h4 className='text-2xl text-secondary pt-8 lg:pt-0'>Tools</h4>
-          <div className='grid grid-cols-3 lg:grid-cols-4 justify-center items-center lg:justify-start py-4 max-w-3xl'>
+          <h3 className='text-2xl text-secondary pt-8'>Tools & skills</h3>
+          <div className='grid grid-cols-4 py-4 max-w-3xl'>
             {icons.map((icon, index) => (
-              <img key={index} className='p-6 w-28 sm:w-32' src={icon} alt={`Icon ${index}`} />
+              <div key={index} className='flex items-center justify-center p-4'>
+                <img className='w-24' src={icon} alt={`Icon ${index}`} />
+              </div>
             ))}
           </div>
-          <h4 className='text-2xl pt-8 text-secondary'>Skills</h4>
-          <div className='flex flex-wrap gap-4 py-4 text-center text-textcolor'>
+          <div className='flex flex-wrap gap-4 py-4 text-center justify-center text-textcolor'>
             {skills.map((skill, index) => (
-              <span key={index} className='border border-secondary p-4 grow rounded max-w-md'>{skill}</span>
+              <p key={index} className='flex gap-4 rounded max-w-md'>{skill}<span className='text-secondary'>{index !== skills.length - 1 ? '|' : ''}</span></p>
             ))}
           </div>
-          <h4 className='text-2xl pt-8 text-secondary'>Certificaten</h4>
+          <h3 className='text-2xl pt-8 text-secondary'>Certificaten</h3>
           <div className='flex flex-wrap gap-4 py-4 text-center text-textcolor'>
             {certificats.map((certificat, index) => (
-              <a href={certificat.link} rel="noreferrer" target="_blank" key={index} tabIndex={tabIndex} className='bg-backgroundcolor2 hover:bg-primary p-4 grow rounded max-w-md hover:text-secondary'>{certificat.title} <FontAwesomeIcon icon={faExternalLink} size='sm'/></a>
+              <a href={certificat.link} rel="noreferrer" target="_blank" key={index} tabIndex={tabIndex} className='bg-backgroundcolor2 hover:bg-primary p-4 grow rounded max-w-md hover:text-secondary'>{certificat.title} <FontAwesomeIcon icon={faExternalLink} size='sm' /></a>
             ))}
           </div>
         </div>
