@@ -15,7 +15,7 @@ const projects =  [
    {
     name: 'Mijn Groningen',
     subtitle: 'Gemeente Groningen',
-    tags: ['Jira', 'Robot Framework','Testersuite'],
+    tags: ['TestCafe','Testersuite', 'Design system', 'Jira'],
     description: 'Binnen de gemeente Groningen wordt er gewerkt aan het nieuwe inwoners portaal ‘Mijn Groningen’. Inwoners van de gemeente Groningen kunnen hier verschillende producten aanvragen en hun huidige aanvragen inzien. Als test coördinator ben ik binnen dit project verantwoordelijk voor de kwaliteit van het portaal. Op basis van user stories en acceptatiecriteria stel ik per sprint testscripts op in het programma testersuite en geef ik een vrijgaveadvies op basis van mijn bevindingen. Daarnaast denk ik mee over de doorontwikkeling en UX van Mijn Groningen. Sinds 15 juni 2023 is Mijn Groningen live en werken we als team aan de door ontwikkeling van het platform.',
     link: 'https://mijn.groningen.nl/accounts/login/',
     linktext: 'Bekijk Mijn Groningen'
@@ -23,7 +23,7 @@ const projects =  [
    {
     name: 'De Stem van Groningen',
     subtitle: 'Gemeente Groningen',
-    tags: ['UX/UI', 'Figma', 'CMS'],
+    tags: ['UX design', 'Figma', 'CMS'],
     description: 'De Stem van Groningen is een website die beheerd wordt door de gemeente Groningen. Inwoners van de gemeente kunnen hier ideeën indienen om hun wijk mooier, leuker, veiliger, duurzamer of socialer te maken. Als beheerder en ontwerper ben ik samen met collega’s verantwoordelijk voor het faciliteren van het platform en het opzetten en indelen van pagina’s voor verschillende wijk projecten. Naast het beheer werken we ook aan de doorontwikkeling van het platform. In Figma maak ik verschillende herontwerpen om de website gebruiksvriendelijker en aantrekkelijker te maken voor de inwoner. Ook heb ik een nieuwe huisstijl en logo gemaakt voor de Stem van Groningen om de website herkenbaarder en overzichtelijker te maken.',
     link: 'https://stemvan.groningen.nl/',
     linktext: 'Bekijk De Stem van Groningen'
@@ -31,7 +31,7 @@ const projects =  [
    {
     name: 'Little Lemon',
     subtitle: 'Meta Front-end Developer',
-    tags: ['React', 'GIT'],
+    tags: ['React'],
     description: 'Tijdens mijn opleiding voor front-end developer bij Meta heb ik als eindwerkstuk een website ontworpen en gebouwd in React voor het fictieve restaurant Little Lemon. Tijdens het bouwen van de website heb ik veel geleerd over het werken met semantische HTML, form validation en CSS grid- en flex- lay-outs.',
     link: 'https://hendrik-boerma.github.io/capstone-course-coursera',
     linktext: 'Bekijk het project in github'
@@ -40,7 +40,7 @@ const projects =  [
    {
     name: 'Formule 1 Dashboard',
     subtitle: 'Eigen front-endproject',
-    tags: ['HTML/CSS/JS', 'API', 'GIT'],
+    tags: ['HTML/CSS/JS', 'API'],
     description: 'Het formule 1 dashboard is een hobbymatig project. Het dashboard is gemaakt met HTML, CSS en JavaScript. Het dashboard is verbonden met een public API die recente data weergeeft over formule 1. De XML-data vanuit de API is gebruikt om recente data op te halen en dit op een visueel aantrekkelijk manier te verwerken in een dashboard. Tijdens het bouwen van dit dashboard heb ik veel kennis opgedaan over JavaScript en het werken met een public API.',
     link: 'https://hendrik-boerma.github.io/F1-live-score-app',
     linktext: 'Bekijk het project in github',
@@ -48,7 +48,7 @@ const projects =  [
    {
     name: 'Portfolio',
     subtitle: 'Eigen front-endproject',
-    tags: ['React', 'GIT', 'Tailwind'],
+    tags: ['React', 'Tailwind'],
     description: 'Dit portfolio is gebouwd met React en er is gebruik gemaakt van Tailwind CSS voor de styling van de website. Tijdens het bouwen van deze website heb ik veel geleerd van React en Tailwind en ook veel nagedacht over de styling en inrichting van het portfolio. Daarnaast probeer ik zoveel mogelijk rekening te houden met toegankelijkheid en semantische HTML.',
     link: 'https://github.com/hendrik-boerma/portfolio',
     linktext: 'Bekijk het project in github',
@@ -56,7 +56,7 @@ const projects =  [
    {
     name: 'Weer app',
     subtitle: 'Eigen front-endproject',
-    tags: ['HTML/CSS/JS', 'API', 'GIT'],
+    tags: ['HTML/CSS/JS', 'API'],
     description: 'De Weer App is een persoonlijk project dat dient als oefening in het gebruik van JavaScript en het integreren van een API. Met deze applicatie kun je eenvoudig het weer van een specifieke locatie opvragen. Na het invoeren van de gewenste locatie worden de relevante weergegevens opgehaald en past de interface zich dynamisch aan op basis van deze gegevens.',
     link: 'https://hendrik-boerma.github.io/Weather-app/',
     linktext: 'Bekijk het project in github',
