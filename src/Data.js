@@ -65,7 +65,7 @@ const projects =  [
    }
 ];
 
-const skills = ['Scrum', 'React', 'Cypress', 'TMAP', 'Adobe', 'Design thinking', 'UX/UI', 'Toegankelijkheid', 'Vormgeving','JSX',  'Human centered design', 'Selenium', 'Robot Framework', 'SCSS', 'Tailwind', 'Usability testing']
+const skills = ['Scrum', 'React', 'SCSS', 'Tailwind', 'Git', 'Node.js', 'Jira', 'Cypress', 'TestCafe', 'TMAP', 'Adobe', 'Design thinking', 'UX design', 'Toegankelijkheid', 'Design system', 'Usability testing']
 
 const certificats = [
   {
@@ -88,7 +88,7 @@ const certificats = [
 
 const jobs = [
   {
-    title: "Tester / UX/UI Designer",
+    title: "Tester & Adviseur digitale dienstverlening",
     company: "Gemeente Groningen",
     date: "Mrt 2023 - heden",
     description: "Description for Test Engineer",
@@ -100,19 +100,19 @@ const jobs = [
     description: "Description for Agile Test Engineer",
   },
   {
-    title: "Webshopbeheerder & vormgever",
+    title: "Webshopbeheerder & Vormgever",
     company: "A4H-TECH BV",
     date: "Sep 2021 - Sep 2022",
     description: "Description for E-Commerce Medewerker",
   },
   {
-    title: "Stagiair UX-design",
+    title: "UX designer (stage)",
     company: "Digital Education Africa Network",
     date: "Feb 2021 - Jun 2021",
     description: "Description for UX Designer",
   },
   {
-    title: "Stagiair grafisch vormgeving",
+    title: "Grafisch vormgever (stage)",
     company: "Adventure Works South-Africa",
     date: "Sep 2019 - Jan 2020",
     description: "Description for Grafisch Vormgever",
@@ -121,19 +121,19 @@ const jobs = [
 
 const studies = [
   {
-    title: "Front-end developer",
+    title: "Front-End Developer",
     company: "Meta - Coursera",
     date: "Dec 2022 - Jul 2023",
     description: "Description for Front-End Developer",
   },
   {
-    title: "Communication & multimedia design",
+    title: "Communication & Multimedia Design",
     company: "Hanzehogeschool Groningen",
     date: "Sep 2017 - Jun 2021",
     description: "Description for CMD - Visual Design",
   },
   {
-    title: "Brand, design & psychology",
+    title: "Brand, Design & Psychology",
     company: "Hanzehogeschool Groningen",
     date: "Feb 2020 - Jun 2020",
     description: "Description for CMD - Visual Design",
