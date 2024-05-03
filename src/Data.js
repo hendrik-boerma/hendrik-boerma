@@ -29,6 +29,14 @@ const projects =  [
     linktext: 'Bekijk De Stem van Groningen'
    },
    {
+    name: 'Movie application',
+    subtitle: 'Eigen front-endproject',
+    tags: ['React', 'SCSS'],
+    description: 'De Movie application is een assessment die ik via Sogeti heb gemaakt om mijn front-end vaardigheden te verbeteren. Het project is gebouwd met React en SCSS en maakt gebruik van de OMDB API om films te tonen en te zoeken. De website highlight twee films bij het laden van de pagina. Daarnaast is er een zoekfunctie die op basis van de zoekterm een top vijf aan films toont.',
+    link: 'https://github.com/hendrik-boerma/movie-application',
+    linktext: 'Bekijk het project in github'
+   },
+   {
     name: 'Little Lemon',
     subtitle: 'Meta Front-end Developer',
     tags: ['React'],
