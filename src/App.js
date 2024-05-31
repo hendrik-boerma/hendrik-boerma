@@ -14,7 +14,7 @@ function App() {
   return (
     < >
       <Header tabIndex={tabIndex} />
-      <main className='bg-backgroundcolor px-4 py-8'>
+      <main className='bg-backgroundcolor py-8 px-4 sm:px-8 2xl:px-0'>
         <About tabIndex={tabIndex} />
         <Portfolio tabIndex={tabIndex} setTabIndex={setTabIndex} />
         <Experience tabIndex={tabIndex} />
