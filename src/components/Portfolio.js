@@ -71,7 +71,7 @@ function Portfolio({ tabIndex, setTabIndex }) {
                                         ))}
                                     </div>
                                 </div>
-                                <button className='text-right col-start-2 row-start-5 col-span-2' tabIndex={tabIndex}>Bekijk project &gt;</button>
+                                <button className='text-right col-start-1 row-start-5 col-span-2' tabIndex={tabIndex}>Bekijk project &gt;</button>
                             </div>
                         </div>
                     ))}
