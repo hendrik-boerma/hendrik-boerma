@@ -22,7 +22,7 @@ jobs:
       - name: Set up GitHub Pages for subdomain
         if: github.ref == 'refs/heads/main'
         run: |
-          echo 'www.acc.hendrikboerma.nl' > CNAME
+          echo 'www.staging.hendrikboerma.nl' > CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
