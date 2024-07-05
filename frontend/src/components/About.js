@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 const About = () => {
+  const apiUrl = process.env.REACT_APP_API_URL;
   const [about, setAbout] = useState([]);
 
   useEffect(() => {
     const fetchAbout = async () => {
       try {
-        const response = await fetch('http://localhost:1337/api/about-me-text');
+        const response = await fetch(`${apiUrl}about-me-text`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
