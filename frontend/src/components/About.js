@@ -1,25 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useContext } from 'react'
+import { DataContext } from '../Dataprovider';
 
 const About = () => {
-  const apiUrl = process.env.REACT_APP_API_URL;
-  const [about, setAbout] = useState([]);
-
-  useEffect(() => {
-    const fetchAbout = async () => {
-      try {
-        const response = await fetch(`${apiUrl}about-me-text`);
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        setAbout(data.data.attributes.About_text);
-      } catch (error) {
-        console.error('Error fetching about text:', error);
-      }
-    };
-
-    fetchAbout();
-  }, []);
+  const about = useContext(DataContext).about;
 
   return (
     <>
