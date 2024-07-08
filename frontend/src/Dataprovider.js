@@ -33,7 +33,7 @@ const DataProvider = ({ children }) => {
                 console.error('Error fetching data:', error);
                 setTitle('Hendrik Boerma');
                 setSubtitle('Front-end developer, designer & tester');
-                setAbout('De content kan helaas niet geladen worden. Probeer het later opnieuw.')
+                setAbout('Ik ben Hendrik Boerma: tester, ontwerper en ontwikkelaar met een sterke focus op front-end. Mijn creativiteit, technische kennis en passie voor UX maken mij een veelzijdige IT-professional. Mijn vaardigheden uiten zich in het grondig testen van digitale producten tot het bedenken, ontwerpen en bouwen van gebruiksvriendelijke interfaces. Ik ben kritisch op de werking van het product en pas graag mijn kennis van UX toe. Met mijn technische vaardigheden creëer ik digitale oplossingen die zowel visueel aantrekkelijk als gebruiksvriendelijk zijn.')
             }
         };
 
