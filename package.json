@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "start": "concurrently \"npm run develop:backend\" \"npm run start:frontend\"",
-        "develop:backend": "cd backend && npm run develop",
+        "start": "concurrently \"npm run dev:sanity_backend\" \"npm run start:frontend\"",
+        "dev:sanity_backend": "cd sanity_backend && npm run dev",
         "start:frontend": "cd frontend && npm start"
     },
     "devDependencies": {
