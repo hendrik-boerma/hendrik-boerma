@@ -2,8 +2,13 @@ import data from '../Data';
 import { useState, useEffect, useRef } from 'react';
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useContext } from 'react'
+import { DataContext } from '../Dataprovider';
 
 function Portfolio({ tabIndex, setTabIndex }) {
+
+    const apiprojects = useContext(DataContext).projects;
+    console.log(apiprojects)
 
     const projects = data.projects;
     const [number, setNumber] = useState(0);

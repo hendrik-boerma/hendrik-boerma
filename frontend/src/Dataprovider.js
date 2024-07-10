@@ -7,23 +7,33 @@ const DataProvider = ({ children }) => {
     const [title, setTitle] = useState('');
     const [subtitle, setSubtitle] = useState('');
     const [about, setAbout] = useState('');
+    const [projects, setProjects] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
             const queryAbout = '*[_type == "aboutText"][0]{content}'
             const queryTitle = '*[_type == "title"][0]{content}'
             const querySubtitle = '*[_type == "subTitle"][0]{content}'
+            const queryProjects = `*[_type == "projects"] {
+                name,
+                subtitle,
+                tags,
+                description,
+                link,
+                linktext}`
 
                 try {
-                    const [aboutResponse, titleResponse, subtitleResponse] = await Promise.all([
+                    const [aboutResponse, titleResponse, subtitleResponse, projectsResponse] = await Promise.all([
                         client.fetch(queryAbout),
                         client.fetch(queryTitle),
-                        client.fetch(querySubtitle)
+                        client.fetch(querySubtitle),
+                        client.fetch(queryProjects)
                       ]);
               
                       setTitle(titleResponse.content);
                       setSubtitle(subtitleResponse.content);
                       setAbout(aboutResponse.content);
+                      setProjects(projectsResponse)
                 } catch (error) {
                     console.error('Error fetching data:', error);
                     setTitle('Hendrik Boerma');
@@ -35,7 +45,7 @@ const DataProvider = ({ children }) => {
       }, []);
 
     return (
-        <DataContext.Provider value={{ title, about, subtitle }}>
+        <DataContext.Provider value={{ title, about, subtitle, projects }}>
             {children}
         </DataContext.Provider>
     );
