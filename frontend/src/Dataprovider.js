@@ -7,7 +7,7 @@ const DataProvider = ({ children }) => {
     const [title, setTitle] = useState('');
     const [subtitle, setSubtitle] = useState('');
     const [about, setAbout] = useState('');
-    const [projects, setProjects] = useState(null);
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {

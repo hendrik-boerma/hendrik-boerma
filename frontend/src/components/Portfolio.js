@@ -1,4 +1,3 @@
-import data from '../Data';
 import { useState, useEffect, useRef } from 'react';
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,12 +6,10 @@ import { DataContext } from '../Dataprovider';
 
 function Portfolio({ tabIndex, setTabIndex }) {
 
-    const apiprojects = useContext(DataContext).projects;
-    console.log(apiprojects)
+    const projects = useContext(DataContext).projects;
 
-    const projects = data.projects;
     const [number, setNumber] = useState(0);
-    const project = data.projects[number];
+    const project = projects[number];
     const [toggleProject, setToggleProject] = useState(false);
     const totalProjects = projects.length - 1;
     const overlayRef = useRef(null);
@@ -69,7 +66,7 @@ function Portfolio({ tabIndex, setTabIndex }) {
                                 <p className='col-span-2 text-md font-regular text-textcolor'>{project.subtitle}</p>
                                 <div className='col-start-1 row-span-1 col-span-2 max-h-8'>
                                     <div className='flex flex-wrap gap-2'>
-                                        {project.tags.map((tag, tagIndex) => (
+                                        {project.tags && project.tags.map((tag, tagIndex) => (
                                             <span className='bg-primary px-2 py-1 rounded text-textcolor flex-nowrap' key={tagIndex}>
                                                 {tag}
                                             </span>
@@ -81,6 +78,7 @@ function Portfolio({ tabIndex, setTabIndex }) {
                         </div>
                     ))}
                 </div>
+                
                 <div className={toggleProject ? "flex items-center justify-center fixed w-full h-full bg-backgroundmodal top-0 right-0 z-20" : "hidden"}>
                     <div className={"overflow-y-auto h-screen bg-backgroundcolor2 drop-shadow-2xl w-full lg:w-auto absolute lg:h-auto p-4 md:p-8 py-16 md:py-8 lg:rounded-lg slideright ease-in-out duration-300"}>
                         <button ref={overlayRef} aria-label="Sluit" className='ml-auto sticky p-2 top-0 flex items-center justify-center text-xl font-bold bg-primary text-textcolor rounded-full w-8 h-8 hover:bg-backgroundcolor2 hover:text-secondary duration-300' onClick={() => closeProject()}><span>X</span></button>
