@@ -24,19 +24,19 @@ const DataProvider = ({ children }) => {
                 name,
                 link
             }`
-            const queryProjects = `*[_type == "projects"] {
+            const queryProjects = `*[_type == "projects"] | order(order asc) {
                 name,
                 subtitle,
                 tags,
                 description,
                 link,
                 linktext}`
-            const queryStudies = `*[_type == "studies"] {
+            const queryStudies = `*[_type == "studies"] | order(order asc) {
                 studiename,
                 institution,
                 startDate,
                 endDate}`
-            const queryWork = `*[_type == "work"] {
+            const queryWork = `*[_type == "work"] | order(order asc) {
                 role,
                 company,
                 startDate,

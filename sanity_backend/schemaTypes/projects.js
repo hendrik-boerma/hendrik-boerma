@@ -33,6 +33,20 @@ export default {
         name: 'linktext',
         title: 'Link Text',
         type: 'string',
+      },
+      {
+        name: 'order',
+        title: 'Order',
+        type: 'number',
+      }
+    ],
+    orderings: [
+      {
+        title: 'Order',
+        name: 'orderAsc',
+        by: [
+          {field: 'order', direction: 'asc'}
+        ]
       }
     ]
   }
