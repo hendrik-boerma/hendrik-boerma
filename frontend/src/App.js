@@ -19,7 +19,7 @@ function App() {
         <Experience tabIndex={tabIndex} />
       </main>
       <Footer />
-  </DataProvider>
+    </DataProvider>
   );
 }
 
