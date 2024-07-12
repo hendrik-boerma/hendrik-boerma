@@ -5,10 +5,22 @@ import figmaicon from './Images/icons/Figma.png'
 
 
 const icons =  [
-  htmlicon,
-  cssicon,
-  jsicon,
-  figmaicon
+  {
+    image: htmlicon,
+    alt: 'HTML logo'
+  },
+  {
+    image: cssicon,
+    alt: 'CSS logo'
+  },
+  {
+    image: jsicon,
+    alt: 'JavaScript logo'
+  },
+  {
+    image: figmaicon,
+    alt: 'Figma logo'
+  }
 ];
 
 const certificats = [
