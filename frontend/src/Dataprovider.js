@@ -8,12 +8,19 @@ const DataProvider = ({ children }) => {
     const [subtitle, setSubtitle] = useState('');
     const [about, setAbout] = useState('');
     const [projects, setProjects] = useState([]);
+    const [skills, setSkills] = useState([]);
+    const [certificates, setCertificates] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
-            const queryAbout = '*[_type == "aboutText"][0]{content}'
-            const queryTitle = '*[_type == "title"][0]{content}'
-            const querySubtitle = '*[_type == "subTitle"][0]{content}'
+            const queryAbout = '*[_type == "aboutText"][0]'
+            const queryTitle = '*[_type == "title"][0]'
+            const querySubtitle = '*[_type == "subTitle"][0]'
+            const querySkills = '*[_type == "skills"][0]'
+            const queryCertificates = `*[_type == "certificates"] {
+                name,
+                link
+            }`
             const queryProjects = `*[_type == "projects"] {
                 name,
                 subtitle,
@@ -23,16 +30,20 @@ const DataProvider = ({ children }) => {
                 linktext}`
 
                 try {
-                    const [aboutResponse, titleResponse, subtitleResponse, projectsResponse] = await Promise.all([
+                    const [aboutResponse, titleResponse, subtitleResponse, skillsResponse, certificateResponse, projectsResponse] = await Promise.all([
                         client.fetch(queryAbout),
                         client.fetch(queryTitle),
                         client.fetch(querySubtitle),
+                        client.fetch(querySkills),
+                        client.fetch(queryCertificates),
                         client.fetch(queryProjects)
                       ]);
               
                       setTitle(titleResponse.content);
                       setSubtitle(subtitleResponse.content);
                       setAbout(aboutResponse.content);
+                      setSkills(skillsResponse.skills);
+                      setCertificates(certificateResponse)
                       setProjects(projectsResponse)
                 } catch (error) {
                     console.error('Error fetching data:', error);
@@ -45,7 +56,7 @@ const DataProvider = ({ children }) => {
       }, []);
 
     return (
-        <DataContext.Provider value={{ title, about, subtitle, projects }}>
+        <DataContext.Provider value={{ title, about, subtitle, projects, certificates, skills}}>
             {children}
         </DataContext.Provider>
     );

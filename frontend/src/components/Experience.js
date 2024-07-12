@@ -1,11 +1,13 @@
 import data from '../Data'
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useContext } from 'react'
+import { DataContext } from '../Dataprovider';
 
 function Experience({ tabIndex }) {
 
-  const certificats = data.certificats;
-  const skills = data.skills;
+  const skills = useContext(DataContext).skills;
+  const certificates = useContext(DataContext).certificates;
   const icons = data.icons;
   const jobs = data.jobs;
   const studies = data.studies;
@@ -43,14 +45,14 @@ function Experience({ tabIndex }) {
             ))}
           </div>
           <div className='flex flex-wrap gap-4 py-4 text-center justify-center text-textcolor'>
-            {skills.map((skill, index) => (
+            {skills && skills.map((skill, index) => (
               <p key={index} className='flex gap-4 rounded max-w-md'>{skill}<span className='text-secondary'>{index !== skills.length - 1 ? '|' : ''}</span></p>
             ))}
           </div>
           <h3 className='text-2xl pt-8 text-secondary'>Certificaten</h3>
           <div className='flex flex-wrap gap-4 py-4 text-center text-textcolor'>
-            {certificats.map((certificat, index) => (
-              <a href={certificat.link} rel="noreferrer" target="_blank" key={index} tabIndex={tabIndex} className='bg-backgroundcolor2 hover:bg-primary p-4 grow rounded max-w-md hover:text-secondary'>{certificat.title} <FontAwesomeIcon icon={faExternalLink} size='sm' /></a>
+            {certificates && certificates.map((certificat, index) => (
+              <a href={certificat.link} rel="noreferrer" target="_blank" key={index} tabIndex={tabIndex} className='bg-backgroundcolor2 hover:bg-primary p-4 grow rounded max-w-md hover:text-secondary'>{certificat.name} <FontAwesomeIcon icon={faExternalLink} size='sm' /></a>
             ))}
           </div>
         </div>
