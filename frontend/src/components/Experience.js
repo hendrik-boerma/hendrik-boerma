@@ -1,4 +1,4 @@
-import data from '../Data'
+import icons from '../icons'
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from 'react'
@@ -10,7 +10,6 @@ function Experience({ tabIndex }) {
   const certificates = useContext(DataContext).certificates;
   const studies = useContext(DataContext).studies;
   const jobs = useContext(DataContext).work;
-  const icons = data.icons;
 
   return (
     <section className='text-textcolor py-8 bg-darkblue' id='section2'>
@@ -26,7 +25,7 @@ function Experience({ tabIndex }) {
             </div>
           ))}
           <h3 className='text-2xl pt-8 text-secondary' id='werk'>Studies</h3>
-          {studies && studies.map((study, index) => (
+          {studies.map((study, index) => (
             <div className='grid grid-cols-2 gap-2 border-b border-primary py-4' key={index}>
               <h4 className='text-lg font-bold text-textcolor col-span-2'>{study.studiename}</h4>
               <p className='justify-self-start text-textcolor2'>{study.institution}</p>
