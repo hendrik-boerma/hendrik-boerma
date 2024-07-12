@@ -4,8 +4,7 @@ import client from './sanityClient'
 const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
-    const [title, setTitle] = useState('');
-    const [subtitle, setSubtitle] = useState('');
+    const [header, setHeader] = useState('');
     const [about, setAbout] = useState('');
     const [projects, setProjects] = useState([]);
     const [skills, setSkills] = useState([]);
@@ -17,8 +16,9 @@ const DataProvider = ({ children }) => {
     useEffect(() => {
         const fetchData = async () => {
             const queryAbout = '*[_type == "aboutText"][0]'
-            const queryTitle = '*[_type == "title"][0]'
-            const querySubtitle = '*[_type == "subTitle"][0]'
+            const queryHeader = `*[_type == "header"][0] {
+                title,
+                subtitle}`
             const querySkills = '*[_type == "skills"][0]'
             const queryCertificates = `*[_type == "certificates"] {
                 name,
@@ -43,10 +43,9 @@ const DataProvider = ({ children }) => {
                 endDate}`
 
                 try {
-                    const [aboutResponse, titleResponse, subtitleResponse, skillsResponse, certificateResponse, projectsResponse, studiesResponse, workResponse] = await Promise.all([
+                    const [aboutResponse, headerResponse, skillsResponse, certificateResponse, projectsResponse, studiesResponse, workResponse] = await Promise.all([
                         client.fetch(queryAbout),
-                        client.fetch(queryTitle),
-                        client.fetch(querySubtitle),
+                        client.fetch(queryHeader),
                         client.fetch(querySkills),
                         client.fetch(queryCertificates),
                         client.fetch(queryProjects),
@@ -54,8 +53,7 @@ const DataProvider = ({ children }) => {
                         client.fetch(queryWork)
                       ]);
               
-                      setTitle(titleResponse.content);
-                      setSubtitle(subtitleResponse.content);
+                      setHeader(headerResponse);
                       setAbout(aboutResponse.content);
                       setSkills(skillsResponse.skills);
                       setCertificates(certificateResponse)
@@ -83,7 +81,7 @@ const DataProvider = ({ children }) => {
     }
 
     return (
-        <DataContext.Provider value={{ title, about, subtitle, projects, certificates, skills, studies, work}}>
+        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work}}>
             {children}
         </DataContext.Provider>
     );

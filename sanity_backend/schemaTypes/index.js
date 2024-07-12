@@ -1,6 +1,5 @@
 import about from "./about"
-import subtitle from "./subtitle"
-import title from "./title"
+import header from "./header"
 import projects from "./projects"
 import skills from "./skills"
 import studies from "./studies"
@@ -9,8 +8,7 @@ import certificates from "./certificates"
 
 export const schemaTypes = [
     about,
-    title,
-    subtitle,
+    header,
     projects,
     skills,
     studies,
