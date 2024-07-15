@@ -1,7 +1,7 @@
-import htmlicon from './Images/icons/html5.png'
-import cssicon from './Images/icons/css3.png'
-import jsicon from './Images/icons/js.png'
-import figmaicon from './Images/icons/Figma.png'
+import htmlicon from './Images/icons/html5.webp'
+import cssicon from './Images/icons/css3.webp'
+import jsicon from './Images/icons/js.webp'
+import figmaicon from './Images/icons/Figma.webp'
 
 const icons =  [
   {

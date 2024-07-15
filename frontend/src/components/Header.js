@@ -1,7 +1,7 @@
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import profile from '../Images/Profile.JPG';
+import profile from '../Images/Profile.webp';
 import { useContext } from 'react'
 import { DataContext } from '../Dataprovider';
 import Skeleton from "./Skeleton";
