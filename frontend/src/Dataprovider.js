@@ -1,5 +1,30 @@
 import React, { createContext, useState, useEffect } from 'react';
 import client from './sanityClient'
+import './index.css';
+import profile from './Images/Profile.webp'
+import htmlicon from './Images/icons/html5.webp'
+import cssicon from './Images/icons/css3.webp'
+import jsicon from './Images/icons/js.webp'
+import figmaicon from './Images/icons/Figma.webp'
+
+const icons =  [
+    {
+      image: htmlicon,
+      alt: 'HTML logo'
+    },
+    {
+      image: cssicon,
+      alt: 'CSS logo'
+    },
+    {
+      image: jsicon,
+      alt: 'JavaScript logo'
+    },
+    {
+      image: figmaicon,
+      alt: 'Figma logo'
+    }
+  ];
 
 const DataContext = createContext();
 
@@ -12,6 +37,7 @@ const DataProvider = ({ children }) => {
     const [studies, setStudies] = useState([])
     const [work, setWork] = useState([])
     const [error, setError] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -42,34 +68,46 @@ const DataProvider = ({ children }) => {
                 startDate,
                 endDate}`
 
-                try {
-                    const [aboutResponse, headerResponse, skillsResponse, certificateResponse, projectsResponse, studiesResponse, workResponse] = await Promise.all([
-                        client.fetch(queryAbout),
-                        client.fetch(queryHeader),
-                        client.fetch(querySkills),
-                        client.fetch(queryCertificates),
-                        client.fetch(queryProjects),
-                        client.fetch(queryStudies),
-                        client.fetch(queryWork)
-                      ]);
-              
-                      setHeader(headerResponse);
-                      setAbout(aboutResponse.content);
-                      setSkills(skillsResponse.skills);
-                      setCertificates(certificateResponse)
-                      setProjects(projectsResponse)
-                      setStudies(studiesResponse)
-                      setWork(workResponse)
-                      setError(false)
-                } catch (error) {
-                    console.error('Error fetching data:', error);
-                    setError(true)
-                }
-            };
-        fetchData()
-      }, []);
+            try {
+                const [aboutResponse, headerResponse, skillsResponse, certificateResponse, projectsResponse, studiesResponse, workResponse] = await Promise.all([
+                    client.fetch(queryAbout),
+                    client.fetch(queryHeader),
+                    client.fetch(querySkills),
+                    client.fetch(queryCertificates),
+                    client.fetch(queryProjects),
+                    client.fetch(queryStudies),
+                    client.fetch(queryWork)
+                ]);
 
-      if (error) {
+                setHeader(headerResponse);
+                setAbout(aboutResponse.content);
+                setSkills(skillsResponse.skills);
+                setCertificates(certificateResponse)
+                setProjects(projectsResponse)
+                setStudies(studiesResponse)
+                setWork(workResponse)
+                setError(false)
+                setLoading(false)
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                setLoading(false)
+                setError(true)
+            }
+        };
+        fetchData()
+    }, []);
+
+    if (loading || !profile) {
+        return (
+            <div className="flex flex-col items-center justify-center text-center gap-8 min-h-screen">
+                <div className="block w-48 max-w-md h-5 bg-backgroundcolor2 rounded-full overflow-hidden">
+                    <div className="block h-full bg-primary animate-fill w-4/5"></div>
+                </div>
+            </div>
+        );
+    }
+
+    if (error) {
         return (
             <div className="flex flex-col items-center justify-center text-center gap-8 min-h-screen">
                 <h1 className="text-2xl font-bold text-textcolor md:text-6xl p-4">Content helaas niet geladen...</h1>
@@ -81,7 +119,7 @@ const DataProvider = ({ children }) => {
     }
 
     return (
-        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work}}>
+        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, icons, profile }}>
             {children}
         </DataContext.Provider>
     );

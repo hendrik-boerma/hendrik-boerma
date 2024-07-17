@@ -24,3 +24,16 @@ body {
 code {
   font-family: 'Montserrat','Arial';
 }
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-fill {
+  animation: fill 2s infinite;
+}

@@ -1,4 +1,3 @@
-import icons from '../icons'
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from 'react'
@@ -10,6 +9,7 @@ function Experience({ tabIndex }) {
   const certificates = useContext(DataContext).certificates;
   const studies = useContext(DataContext).studies;
   const jobs = useContext(DataContext).work;
+  const icons = useContext(DataContext).icons;
 
   return (
     <section className='text-textcolor py-8 bg-darkblue' id='section2'>
