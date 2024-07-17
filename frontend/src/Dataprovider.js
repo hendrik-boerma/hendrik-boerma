@@ -97,7 +97,7 @@ const DataProvider = ({ children }) => {
         fetchData()
     }, []);
 
-    if (loading || !profile) {
+    if (loading) {
         return (
             <div className="flex flex-col items-center justify-center text-center gap-8 min-h-screen">
                 <div className="block w-48 max-w-md h-5 bg-backgroundcolor2 rounded-full overflow-hidden">
