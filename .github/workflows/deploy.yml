@@ -24,7 +24,9 @@ jobs:
 
       - name: Build the project
         env:
-          DATA_SET: ${{ secrets.DATA_SET }}
+          NODE_ENV: production
+          SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
+          SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
         run: npm run build
         working-directory: ./frontend
 
