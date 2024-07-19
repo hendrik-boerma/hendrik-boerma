@@ -23,6 +23,8 @@ jobs:
         working-directory: ./frontend
 
       - name: Build the project
+        env:
+          DATA_SET: ${{ secrets.DATA_SET }}
         run: npm run build
         working-directory: ./frontend
 
