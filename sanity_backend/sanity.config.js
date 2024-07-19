@@ -3,7 +3,7 @@ import { structureTool } from 'sanity/structure'
 import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './schemaTypes'
 
-const isProduction = process.env.DATA_SET === 'production';
+const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   name: isProduction ? 'production' : 'development',
