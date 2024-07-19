@@ -24,7 +24,7 @@ jobs:
 
       - name: Build the project
         env:
-          NODE_ENV: production
+          NODE_ENV:  ${{ secrets.NODE_ENV }}
           SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
           SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
         run: npm run build
