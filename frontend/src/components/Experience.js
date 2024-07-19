@@ -39,7 +39,7 @@ function Experience({ tabIndex }) {
           <div className='grid grid-cols-4 py-4 max-w-3xl'>
             {icons.map((icon, index) => (
               <div key={index} className='flex items-center justify-center p-4'>
-                <img className='w-24 h-auto' src={icon.image} alt={icon.alt} />
+                <img className='w-24 h-auto' src={icon.image} alt={icon.alt} loading="lazy" />
               </div>
             ))}
           </div>

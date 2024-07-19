@@ -1,30 +1,30 @@
 import React, { createContext, useState, useEffect } from 'react';
-import client from './sanityClient'
+import client from './sanityClient';
 import './index.css';
-import profile from './Images/Profile.webp'
-import htmlicon from './Images/icons/html5.webp'
-import cssicon from './Images/icons/css3.webp'
-import jsicon from './Images/icons/js.webp'
-import figmaicon from './Images/icons/Figma.webp'
+import htmlicon from './Images/icons/html5.webp';
+import cssicon from './Images/icons/css3.webp';
+import jsicon from './Images/icons/js.webp';
+import figmaicon from './Images/icons/Figma.webp';
+import profile from './Images/Profile.webp';
 
-const icons =  [
+const icons = [
     {
-      image: htmlicon,
-      alt: 'HTML logo'
+        image: htmlicon,
+        alt: 'HTML logo'
     },
     {
-      image: cssicon,
-      alt: 'CSS logo'
+        image: cssicon,
+        alt: 'CSS logo'
     },
     {
-      image: jsicon,
-      alt: 'JavaScript logo'
+        image: jsicon,
+        alt: 'JavaScript logo'
     },
     {
-      image: figmaicon,
-      alt: 'Figma logo'
+        image: figmaicon,
+        alt: 'Figma logo'
     }
-  ];
+];
 
 const DataContext = createContext();
 
@@ -33,40 +33,40 @@ const DataProvider = ({ children }) => {
     const [about, setAbout] = useState('');
     const [projects, setProjects] = useState([]);
     const [skills, setSkills] = useState([]);
-    const [certificates, setCertificates] = useState([])
-    const [studies, setStudies] = useState([])
-    const [work, setWork] = useState([])
+    const [certificates, setCertificates] = useState([]);
+    const [studies, setStudies] = useState([]);
+    const [work, setWork] = useState([]);
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
-            const queryAbout = '*[_type == "aboutText"][0]'
+            const queryAbout = '*[_type == "aboutText"][0]';
             const queryHeader = `*[_type == "header"][0] {
                 title,
-                subtitle}`
-            const querySkills = '*[_type == "skills"][0]'
+                subtitle}`;
+            const querySkills = '*[_type == "skills"][0]';
             const queryCertificates = `*[_type == "certificates"] {
                 name,
                 link
-            }`
+            }`;
             const queryProjects = `*[_type == "projects"] | order(order asc) {
                 name,
                 subtitle,
                 tags,
                 description,
                 link,
-                linktext}`
+                linktext}`;
             const queryStudies = `*[_type == "studies"] | order(order asc) {
                 studiename,
                 institution,
                 startDate,
-                endDate}`
+                endDate}`;
             const queryWork = `*[_type == "work"] | order(order asc) {
                 role,
                 company,
                 startDate,
-                endDate}`
+                endDate}`;
 
             try {
                 const [aboutResponse, headerResponse, skillsResponse, certificateResponse, projectsResponse, studiesResponse, workResponse] = await Promise.all([
@@ -82,22 +82,43 @@ const DataProvider = ({ children }) => {
                 setHeader(headerResponse);
                 setAbout(aboutResponse.content);
                 setSkills(skillsResponse.skills);
-                setCertificates(certificateResponse)
-                setProjects(projectsResponse)
-                setStudies(studiesResponse)
-                setWork(workResponse)
-                setError(false)
-                setLoading(false)
+                setCertificates(certificateResponse);
+                setProjects(projectsResponse);
+                setStudies(studiesResponse);
+                setWork(workResponse);
+                setError(false);
+                setLoading(false);
             } catch (error) {
                 console.error('Error fetching data:', error);
-                setLoading(false)
-                setError(true)
+                setLoading(false);
+                setError(true);
             }
         };
-        fetchData()
+        fetchData();
     }, []);
 
-    if (loading) {
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
+    useEffect(() => {
+        const imageUrls = [profile, ...icons.map(icon => icon.image)];
+        let loadedImages = 0;
+
+        const handleImageLoad = () => {
+            loadedImages += 1;
+            if (loadedImages === imageUrls.length) {
+                setImagesLoaded(true);
+            }
+        };
+
+        imageUrls.forEach(url => {
+            const img = new Image();
+            img.src = url;
+            img.onload = handleImageLoad;
+        });
+
+    }, []);
+
+    if (loading || !imagesLoaded) {
         return (
             <div className="flex flex-col items-center justify-center text-center gap-8 min-h-screen">
                 <div className="block w-48 max-w-md h-5 bg-backgroundcolor2 rounded-full overflow-hidden">

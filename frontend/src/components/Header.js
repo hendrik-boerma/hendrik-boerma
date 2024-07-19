@@ -11,7 +11,7 @@ function Header({ tabIndex }) {
   return (
     <header className='h-auto pt-16 px-4 sm:px-8 2xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8'>
       <div className="flex justify-center lg:justify-end lg:order-last">
-        <img className=' fade w-full h-auto' src={profile} alt="Foto van Hendrik Boerma" />
+        <img className='fade w-full h-auto' src={profile} alt="Foto van Hendrik Boerma" />
       </div>
       <article className="flex flex-col justify-center gap-4">
           <h1 className='text-textcolor text-3xl font-bold md:text-4xl 2xl:text-6xl'>{header.title}</h1>

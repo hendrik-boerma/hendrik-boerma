@@ -17,12 +17,6 @@ module.exports = {
       backgroundImage: {
         'portret': "url('../src/Images/portret.png')",
         'portretmono' :"url('../src/Images/Profile.JPG')"
-      },
-      height: {
-        '713px': '713px',
-      },
-      width: {
-        '713px': '713px',
       }
     },
   plugins: [],
