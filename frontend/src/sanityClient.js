@@ -1,6 +1,6 @@
 import { createClient } from '@sanity/client'
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.DATA_SET === 'production';
 
 const client = createClient({
   projectId: '7d7n1ptu',
