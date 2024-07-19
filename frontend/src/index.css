@@ -19,6 +19,12 @@ body {
   background-color: #161616;
   max-width: 72rem;
   font-family: 'Montserrat','Arial';
+  padding: 0;
+  margin: 0;
+}
+
+body.no-max-width {
+  max-width: none;
 }
 
 code {

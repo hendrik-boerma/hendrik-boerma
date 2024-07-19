@@ -119,10 +119,11 @@ const DataProvider = ({ children }) => {
     }, []);
 
     if (loading || !imagesLoaded) {
+        document.body.classList.add('no-max-width');
         return (
-            <div className="flex flex-col items-center justify-center text-center gap-8 min-h-screen">
-                <div className="block w-48 max-w-md h-5 bg-backgroundcolor2 rounded-full overflow-hidden">
-                    <div className="block h-full bg-primary animate-fill w-4/5"></div>
+            <div className="flex flex-col items-center justify-start text-center min-h-screen w-screen p-0 m-0">
+                <div className=" w-full h-2 bg-backgroundcolor2 overflow-hidden animate-pulse">
+                    <div className=" h-full bg-primary animate-fill w-full"></div>
                 </div>
             </div>
         );
@@ -139,6 +140,7 @@ const DataProvider = ({ children }) => {
         );
     }
 
+    document.body.classList.remove('no-max-width');
     return (
         <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, icons, profile }}>
             {children}
