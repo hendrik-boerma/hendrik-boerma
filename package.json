@@ -11,6 +11,7 @@
         "concurrently": "^6.0.0"
     },
     "dependencies": {
+        "@portabletext/react": "^3.1.0",
         "mysql": "^2.18.1"
     }
 }
