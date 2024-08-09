@@ -105,8 +105,7 @@ function Portfolio({ tabIndex, setTabIndex }) {
                                     <img className={project.image == null ? 'hidden' : "max-w-xl w-full"} src={project.image} alt={project.alt} />
                                     <PortableText value={project.description} components={components} />
                                     <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary hover:text-secondary text-center ease-in-out duration-300'}>
-                                        {project.linktext}
-                                        <FontAwesomeIcon icon={faExternalLink} size='sm' />
+                                        {project.linktext} <FontAwesomeIcon icon={faExternalLink} size='sm' />
                                     </a>
                                     <div className='flex items-start gap-4 justify-left py-4' >
                                         <button
