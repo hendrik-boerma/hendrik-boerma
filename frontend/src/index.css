@@ -39,7 +39,3 @@ code {
     width: 100%;
   }
 }
-
-.animate-fill {
-  animation: fill 2s infinite;
-}
