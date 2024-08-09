@@ -43,3 +43,7 @@ code {
 .animate-fill {
   animation: fill 2s infinite;
 }
+
+.contentBlock {
+  color: aqua;
+}

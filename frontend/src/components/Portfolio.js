@@ -3,6 +3,17 @@ import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from 'react'
 import { DataContext } from '../Dataprovider';
+import { PortableText } from '@portabletext/react';
+
+const components = {
+    block: {
+      normal: ({ children }) => (
+        <p className='col-span-2 text-md font-regular text-textcolor py-4 leading-relaxed max-w-xl'>
+          {children}
+        </p>
+      )
+    }
+  };
 
 function Portfolio({ tabIndex, setTabIndex }) {
     const projects = useContext(DataContext).projects;
@@ -92,11 +103,11 @@ function Portfolio({ tabIndex, setTabIndex }) {
                                         ))}
                                     </p>
                                     <img className={project.image == null ? 'hidden' : "max-w-xl w-full"} src={project.image} alt={project.alt} />
-                                    <p className='col-span-2 text-md font-regular text-textcolor py-4 leading-relaxed max-w-xl'>
-                                        {project.description}
-                                    </p>
-                                    <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary hover:text-secondary text-center ease-in-out duration-300'}>{project.linktext} <FontAwesomeIcon icon={faExternalLink} size='sm' /></a>
-
+                                    <PortableText value={project.description} components={components} />
+                                    <a type="button" href={project.link} rel="noreferrer" target="_blank" className={project.link == null ? 'hidden' : 'bg-secondary p-4 rounded cursor-pointer max-w-xs hover:bg-primary hover:text-secondary text-center ease-in-out duration-300'}>
+                                        {project.linktext}
+                                        <FontAwesomeIcon icon={faExternalLink} size='sm' />
+                                    </a>
                                     <div className='flex items-start gap-4 justify-left py-4' >
                                         <button
                                             id="previous"
