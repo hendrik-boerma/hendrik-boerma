@@ -1,29 +1,27 @@
+import '../index.css';
+import { NavLink } from "react-router-dom";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContext } from 'react'
-import { DataContext } from '../Dataprovider';
 
 function Header({ tabIndex }) {
-  const header = useContext(DataContext).header;
-  const profile = useContext(DataContext).profile;
+
 
   return (
-    <header className='h-auto pt-16 px-4 sm:px-8 2xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8'>
-      <div className="flex justify-center lg:justify-end lg:order-last">
-        <img className='fade w-full h-auto' src={profile} alt="Foto van Hendrik Boerma" />
+    <nav className="flex flex-row justify-between text-center py-8 px-4 sm:px-8 2xl:px-0">
+      <ul className="flex flex-row gap-4 text-lg text-textcolor">
+        <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'link')} to="/">Over mij</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'link')} to="/Experience">Ervaring</NavLink>
+        <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'link')} to="/Work">Werk</NavLink>
+      </ul>
+      <div className="flex gap-4">
+        <a href="https://github.com/hendrik-boerma" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='xl' /></a>
+        <a href="https://www.linkedin.com/in/hendrik-boerma/" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='xl' /></a>
+        <a href="mailto:hendrikboerma@gmail.com" tabIndex={tabIndex} aria-label="Mail"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faEnvelope} size='xl' /></a>
       </div>
-      <article className="flex flex-col justify-center gap-4">
-          <h1 className='text-textcolor text-3xl font-bold md:text-4xl 2xl:text-6xl'>{header.title}</h1>
-        <p className='text-secondary text-xl md:text-2xl xl:text-3xl'>{header.subtitle}</p>
-        <div className="flex gap-8 py-2 slideleft">
-          <a href="https://github.com/hendrik-boerma" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='2xl' /></a>
-          <a href="https://www.linkedin.com/in/hendrik-boerma/" rel="noreferrer" target="_blank" tabIndex={tabIndex} aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='2xl' /></a>
-          <a href="mailto:hendrikboerma@gmail.com" tabIndex={tabIndex} aria-label="Mail"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faEnvelope} size='2xl' /></a>
-        </div>
-      </article>
-    </header>
+    </nav>
+
   );
 }
 
-export default Header; 
+export default Header;

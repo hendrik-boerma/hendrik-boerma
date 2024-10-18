@@ -43,3 +43,13 @@ code {
 .animate-fill {
   animation: fill 2s infinite;
 }
+
+.linkvisited {
+  border-bottom: 2px solid var(--tw-color-secondary);
+  color: var(--tw-color-secondary);
+}
+
+.link:hover {
+  color: var(--tw-color-secondary);
+  cursor: pointer;
+}

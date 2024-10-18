@@ -13,7 +13,7 @@ function Experience({ tabIndex }) {
 
   return (
     <section className='text-textcolor py-8 bg-darkblue' id='section2'>
-      <h2 className='text-3xl font-bold text-textcolor' id='ervaring'>Ervaring</h2>
+      <h1 className='text-3xl font-bold text-textcolor' id='ervaring'>Ervaring</h1>
       <div className='flex flex-col-reverse lg:flex-row lg:gap-16'>
         <div className='flex flex-col lg:w-6/12'>
           <h3 className='text-2xl text-secondary pt-8' id='werk'>Werk Ervaring</h3>
