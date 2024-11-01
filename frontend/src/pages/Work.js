@@ -12,11 +12,11 @@ function Portfolio() {
                 <h1 className='text-3xl text-textcolor font-bold'>Werk</h1>
                 <h2 className='text-2xl text-secondary py-8' id='werk'>Webapplicaties</h2>
                 <ImageGallery
-                images={projects}
+                images={projects.web}
                 />
                 <h2 className='text-2xl text-secondary py-8' id='werk'>Designs</h2>
                 <ImageGallery
-                images={projects}
+                images={projects.design}
                 />
             </section>
         </>

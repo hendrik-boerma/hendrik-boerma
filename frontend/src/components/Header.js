@@ -8,7 +8,7 @@ function Header({ tabIndex }) {
 
 
   return (
-    <nav className="flex flex-row justify-between text-center py-8 px-4 sm:px-8 2xl:px-0">
+    <nav className="sticky top-0 bg-backgroundcolor flex flex-row justify-between text-center py-8 px-4 sm:px-8 2xl:px-0">
       <ul className="flex flex-row gap-4 text-lg text-textcolor">
         <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'link')} to="/">Over mij</NavLink>
         <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'link')} to="/Experience">Ervaring</NavLink>

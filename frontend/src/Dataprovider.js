@@ -9,7 +9,7 @@ import profile from './Images/Profile.webp';
 import f1 from './Images/projects/f1.png'
 import littlelemon from './Images/projects/littlelemon.png'
 import movieapp from './Images/projects/movieapp.png'
-import portfolio from './Images/projects/portfolio.png'
+import stem from './Images/projects/stem.png'
 
 const icons = [
     {
@@ -30,24 +30,29 @@ const icons = [
     }
 ];
 
-const projectImages = [
-    {
-        image: f1,
-        alt: 'f1'
-    },
-    {
-        image: littlelemon,
-        alt: 'littlelemon'
-    },
-    {
-        image: movieapp,
-        alt: 'movieapp'
-    },
-    {
-        image: portfolio,
-        alt: 'portfolio'
-    }
-];
+const projectImages = {
+    web: [
+        {
+            image: f1,
+            alt: 'f1'
+        },
+        {
+            image: littlelemon,
+            alt: 'littlelemon'
+        },
+        {
+            image: movieapp,
+            alt: 'movieapp'
+        }
+    ],
+    design: [
+        {
+            image: stem,
+            alt: 'stem'
+        }
+    ]
+};
+
 
 const DataContext = createContext();
 

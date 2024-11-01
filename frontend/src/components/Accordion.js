@@ -13,19 +13,23 @@ function Accordion({ title, subtitle, startdate, enddate, description, index }) 
     };
 
     return (
-        <div className='border-b border-primary pb-4'>
-            <button className='flex justify-between gap-4 items-center py-4 cursor-pointer w-full' onClick={handleToggle} key={index}>
+        <div className='border-b border-primary'>
+            <button className='flex justify-between gap-4 items-center py-4 px-2 cursor-pointer w-full hover:bg-hover rounded' onClick={handleToggle} key={index}>
                 <div className='flex flex-col gap-2 text-left w-full'>
-                    <h3 className='text-lg font-bold text-textcolor'>{title}</h3>
-                    <p className='grid grid-cols-2'>
-                        <span className='text-textcolor2 col-span-1'>{subtitle}</span>
-                        <span className='justify-self-end text-textcolor2 mt-auto col-span-1'>{startdate} - {enddate}</span>
+                    <div className='flex justify-between'>
+                        <h3 className='text-lg font-bold text-textcolor'>{title}</h3>
+                        <FontAwesomeIcon icon={toggle ? faChevronUp : faChevronDown} />
+                    </div>
+                    <p className='grid grid-cols-2 text-textcolor2'>
+                        <span className='col-span-1'>{subtitle}</span>
+                        <span className='justify-self-end mt-auto col-span-1'>{startdate} - {enddate}</span>
                     </p>
                 </div>
-                <FontAwesomeIcon icon={toggle ? faChevronUp : faChevronDown} />
             </button>
             {toggle && (
-                <PortableText className='text-textcolor2 mt-auto' value={description} />
+            <div className='py-4'>
+                <PortableText className='text-textcolor2' value={description} />
+            </div>
             )}
         </div>
 
