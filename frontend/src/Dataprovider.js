@@ -33,17 +33,18 @@ const icons = [
 const projectImages = {
     web: [
         {
-            image: f1,
-            alt: 'f1'
-        },
-        {
             image: littlelemon,
             alt: 'littlelemon'
+        },
+        {
+            image: f1,
+            alt: 'f1'
         },
         {
             image: movieapp,
             alt: 'movieapp'
         }
+
     ],
     design: [
         {
