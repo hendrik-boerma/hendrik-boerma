@@ -10,6 +10,7 @@ import f1 from './Images/projects/f1.png'
 import littlelemon from './Images/projects/littlelemon.png'
 import movieapp from './Images/projects/movieapp.png'
 import stem from './Images/projects/stem.png'
+import motorrent from './Images/projects/motorrent.png'
 
 const icons = [
     {
@@ -37,12 +38,16 @@ const projectImages = {
             alt: 'littlelemon'
         },
         {
-            image: f1,
-            alt: 'f1'
-        },
-        {
             image: movieapp,
             alt: 'movieapp'
+        },
+        {
+            image: motorrent,
+            alt: 'motorrent'
+        },
+        {
+            image: f1,
+            alt: 'f1'
         }
 
     ],
