@@ -4,19 +4,17 @@ import ImageGallery from '../components/ImageGallery'
 
 function Portfolio() {
 
-  const projects = useContext(DataContext).projectImages;
+    const projects = useContext(DataContext).projectImages;
 
     return (
         <>
-            <section className='bg-darkblue' id='section3'>
+            <section className='bg-darkblue flex flex-col gap-8' id='section3'>
                 <h1 className='text-3xl text-textcolor font-bold'>Werk</h1>
-                <h2 className='text-2xl text-secondary py-8' id='werk'>Webapplicaties</h2>
+                <p className='col-span-2 text-md leading-relaxed font-regular text-textcolor md:w-4/5'>
+                    Een aantal wbapplicaties die ik gebouwd heb met onder andere React en Tailwind.
+                </p>
                 <ImageGallery
-                images={projects.web}
-                />
-                <h2 className='text-2xl text-secondary py-8' id='werk'>Designs</h2>
-                <ImageGallery
-                images={projects.design}
+                    images={projects.web}
                 />
             </section>
         </>

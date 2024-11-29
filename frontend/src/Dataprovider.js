@@ -11,6 +11,7 @@ import littlelemon from './Images/projects/littlelemon.png'
 import movieapp from './Images/projects/movieapp.png'
 import stem from './Images/projects/stem.png'
 import motorrent from './Images/projects/motorrent.png'
+import portfolio from './Images/projects/portfolio.png';
 
 const icons = [
     {
@@ -34,12 +35,16 @@ const icons = [
 const projectImages = {
     web: [
         {
+            image: movieapp,
+            alt: 'movieapp'
+        },
+        {
             image: littlelemon,
             alt: 'littlelemon'
         },
         {
-            image: movieapp,
-            alt: 'movieapp'
+            image: portfolio,
+            alt: 'portfolio'
         },
         {
             image: motorrent,
