@@ -17,6 +17,7 @@ function Header() {
     } else {
       body.classList.remove('lock-scroll')
     }
+
   }, [toggleMenu])
 
   return (
@@ -28,16 +29,19 @@ function Header() {
           aria-expanded={toggleMenu}
           >
           <span className={`block h-[0.25rem] bg-textcolor rounded-full transition-all duration-500 
-          ${toggleMenu ? 'w-[2rem] translate-y-[0.25rem] rotate-[45deg]' : 'w-[1.5rem]'}`} />
+          ${toggleMenu ? 'w-[2.5rem] translate-y-[0.25rem] rotate-[45deg]' : 'w-[2rem]'}`} />
           <span className={`block h-[0.25rem] bg-textcolor rounded-full transition-all duration-500 
-          ${toggleMenu ? 'w-[2rem] translate-y-0 rotate-[315deg]' : 'w-[2rem]'}`} />
+          ${toggleMenu ? 'w-[2.5rem] translate-y-0 rotate-[315deg]' : 'w-[2.5rem]'}`} />
           <span className={`block h-[0.25rem] bg-textcolor rounded-full transition-all duration-500 
-          ${toggleMenu ? 'hidden' : 'w-[1.5rem]'}`} />
+          ${toggleMenu ? 'hidden' : 'w-[2rem]'}`} />
         </button>
         <ul className={toggleMenu ? 'flex flex-col gap-4 text-lg text-textcolor md:flex-row' : 'flex-row gap-4 text-lg text-textcolor hidden md:flex'}>
-          <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'hover:text-secondary')} onClick={() => setToggleMenu(!toggleMenu)} to="/">Over mij</NavLink>
-          <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'hover:text-secondary')} onClick={() => setToggleMenu(!toggleMenu)} to="/Experience">Ervaring</NavLink>
-          <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'hover:text-secondary')} onClick={() => setToggleMenu(!toggleMenu)} to="/Work">Werk</NavLink>
+          <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'hover:underline hover:underline-offset-8 hover:text-secondary hover:-translate-y-1 duration-500')} 
+          onClick={() => window.innerWidth === 750 ? setToggleMenu(true) : setToggleMenu(false)} to="/">Over mij</NavLink>
+          <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'hover:underline hover:underline-offset-8 hover:text-secondary hover:-translate-y-1 duration-500')}
+          onClick={() => window.innerWidth === 750 ? setToggleMenu(true) : setToggleMenu(false)} to="/Experience">Ervaring</NavLink>
+          <NavLink className={({ isActive }) => (isActive ? 'linkvisited' : 'hover:underline hover:underline-offset-8 hover:text-secondary hover:-translate-y-1 duration-500')}
+          onClick={() => window.innerWidth === 750 ? setToggleMenu(true) : setToggleMenu(false)} to="/Work">Werk</NavLink>
         </ul>
       </div>
       <div className="flex gap-4 justify-end h-6">

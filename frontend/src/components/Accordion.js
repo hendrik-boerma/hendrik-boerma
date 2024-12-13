@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import Paragraph from './Paragraph'
 
 function Accordion({ title, subtitle, startdate, enddate, description, index }) {
 
@@ -28,7 +29,7 @@ function Accordion({ title, subtitle, startdate, enddate, description, index }) 
             </button>
             {toggle && (
             <div className='py-4'>
-                <PortableText className='text-textcolor2' value={description} />
+          <PortableText value={description} components={Paragraph()} />
             </div>
             )}
         </div>
