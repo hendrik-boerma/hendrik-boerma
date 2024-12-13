@@ -13,6 +13,7 @@ import stem from './Images/projects/stem.png'
 import motorrent from './Images/projects/motorrent.png'
 import portfolio from './Images/projects/portfolio.png';
 
+
 const icons = [
     {
         image: htmlicon,
@@ -94,6 +95,13 @@ const DataProvider = ({ children }) => {
                 subtitle,
                 tags,
                 description,
+                image{
+                    asset->{
+                        _id,
+                        url
+                    },
+                    alt
+                },
                 link,
                 linktext}`;
             const queryStudies = `*[_type == "studies"] | order(order asc) {
