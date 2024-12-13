@@ -5,7 +5,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Paragraph from './Paragraph'
 
-function Accordion({ title, subtitle, startdate, enddate, description, index }) {
+function Accordion({ title, subtitle, startdate, enddate, description }) {
 
     const [toggle, setToggle] = useState(false);
 
@@ -15,7 +15,7 @@ function Accordion({ title, subtitle, startdate, enddate, description, index }) 
 
     return (
         <div className='border-b border-primary'>
-            <button className='flex justify-between gap-4 items-center py-4 px-2 cursor-pointer w-full hover:bg-hover rounded' onClick={handleToggle} key={index}>
+            <button className='flex justify-between gap-4 items-center py-4 px-2 cursor-pointer w-full hover:bg-hover rounded' onClick={handleToggle}>
                 <div className='flex flex-col gap-2 text-left w-full'>
                     <div className='flex justify-between'>
                         <h3 className='text-lg font-bold text-textcolor'>{title}</h3>

@@ -7,8 +7,8 @@ function Card({ contents }) {
 
   return (
     <>
-      {contents.map((content) => (
-        <div className="flex flex-col justify-start gap-4">
+      {contents.map((content) => ( 
+        <div className="flex flex-col justify-start gap-4" key={content._id}>
           <h2 className='text-2xl text-secondary pt-8'>{content.name}</h2>
           <p className='text-md text-textcolor2 font-bold'>{content.subtitle}</p>
           <img
@@ -19,8 +19,8 @@ function Card({ contents }) {
           />
           <div className='col-start-1 row-span-1 col-span-2'>
             <div className='flex flex-wrap gap-2'>
-              {content.tags && content.tags.map((tag) => (
-                <span className='bg-primary px-2 py-1 rounded text-textcolor flex-nowrap'>
+              {content.tags && content.tags.map((tag, index) => (
+                <span key={index} className='bg-primary px-2 py-1 rounded text-textcolor flex-nowrap'>
                   {tag}
                 </span>
               ))}

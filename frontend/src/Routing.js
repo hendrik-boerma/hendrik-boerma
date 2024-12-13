@@ -8,7 +8,6 @@ function Routing() {
   const location = useLocation();
 
   useEffect(() => {
-    console.log('Path changed:', location.pathname);
     return () => {
       window.scrollTo(0, 0);
     };

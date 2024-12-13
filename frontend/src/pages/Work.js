@@ -13,8 +13,8 @@ function Portfolio() {
                 <p className='col-span-2 text-md leading-relaxed font-regular text-textcolor md:w-4/5'>
                     Een aantal webapplicaties die ik gebouwd heb met onder andere React en Tailwind.
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-2 gap-8">
-                    <Card contents={projects}/>
+                <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-2 gap-8">
+                    <Card contents={projects} />
                 </div>
             </section>
         </>

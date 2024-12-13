@@ -17,19 +17,23 @@ import portfolio from './Images/projects/portfolio.png';
 const icons = [
     {
         image: htmlicon,
-        alt: 'HTML logo'
+        alt: 'HTML logo',
+        _id: 1
     },
     {
         image: cssicon,
-        alt: 'CSS logo'
+        alt: 'CSS logo',
+        _id: 2
     },
     {
         image: jsicon,
-        alt: 'JavaScript logo'
+        alt: 'JavaScript logo',
+        _id: 3
     },
     {
         image: figmaicon,
-        alt: 'Figma logo'
+        alt: 'Figma logo',
+        _id: 4
     }
 ];
 
@@ -87,10 +91,12 @@ const DataProvider = ({ children }) => {
                 subtitle}`;
             const querySkills = '*[_type == "skills"][0]';
             const queryCertificates = `*[_type == "certificates"] {
+                _id,
                 name,
                 link
             }`;
             const queryProjects = `*[_type == "projects"] | order(order asc) {
+                _id,
                 name,
                 subtitle,
                 tags,
@@ -105,12 +111,14 @@ const DataProvider = ({ children }) => {
                 link,
                 linktext}`;
             const queryStudies = `*[_type == "studies"] | order(order asc) {
+                _id,
                 studiename,
                 institution,
                 description,
                 startDate,
                 endDate}`;
             const queryWork = `*[_type == "work"] | order(order asc) {
+                _id,
                 role,
                 company,
                 description,

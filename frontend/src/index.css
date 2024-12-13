@@ -25,6 +25,10 @@ body {
   box-sizing: border-box;
 }
 
+body.no-max-width {
+  max-width: none;
+}
+
 .lock-scroll {
   overflow: hidden;
 }
