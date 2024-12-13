@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { DataContext } from '../Dataprovider';
 
-const About = ({ tabIndex }) => {
+const About = () => {
   const about = useContext(DataContext).about;
   const header = useContext(DataContext).header;
 
