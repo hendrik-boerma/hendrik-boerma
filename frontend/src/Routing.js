@@ -19,7 +19,7 @@ function Routing() {
       <Route path="/" element={<About />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/work" element={<Work />} />
-      <Route path="/*" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
