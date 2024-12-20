@@ -12,7 +12,7 @@ function Card({ contents }) {
           <h2 className='text-2xl text-secondary pt-8'>{content.name}</h2>
           <p className='text-md text-textcolor2 font-bold'>{content.subtitle}</p>
           <img
-            className="h-64 object-contain rounded bg-textcolor p-4"
+            className="h-64 object-contain rounded bg-textcolor p-2"
             src={content.image.asset.url}
             alt={content.image.alt}
             loading="lazy"
