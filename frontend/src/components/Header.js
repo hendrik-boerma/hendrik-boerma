@@ -23,7 +23,7 @@ function Header() {
   return (
     <nav className={`top-0 bg-backgroundcolor flex flex-row md:grid-rows-1 justify-between py-8 px-4 sm:px-8 2xl:px-0 ${toggleMenu ? 'fixed w-full h-full md:sticky' : ''}`}>
       <div className='flex flex-col gap-16'>
-      <button className={`h-[2.5rem] md:hidden text-lg text-textcolor cursor-pointer overflow-hidden
+      <button aria-label="Menu" className={`h-[2.5rem] md:hidden text-lg text-textcolor cursor-pointer overflow-hidden
         ${toggleMenu ? '' : 'flex flex-col justify-between'}`}
           onClick={() => setToggleMenu(!toggleMenu)}
           aria-expanded={toggleMenu}
