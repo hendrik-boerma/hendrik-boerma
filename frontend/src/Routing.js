@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import About from './pages/About.js';
 import Experience from './pages/Experience.js';
 import Work from './pages/Work.js';
+import NotFound from './pages/NotFound.js';
 import { useEffect } from "react";
 
 function Routing() {
@@ -14,10 +15,11 @@ function Routing() {
   }, [location.pathname]);
 
   return (
-    <Routes basename="/">
+    <Routes>
       <Route path="/" element={<About />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/work" element={<Work />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
