@@ -6,25 +6,69 @@ import cssicon from './Images/icons/css3.webp';
 import jsicon from './Images/icons/js.webp';
 import figmaicon from './Images/icons/Figma.webp';
 import profile from './Images/Profile.webp';
+import f1 from './Images/projects/f1.png'
+import littlelemon from './Images/projects/littlelemon.png'
+import movieapp from './Images/projects/movieapp.png'
+import stem from './Images/projects/stem.png'
+import motorrent from './Images/projects/motorrent.png'
+import portfolio from './Images/projects/portfolio.png';
+
 
 const icons = [
     {
         image: htmlicon,
-        alt: 'HTML logo'
+        alt: 'HTML logo',
+        _id: 1
     },
     {
         image: cssicon,
-        alt: 'CSS logo'
+        alt: 'CSS logo',
+        _id: 2
     },
     {
         image: jsicon,
-        alt: 'JavaScript logo'
+        alt: 'JavaScript logo',
+        _id: 3
     },
     {
         image: figmaicon,
-        alt: 'Figma logo'
+        alt: 'Figma logo',
+        _id: 4
     }
 ];
+
+const projectImages = {
+    web: [
+        {
+            image: movieapp,
+            alt: 'movieapp'
+        },
+        {
+            image: littlelemon,
+            alt: 'littlelemon'
+        },
+        {
+            image: portfolio,
+            alt: 'portfolio'
+        },
+        {
+            image: motorrent,
+            alt: 'motorrent'
+        },
+        {
+            image: f1,
+            alt: 'f1'
+        }
+
+    ],
+    design: [
+        {
+            image: stem,
+            alt: 'stem'
+        }
+    ]
+};
+
 
 const DataContext = createContext();
 
@@ -47,24 +91,37 @@ const DataProvider = ({ children }) => {
                 subtitle}`;
             const querySkills = '*[_type == "skills"][0]';
             const queryCertificates = `*[_type == "certificates"] {
+                _id,
                 name,
                 link
             }`;
             const queryProjects = `*[_type == "projects"] | order(order asc) {
+                _id,
                 name,
                 subtitle,
                 tags,
                 description,
+                image{
+                    asset->{
+                        _id,
+                        url
+                    },
+                    alt
+                },
                 link,
                 linktext}`;
             const queryStudies = `*[_type == "studies"] | order(order asc) {
+                _id,
                 studiename,
                 institution,
+                description,
                 startDate,
                 endDate}`;
             const queryWork = `*[_type == "work"] | order(order asc) {
+                _id,
                 role,
                 company,
+                description,
                 startDate,
                 endDate}`;
 
@@ -142,7 +199,7 @@ const DataProvider = ({ children }) => {
 
     document.body.classList.remove('no-max-width');
     return (
-        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, icons, profile }}>
+        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, icons, profile, projectImages }}>
             {children}
         </DataContext.Provider>
     );

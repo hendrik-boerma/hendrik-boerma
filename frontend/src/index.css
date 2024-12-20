@@ -18,13 +18,19 @@ body {
   height: 100vh;
   background-color: #161616;
   max-width: 72rem;
+  width: 1112px;
   font-family: 'Montserrat','Arial';
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body.no-max-width {
   max-width: none;
+}
+
+.lock-scroll {
+  overflow: hidden;
 }
 
 code {
@@ -42,4 +48,11 @@ code {
 
 .animate-fill {
   animation: fill 2s infinite;
+}
+
+.linkvisited {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  color: var(--tw-color-secondary);
+  text-underline-offset: 8px;
 }

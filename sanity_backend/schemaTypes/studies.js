@@ -14,6 +14,27 @@ export default {
         type: 'string',
       },
       {
+        name: 'description',
+        title: 'Description',
+        type: 'array',
+        of: [
+          {
+            type: 'block',
+            styles: [
+              { title: 'Normal', value: 'normal' },
+            ],
+            marks: {
+              decorators: [
+                { title: 'Strong', value: 'strong' },
+                { title: 'Emphasis', value: 'em' }
+              ],
+              annotations: []
+            },
+            lists: []
+          }
+        ]
+      },
+      {
         name: 'startDate',
         title: 'Start Date',
         type: 'string',

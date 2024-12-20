@@ -41,6 +41,21 @@ export default {
         ]
       },
       {
+        name: 'image',
+        title: 'Image',
+        type: 'image',
+        options: {
+          hotspot: true
+        },
+        fields: [
+          {
+            name: 'alt',
+            type: 'string',
+            title: 'Alt tekst',
+          }
+        ]
+      },
+      {
         name: 'link',
         title: 'Link',
         type: 'url',
