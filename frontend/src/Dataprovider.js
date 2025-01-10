@@ -176,9 +176,10 @@ const DataProvider = ({ children }) => {
     }, []);
 
     if (loading || !imagesLoaded) {
+        document.body.classList.add('w-full');
         document.body.classList.add('no-max-width');
         return (
-            <div className="flex flex-col items-center justify-start text-center min-h-screen w-screen p-0 m-0">
+            <div className="flex flex-col items-center justify-start text-center min-h-screen w-full p-0 m-0">
                 <div className=" w-full h-2 bg-backgroundcolor2 overflow-hidden animate-pulse">
                     <div className=" h-full bg-primary animate-fill w-full"></div>
                 </div>
