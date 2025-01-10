@@ -8,7 +8,7 @@ function Portfolio() {
 
     return (
         <>
-            <section className='bg-darkblue flex flex-col gap-8' id='section3'>
+            <section className='bg-darkblue flex flex-col' id='section3'>
                 <h1 className='text-3xl text-textcolor font-bold'>Werk</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-2 gap-8">
                     <Card contents={projects} />
