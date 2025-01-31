@@ -25,7 +25,7 @@ function Card({ contents }) {
             <p className='text-md text-textcolor2 font-bold'>{content.subtitle}</p>
             <img
               tabIndex="0"
-              className="h-64 object-contain rounded bg-textcolor p-2 cursor-pointer"
+              className="cardImage h-64 object-contain rounded bg-textcolor p-2 cursor-pointer"
               src={content.image.asset.url}
               alt={content.image.alt}
               loading="lazy"
