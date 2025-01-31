@@ -1,11 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 
 function Modal({ image, setToggleModal, toggleModal }) {
 
-    function handleClick() {
+    const handleClick = useCallback(() => {
         setToggleModal(false);
         document.body.style.overflow = "auto";
-    }
+    }, [setToggleModal]);
+
+    useEffect(() => {
+        function handleKeyDown(e) {
+            if (e.key === 'Escape') {
+                handleClick();
+            }
+        }
+
+        document.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [handleClick]);
 
     useEffect(() => {
 
@@ -43,10 +57,6 @@ function Modal({ image, setToggleModal, toggleModal }) {
                             firstTab.focus();
                         }
                     }
-                }
-
-                if (e.key === 'Escape') {
-                    handleClick();
                 }
             }
 
