@@ -56,3 +56,9 @@ code {
   color: var(--tw-color-secondary);
   text-underline-offset: 8px;
 }
+
+:focus {
+	outline: 2px #161616 solid;
+	outline-offset: 0;
+	box-shadow: 0 0 0 4px var(--tw-color-secondary);
+}
