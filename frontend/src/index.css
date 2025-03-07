@@ -61,4 +61,5 @@ code {
 	outline: 2px #161616 solid;
 	outline-offset: 0;
 	box-shadow: 0 0 0 4px var(--tw-color-secondary);
+  border-radius: 0.25rem;
 }
