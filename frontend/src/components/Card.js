@@ -46,10 +46,12 @@ function Card({ contents }) {
               </div>
             </div>
             <PortableText value={content.description} components={Paragraph()} />
-            <a href={content.link} rel="noreferrer" target="_blank" className='pt-2 flex gap-2 sm:mt-auto text-start text-md font-bold text-textcolor hover:underline hover:underline-offset-8 hover:text-secondary hover:translate-x-1 duration-500'>
+            {content.link && <a href={content.link} rel="noreferrer" target="_blank" className='pt-2 flex gap-2 sm:mt-auto text-start text-md font-bold text-textcolor hover:underline hover:underline-offset-8 hover:text-secondary hover:translate-x-1 duration-500'>
               <span>{content.linktext}</span>
               <FontAwesomeIcon icon={faArrowRight} size='xl' />
             </a>
+            }
+            
           </div>
       ))}
     </>
