@@ -6,12 +6,6 @@ import cssicon from './Images/icons/css3.webp';
 import jsicon from './Images/icons/js.webp';
 import figmaicon from './Images/icons/Figma.webp';
 import profile from './Images/Profile.webp';
-import f1 from './Images/projects/f1.png'
-import littlelemon from './Images/projects/littlelemon.png'
-import movieapp from './Images/projects/movieapp.png'
-import stem from './Images/projects/stem.png'
-import motorrent from './Images/projects/motorrent.png'
-import portfolio from './Images/projects/portfolio.png';
 
 
 const icons = [
@@ -36,39 +30,6 @@ const icons = [
         _id: 4
     }
 ];
-
-const projectImages = {
-    web: [
-        {
-            image: movieapp,
-            alt: 'movieapp'
-        },
-        {
-            image: littlelemon,
-            alt: 'littlelemon'
-        },
-        {
-            image: portfolio,
-            alt: 'portfolio'
-        },
-        {
-            image: motorrent,
-            alt: 'motorrent'
-        },
-        {
-            image: f1,
-            alt: 'f1'
-        }
-
-    ],
-    design: [
-        {
-            image: stem,
-            alt: 'stem'
-        }
-    ]
-};
-
 
 const DataContext = createContext();
 
@@ -200,7 +161,7 @@ const DataProvider = ({ children }) => {
 
     document.body.classList.remove('no-max-width');
     return (
-        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, icons, profile, projectImages }}>
+        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, icons, profile }}>
             {children}
         </DataContext.Provider>
     );
