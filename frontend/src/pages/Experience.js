@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from 'react';
 import { DataContext } from '../Dataprovider';
 import Accordion from '../components/Accordion.js';
+import { DiAngularSimple } from "react-icons/di";
+import { DiReact } from "react-icons/di";
+import { DiJavascript1 } from "react-icons/di";
+import { DiDrupal } from "react-icons/di";
 
 function Experience() {
 
@@ -10,7 +14,6 @@ function Experience() {
   const certificates = useContext(DataContext).certificates;
   const studies = useContext(DataContext).studies;
   const jobs = useContext(DataContext).work;
-  const icons = useContext(DataContext).icons;
 
   return (
     <section className='text-textcolor bg-darkblue' id='section2'>
@@ -43,12 +46,11 @@ function Experience() {
 
         <div className='lg:w-6/12'>
           <h2 className='text-2xl text-secondary pt-8'>Tools & skills</h2>
-          <div className='grid grid-cols-4 py-4 max-w-3xl'>
-            {icons.map((icon) => (
-              <div key={icon._id} className='flex items-center justify-center p-4'>
-                <img className='w-24 h-auto' src={icon.image} alt={icon.alt} loading="lazy" />
-              </div>
-            ))}
+          <div className='grid grid-cols-6 py-4 max-w-3xl'>
+            <DiJavascript1 className="h-full w-full text-white"/>
+            <DiAngularSimple className="h-full w-full text-secondary"/>
+            <DiReact className="h-full w-full text-white"/>
+            <DiDrupal className="h-full w-full text-secondary"/>
           </div>
           <div className='flex flex-wrap gap-4 py-4 text-center justify-center text-textcolor'>
             {skills && skills.map((skill, index) => (

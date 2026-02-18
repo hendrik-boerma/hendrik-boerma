@@ -1,35 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 import client from './sanityClient';
 import './index.css';
-import htmlicon from './Images/icons/html5.webp';
-import cssicon from './Images/icons/css3.webp';
-import jsicon from './Images/icons/js.webp';
-import figmaicon from './Images/icons/Figma.webp';
 import profile from './Images/Profile.webp';
-
-
-const icons = [
-    {
-        image: htmlicon,
-        alt: 'HTML logo',
-        _id: 1
-    },
-    {
-        image: cssicon,
-        alt: 'CSS logo',
-        _id: 2
-    },
-    {
-        image: jsicon,
-        alt: 'JavaScript logo',
-        _id: 3
-    },
-    {
-        image: figmaicon,
-        alt: 'Figma logo',
-        _id: 4
-    }
-];
 
 const DataContext = createContext();
 
@@ -118,7 +90,7 @@ const DataProvider = ({ children }) => {
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
-        const imageUrls = [profile, ...icons.map(icon => icon.image)];
+        const imageUrls = [profile];
         let loadedImages = 0;
 
         const handleImageLoad = () => {
@@ -161,7 +133,7 @@ const DataProvider = ({ children }) => {
 
     document.body.classList.remove('no-max-width');
     return (
-        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, icons, profile }}>
+        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, profile }}>
             {children}
         </DataContext.Provider>
     );
