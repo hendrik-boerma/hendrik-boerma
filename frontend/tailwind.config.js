@@ -3,13 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
-      backgroundcolor: '#161616',
-      backgroundcolor2: '#262626',
-      hover: '#1C1C1C',
+      backgroundcolor: '#021412',
+      backgroundcolor2: '#011d1a',
+      hover: '#000d0c',
       backgroundmodal: 'rgba(0, 0, 0, 0.5)',
       textcolor: '#EFEFEF',
       textcolor2: '#D1D1D1',
-      primary: '#595959',
+      primary: '#000d0c',
       secondary: '#00E3CC'
     },
     extend: {

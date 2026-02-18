@@ -3,10 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from 'react';
 import { DataContext } from '../Dataprovider';
 import Accordion from '../components/Accordion.js';
-import { DiAngularSimple } from "react-icons/di";
-import { DiReact } from "react-icons/di";
-import { DiJavascript1 } from "react-icons/di";
-import { DiDrupal } from "react-icons/di";
+import { DiAngularSimple, DiCss3, DiHtml5, DiReact, DiJavascript1, DiDrupal } from "react-icons/di";
 
 function Experience() {
 
@@ -47,10 +44,12 @@ function Experience() {
         <div className='lg:w-6/12'>
           <h2 className='text-2xl text-secondary pt-8'>Tools & skills</h2>
           <div className='grid grid-cols-6 py-4 max-w-3xl'>
-            <DiJavascript1 className="h-full w-full text-white"/>
-            <DiAngularSimple className="h-full w-full text-secondary"/>
-            <DiReact className="h-full w-full text-white"/>
-            <DiDrupal className="h-full w-full text-secondary"/>
+            <DiHtml5 className="h-full w-full text-white" alt='html icon'/>
+            <DiCss3 className="h-full w-full text-white" alt='css icon'/>
+            <DiJavascript1 className="h-full w-full text-white" alt='javascript icon'/>
+            <DiAngularSimple className="h-full w-full text-white" alt='angular icon'/>
+            <DiReact className="h-full w-full text-white" alt='react icon'/>
+            <DiDrupal className="h-full w-full text-white" alt='drupal icon'/>
           </div>
           <div className='flex flex-wrap gap-4 py-4 text-center justify-center text-textcolor'>
             {skills && skills.map((skill, index) => (
