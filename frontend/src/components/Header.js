@@ -2,7 +2,6 @@ import '../index.css';
 import { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
@@ -53,7 +52,6 @@ function Header() {
       <div className="flex gap-4 justify-end h-6">
         <a href="https://github.com/hendrik-boerma" rel="noreferrer" target="_blank" aria-label="Github"><FontAwesomeIcon className="cursor-pointer text-textcolor hover:text-secondary" icon={faGithub} size='xl' /></a>
         <a href="https://www.linkedin.com/in/hendrik-boerma/" rel="noreferrer" target="_blank" aria-label="Linkedin"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faLinkedinIn} size='xl' /></a>
-        <a href="mailto:hendrikboerma@gmail.com" aria-label="Mail"><FontAwesomeIcon className="cursor-pointer text-textcolor  hover:text-secondary" icon={faEnvelope} size='xl' /></a>
       </div>
     </nav>
 
