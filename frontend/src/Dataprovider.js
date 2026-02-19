@@ -6,29 +6,22 @@ import profile from './Images/Profile.webp';
 const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
-    const [header, setHeader] = useState('');
-    const [about, setAbout] = useState('');
-    const [projects, setProjects] = useState([]);
-    const [skills, setSkills] = useState([]);
-    const [certificates, setCertificates] = useState([]);
-    const [studies, setStudies] = useState([]);
-    const [work, setWork] = useState([]);
+    const [data, setData] = useState({});
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const queryAbout = '*[_type == "aboutText"][0]';
-            const queryHeader = `*[_type == "header"][0] {
+    const querys = {
+        queryAbout: '*[_type == "aboutText"][0]',
+        queryHeader: `*[_type == "header"][0] {
                 title,
-                subtitle}`;
-            const querySkills = '*[_type == "skills"][0]';
-            const queryCertificates = `*[_type == "certificates"] {
+                subtitle}`,
+        querySkills: '*[_type == "skills"][0]',
+        queryCertificates: `*[_type == "certificates"] {
                 _id,
                 name,
                 link
-            }`;
-            const queryProjects = `*[_type == "projects"] | order(order asc) {
+            }`,
+        queryProjects: `*[_type == "projects"] | order(order asc) {
                 _id,
                 name,
                 subtitle,
@@ -42,41 +35,46 @@ const DataProvider = ({ children }) => {
                     alt
                 },
                 link,
-                linktext}`;
-            const queryStudies = `*[_type == "studies"] | order(order asc) {
+                linktext}`,
+        queryStudies: `*[_type == "studies"] | order(order asc) {
                 _id,
                 studiename,
                 institution,
                 description,
                 startDate,
-                endDate}`;
-            const queryWork = `*[_type == "work"] | order(order asc) {
+                endDate}`,
+        queryWork: `*[_type == "work"] | order(order asc) {
                 _id,
                 role,
                 company,
                 description,
                 startDate,
-                endDate}`;
+                endDate}`
+    }
 
+    useEffect(() => {
+        const fetchData = async () => {
             try {
                 const [aboutResponse, headerResponse, skillsResponse, certificateResponse, projectsResponse, studiesResponse, workResponse] = await Promise.all([
-                    client.fetch(queryAbout),
-                    client.fetch(queryHeader),
-                    client.fetch(querySkills),
-                    client.fetch(queryCertificates),
-                    client.fetch(queryProjects),
-                    client.fetch(queryStudies),
-                    client.fetch(queryWork)
+                    client.fetch(querys.queryAbout),
+                    client.fetch(querys.queryHeader),
+                    client.fetch(querys.querySkills),
+                    client.fetch(querys.queryCertificates),
+                    client.fetch(querys.queryProjects),
+                    client.fetch(querys.queryStudies),
+                    client.fetch(querys.queryWork)
                 ]);
 
-                setHeader(headerResponse);
-                setAbout(aboutResponse.content);
-                setSkills(skillsResponse.skills);
-                setCertificates(certificateResponse);
-                setProjects(projectsResponse);
-                setStudies(studiesResponse);
-                setWork(workResponse);
-                setError(false);
+                setData({
+                    about: aboutResponse,
+                    header: headerResponse,
+                    skills: skillsResponse,
+                    certificates: certificateResponse,
+                    projects: projectsResponse,
+                    studies: studiesResponse,
+                    work: workResponse
+                });
+
                 setLoading(false);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -133,7 +131,7 @@ const DataProvider = ({ children }) => {
 
     document.body.classList.remove('no-max-width');
     return (
-        <DataContext.Provider value={{ header, about, projects, certificates, skills, studies, work, profile }}>
+        <DataContext.Provider value={{ data }}>
             {children}
         </DataContext.Provider>
     );

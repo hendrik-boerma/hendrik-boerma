@@ -10,10 +10,11 @@ import { DiDrupal } from "react-icons/di";
 
 function Experience() {
 
-  const skills = useContext(DataContext).skills;
-  const certificates = useContext(DataContext).certificates;
-  const studies = useContext(DataContext).studies;
-  const jobs = useContext(DataContext).work;
+  const data = useContext(DataContext).data;
+  const skills = data.skills;
+  const certificates = data.certificates;
+  const studies = data.studies;
+  const jobs = data.work;
 
   return (
     <section className='text-textcolor bg-darkblue' id='section2'>
@@ -53,12 +54,12 @@ function Experience() {
             <DiDrupal className="h-full w-full text-secondary"/>
           </div>
           <div className='flex flex-wrap gap-4 py-4 text-center justify-center text-textcolor'>
-            {skills && skills.map((skill, index) => (
+            {/* {skills && skills.map((skill, index) => (
               <p key={index} className='flex gap-4 rounded max-w-md'>
                 {skill}
                 <span className='text-secondary'>{index !== skills.length - 1 ? '|' : ''}</span>
               </p>
-            ))}
+            ))} */}
           </div>
           <h2 className='text-2xl pt-8 text-secondary'>Certificaten</h2>
           <div className='flex flex-wrap gap-4 py-4 text-center text-textcolor'>
