@@ -1,7 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import client from './sanityClient';
 import './index.css';
-import profile from './Images/Profile.webp';
 
 const DataContext = createContext();
 
@@ -20,7 +19,7 @@ const DataProvider = ({ children }) => {
                 _id,
                 name,
                 link
-            }`,
+                }`,
         queryProjects: `*[_type == "projects"] | order(order asc) {
                 _id,
                 name,
@@ -68,7 +67,7 @@ const DataProvider = ({ children }) => {
                 setData({
                     about: aboutResponse,
                     header: headerResponse,
-                    skills: skillsResponse,
+                    skills: skillsResponse.skills,
                     certificates: certificateResponse,
                     projects: projectsResponse,
                     studies: studiesResponse,
@@ -76,6 +75,7 @@ const DataProvider = ({ children }) => {
                 });
 
                 setLoading(false);
+
             } catch (error) {
                 console.error('Error fetching data:', error);
                 setLoading(false);
@@ -85,34 +85,13 @@ const DataProvider = ({ children }) => {
         fetchData();
     }, []);
 
-    const [imagesLoaded, setImagesLoaded] = useState(false);
-
-    useEffect(() => {
-        const imageUrls = [profile];
-        let loadedImages = 0;
-
-        const handleImageLoad = () => {
-            loadedImages += 1;
-            if (loadedImages === imageUrls.length) {
-                setImagesLoaded(true);
-            }
-        };
-
-        imageUrls.forEach(url => {
-            const img = new Image();
-            img.src = url;
-            img.onload = handleImageLoad;
-        });
-
-    }, []);
-
-    if (loading || !imagesLoaded) {
+    if (loading) {
         document.body.classList.add('w-full');
         document.body.classList.add('no-max-width');
         return (
             <div className="flex flex-col items-center justify-start text-center min-h-screen w-full p-0 m-0">
-                <div className=" w-full h-2 bg-backgroundcolor2 overflow-hidden animate-pulse">
-                    <div className=" h-full bg-primary animate-fill w-full"></div>
+                <div className=" w-full h-2 bg-hover overflow-hidden animate-pulse">
+                    <div className=" h-full bg-backgroundcolor2 animate-fill w-full"></div>
                 </div>
             </div>
         );
@@ -130,6 +109,7 @@ const DataProvider = ({ children }) => {
     }
 
     document.body.classList.remove('no-max-width');
+
     return (
         <DataContext.Provider value={{ data }}>
             {children}

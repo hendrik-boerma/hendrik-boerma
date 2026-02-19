@@ -19,7 +19,7 @@ function Experience() {
       <div className='flex flex-col-reverse lg:flex-row lg:gap-16'>
         <div className='flex flex-col lg:w-6/12'>
           <h2 className='text-2xl text-secondary pt-8' id='werk'>Werk Ervaring</h2>
-          {jobs.map((job) => (
+          {jobs && jobs.map((job) => (
             <Accordion
               key={job._id}
               title={job.role}
@@ -30,7 +30,7 @@ function Experience() {
             />
           ))}
           <h2 className='text-2xl pt-8 text-secondary' id='werk'>Studies</h2>
-          {studies.map((study) => (
+          {studies && studies.map((study) => (
             <Accordion
               key={study._id}
               title={study.studiename}
@@ -53,12 +53,12 @@ function Experience() {
             <DiDrupal className="h-full w-full text-white" alt='drupal icon'/>
           </div>
           <div className='flex flex-wrap gap-4 py-4 text-center justify-center text-textcolor'>
-            {/* {skills && skills.map((skill, index) => (
+            {skills && skills.map((skill, index) => (
               <p key={index} className='flex gap-4 rounded max-w-md'>
                 {skill}
                 <span className='text-secondary'>{index !== skills.length - 1 ? '|' : ''}</span>
               </p>
-            ))} */}
+            ))}
           </div>
           <h2 className='text-2xl pt-8 text-secondary'>Certificaten</h2>
           <div className='flex flex-wrap gap-4 py-4 text-center text-textcolor'>

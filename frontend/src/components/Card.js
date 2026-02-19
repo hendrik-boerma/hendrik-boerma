@@ -19,7 +19,7 @@ function Card({ contents }) {
   return (
     <>
       <Modal image={imageUrl} setToggleModal={setToggleModal} toggleModal={toggleModal}/>
-      {contents.map((content) => (
+      {contents && contents.map((content) => (
           <div className="flex flex-col justify-start gap-2" key={content._id}>
             <h2 className='text-2xl text-secondary pt-8'>{content.name}</h2>
             <p className='text-md text-textcolor2 font-bold'>{content.subtitle}</p>

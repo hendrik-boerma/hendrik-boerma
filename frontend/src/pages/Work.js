@@ -3,8 +3,8 @@ import { useContext } from 'react'
 import { DataContext } from '../Dataprovider';
 
 function Portfolio() {
-
-    const projects = useContext(DataContext).projects;
+    const data = useContext(DataContext).data;
+    const projects = data.projects;
 
     return (
         <>
