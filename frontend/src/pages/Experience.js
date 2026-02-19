@@ -7,10 +7,11 @@ import { DiAngularSimple, DiCss3, DiHtml5, DiReact, DiJavascript1, DiDrupal } fr
 
 function Experience() {
 
-  const skills = useContext(DataContext).skills;
-  const certificates = useContext(DataContext).certificates;
-  const studies = useContext(DataContext).studies;
-  const jobs = useContext(DataContext).work;
+  const data = useContext(DataContext).data;
+  const skills = data.skills;
+  const certificates = data.certificates;
+  const studies = data.studies;
+  const jobs = data.work;
 
   return (
     <section className='text-textcolor bg-darkblue' id='section2'>
@@ -18,7 +19,7 @@ function Experience() {
       <div className='flex flex-col-reverse lg:flex-row lg:gap-16'>
         <div className='flex flex-col lg:w-6/12'>
           <h2 className='text-2xl text-secondary pt-8' id='werk'>Werk Ervaring</h2>
-          {jobs.map((job) => (
+          {jobs && jobs.map((job) => (
             <Accordion
               key={job._id}
               title={job.role}
@@ -29,7 +30,7 @@ function Experience() {
             />
           ))}
           <h2 className='text-2xl pt-8 text-secondary' id='werk'>Studies</h2>
-          {studies.map((study) => (
+          {studies && studies.map((study) => (
             <Accordion
               key={study._id}
               title={study.studiename}
