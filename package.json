@@ -8,11 +8,11 @@
         "start:frontend": "cd frontend && npm start"
     },
     "devDependencies": {
-        "concurrently": "^6.0.0"
+        "concurrently": "^9.2.1"
     },
     "dependencies": {
-        "@portabletext/react": "^3.1.0",
-        "focus-trap-react": "^11.0.3",
+        "@portabletext/react": "^6.0.3",
+        "focus-trap-react": "^12.0.0",
         "hash-router": "^0.4.0",
         "mysql": "^2.18.1"
     }
