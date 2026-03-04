@@ -9,19 +9,18 @@ const DataProvider = ({ children }) => {
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const querys = {
-            queryAbout: '*[_type == "aboutText"][0]',
-            queryHeader: `*[_type == "header"][0] {
+    const querys = {
+        queryAbout: '*[_type == "aboutText"][0]',
+        queryHeader: `*[_type == "header"][0] {
                 title,
                 subtitle}`,
-            querySkills: '*[_type == "skills"][0]',
-            queryCertificates: `*[_type == "certificates"] {
+        querySkills: '*[_type == "skills"][0]',
+        queryCertificates: `*[_type == "certificates"] {
                 _id,
                 name,
                 link
                 }`,
-            queryProjects: `*[_type == "projects"] | order(order asc) {
+        queryProjects: `*[_type == "projects"] | order(order asc) {
                 _id,
                 name,
                 subtitle,
@@ -36,22 +35,23 @@ const DataProvider = ({ children }) => {
                 },
                 link,
                 linktext}`,
-            queryStudies: `*[_type == "studies"] | order(order asc) {
+        queryStudies: `*[_type == "studies"] | order(order asc) {
                 _id,
                 studiename,
                 institution,
                 description,
                 startDate,
                 endDate}`,
-            queryWork: `*[_type == "work"] | order(order asc) {
+        queryWork: `*[_type == "work"] | order(order asc) {
                 _id,
                 role,
                 company,
                 description,
                 startDate,
                 endDate}`
-        }
-        
+    }
+
+    useEffect(() => {
         const fetchData = async () => {
             try {
                 const [aboutResponse, headerResponse, skillsResponse, certificateResponse, projectsResponse, studiesResponse, workResponse] = await Promise.all([
